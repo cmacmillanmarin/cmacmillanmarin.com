@@ -11,7 +11,7 @@
             </div>
         </div>
         <organism-footer />
-        <background />
+        <!-- <background /> -->
     </div>
 </template>
 
