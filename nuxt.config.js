@@ -6,7 +6,7 @@ const manifest = require("./config/manifest");
 
 module.exports = {
     head: {
-        title: "Christian MacMillan Boilerplate",
+        title: "Christian MacMillan | Creative Developer",
         meta: [{
             charset: "utf-8"
         },
@@ -15,9 +15,9 @@ module.exports = {
             content: "width=device-width, initial-scale=1"
         },
         {
-            hid: "B__Reel",
-            name: "B__Reel",
-            content: "Christian MacMillan Boilerplate"
+            hid: "cmacmillanmarin",
+            name: "Christian MacMillan",
+            content: "Christian MacMillan is an islander creative developer based in Barcelona."
         },
         ],
         bodyAttrs: {

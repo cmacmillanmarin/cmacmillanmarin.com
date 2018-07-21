@@ -6,7 +6,9 @@
     <div class="l-default">
         <organism-header />
         <div class="vs-section">
-            <nuxt />
+            <div class="sections">
+                <nuxt />
+            </div>
         </div>
         <organism-footer />
         <background />
@@ -14,6 +16,8 @@
 </template>
 
 <script>
+
+    import { mapMutations } from "vuex";
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 
@@ -29,52 +33,28 @@
 
         methods: {
             init() {
+                this.domSections = this.$el.querySelector(".sections")
+                this.domScrollEl = this.$el.querySelector(".vs-section");
                 this.initScroll();
+            },
+            setListeners() {
+                this.scroll.vs._emitter.on("scrolling", this.dispatchScroll);
             },
             initScroll() {
                 this.scroll = new Scroll({
                     native: false,
-                    section: this.$el.querySelector(".vs-section"),
+                    section: this.domScrollEl,
                     ease: 0.05,
                     infiniteScroll: true
                 });
-
                 this.scroll.init();
             },
-            scrolling() {
-                console.log("scrolling!");
-                // if (this.albumsEl.getBoundingClientRect().top > 0) {
-                //     this.addAlbumOnTop()
-                // } else if ((this.albumsEl.getBoundingClientRect().bottom - global.window.innerHeight) < 0) {
-                //     this.addAlbumOnBottom()
-                // }
+            dispatchScroll(p) {
+                this.setScrollPoint(p);
             },
-            addAlbumOnTop() {
-                const aux = _.clone(this.albums)
-                this.albums = []
-                this.$nextTick(() => {
-                    aux.unshift(aux[aux.length - 1])
-                    aux.pop()
-                    this.albums = _.clone(aux)
-                    this.$nextTick(() => {
-                        this.setAlbumOffset(-this.topElHeight)
-                        this.$nextTick(this.setSizes)
-                    })
-                })
-            },
-            addAlbumOnBottom() {
-                const aux = _.clone(this.albums)
-                this.albums = []
-                this.$nextTick(() => {
-                    aux.push(aux[0])
-                    aux.shift()
-                    this.albums = _.clone(aux)
-                    this.$nextTick(() => {
-                        this.setAlbumOffset(this.bottomElHeight)
-                        this.$nextTick(this.setSizes)
-                    })
-                })
-            }
+            ...mapMutations({
+                setScrollPoint: "scroll/setPoint"
+            })
         },
 
         components: {
