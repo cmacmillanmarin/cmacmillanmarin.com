@@ -1,13 +1,5 @@
 //
-// scroll.js
-
-//
-// AUTHOR
-//
-// Developed by Christian MacMillan in 2017
-// https://github.com/cmacmillanmarin
-// _@cmacmillanmarin.com
-//
+// plugins/Scroll.js
 
 class Scroll extends Smooth {
 

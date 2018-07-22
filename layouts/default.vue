@@ -11,7 +11,7 @@
             </div>
         </div>
         <organism-footer />
-        <!-- <background /> -->
+        <background />
     </div>
 </template>
 
@@ -33,24 +33,21 @@
 
         methods: {
             init() {
-                this.domSections = this.$el.querySelector(".sections")
+                this.domSections = this.$el.querySelector(".sections");
                 this.domScrollEl = this.$el.querySelector(".vs-section");
                 this.initScroll();
             },
             setListeners() {
-                this.scroll.vs._emitter.on("scrolling", this.dispatchScroll);
+                this.scroll.vs._emitter.on("scrolling", this.setScrollPoint);
             },
             initScroll() {
                 this.scroll = new Scroll({
-                    native: false,
                     section: this.domScrollEl,
-                    ease: 0.05,
-                    infiniteScroll: true
+                    infiniteScroll: true,
+                    native: false,
+                    ease: 0.05
                 });
                 this.scroll.init();
-            },
-            dispatchScroll(p) {
-                this.setScrollPoint(p);
             },
             ...mapMutations({
                 setScrollPoint: "scroll/setPoint"

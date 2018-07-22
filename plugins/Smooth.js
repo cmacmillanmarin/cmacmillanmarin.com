@@ -1,3 +1,8 @@
+//
+// plugins/Smooth.js
+
+// by @baptistebriel (https://github.com/baptistebriel/smooth-scrolling)
+
 import classes from 'dom-classes'
 import create from 'dom-create-element'
 import prefix from 'prefix'
