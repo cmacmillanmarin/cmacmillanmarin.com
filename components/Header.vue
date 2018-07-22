@@ -1,17 +1,19 @@
 <!--
-    components/organisms/Header.vue
+    components/Header.vue
 -->
 
 <template>
-    <header class="o-header">
+    <header class="c-header">
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell _2 _alignLeft">
-                <nuxt-link :to="{ name: `lang`, params: { lang }}">
-                    <atom-logo />
-                </nuxt-link>
+            <a class="a-mail" href="" v-text="`_@cmacmillanmarin.com`" />
+            <!-- <div class="flexGrid__cell _2 _alignLeft">
             </div>
             <div class="flexGrid__cell _2 _alignRight">
-            </div>
+                
+                <nuxt-link :to="{ name: 'lang', params: { lang: 'es' } }"> es </nuxt-link>
+                <nuxt-link :to="{ name: 'lang', params: { lang: 'en' } }"> en </nuxt-link>
+                <nuxt-link :to="{ name: 'lang', params: { lang: 'jp' } }"> jp </nuxt-link>
+            </div> -->
         </div>
     </header>
 </template>
@@ -19,8 +21,6 @@
 <script>
 
     import { mapState } from "vuex";
-
-    import AtomLogo from "~/components/Logo";
 
     export default {
         name: "Header",
@@ -36,9 +36,6 @@
             breakpoint() {
                 console.log(`Breakpoint header listener! New breakpoint :: ${this.breakpoint}`);
             }
-        },
-        components: {
-            AtomLogo
         }
     }
 
@@ -46,19 +43,19 @@
 
 <style lang="scss" scoped>
 
-    .o-header {
+    .c-header {
         
         position: fixed;
         z-index: 9;
         width: 100%;
-        padding: 20px;
+        padding: 25px 16.666666%;
+        color: $white;
 
-        .a-logo {
-            width: 45px;
-        }
-
-        p {
-            font-size: 10px;
+        .a-mail {
+            font-size: 12px;
+            color: $white;
+            position: absolute;
+            left: 83.333334%;
         }
     }
 

@@ -4,32 +4,40 @@
 
 <template>
     <div class="l-default">
-        <organism-header />
+        <organism-header ref="header" />
+        <roulette ref="roulette"/>
         <div class="vs-section">
             <div class="sections">
                 <nuxt />
             </div>
         </div>
-        <organism-footer />
-        <background />
+        <organism-footer ref="footer"/>
+        <background ref="background"/>
     </div>
 </template>
 
 <script>
 
-    import { mapMutations } from "vuex";
+    import { mapState, mapMutations } from "vuex";
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 
     import OrganismHeader from "~/components/Header";
     import OrganismFooter from "~/components/Footer";
     import Background from "~/components/Background";
+    import Roulette from "~/components/Roulette";
 
     export default {
 
         name: "default",
 
         mixins: [ LifecycleHooks ],
+
+        computed: {
+            ...mapState({
+                Scroll: state => state.scroll.obj
+            })
+        },
 
         methods: {
             init() {
@@ -43,6 +51,7 @@
             initScroll() {
                 this.scroll = new Scroll({
                     section: this.domScrollEl,
+                    roulette: this.$refs.roulette.$el,
                     infiniteScroll: true,
                     native: false,
                     ease: 0.05
@@ -58,7 +67,8 @@
 
             OrganismHeader,
             OrganismFooter,
-            Background
+            Background,
+            Roulette
         }
     }
 
@@ -70,6 +80,9 @@
         overflow-y: hidden;
         .c-background {
             z-index: -1;
+        }
+        .c-roulette {
+            z-index: 9;
         }
     }  
 

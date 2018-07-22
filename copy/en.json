@@ -1,9 +1,9 @@
 {
-    "p-index:intro": "intro",
-    "p-index:work": "work",
-    "p-index:agency": "agency",
-    "p-index:awards": "awards",
-    "p-index:press": "press",
-    "p-index:interests": "interest",
-    "p-index:contact": "contact"
+    "p-text:intro": "Hi, I’m Christian, a 28 y/o islander based in Barcelona. B-Reel Creative developer Burundanga Studio FWA 🏅 judge",
+    "p-text:work": "selected work",
+    "p-text:agency": "agency",
+    "p-text:awards": "awards",
+    "p-text:press": "press",
+    "p-text:interests": "interest",
+    "p-text:contact": "contact"
 }

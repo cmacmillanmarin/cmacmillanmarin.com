@@ -1,22 +1,24 @@
 <!--
-    components/molecules/Logo.vue
+    components/Background.vue
 -->
 
 <template>
     <div class="c-background">
         <canvas ref="canvas" />
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell _6" />
-            <div class="flexGrid__cell _6" />
-            <div class="flexGrid__cell _6" />
-            <div class="flexGrid__cell _6" />
-            <div class="flexGrid__cell _6" />
-            <div class="flexGrid__cell _6" />
+            <div class="flexGrid__cell" :class="smallDevice ? '_8' : '_6'"/>
+            <div class="flexGrid__cell" :class="smallDevice ? '_37' : '_6'"/>
+            <div class="flexGrid__cell" :class="smallDevice ? '_37' : '_6'"/>
+            <div class="flexGrid__cell" :class="smallDevice ? '_8' : '_6'"/>
+            <div v-if="!smallDevice" class="flexGrid__cell _6" />
+            <div v-if="!smallDevice" class="flexGrid__cell _6" />
         </div>
     </div>
 </template>
 
 <script>
+
+    import { mapState } from "vuex";
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 
@@ -24,16 +26,35 @@
     import NoiseFS from "~/assets/glsl/noise/fs.glsl";
 
     export default {
-        name: "distortedImage",
+        name: "Background",
         mixins: [ LifecycleHooks ],
+        data() {
+            return {
+                smallDevice: true
+            }
+        },
+        computed: {
+            ...mapState({
+                breakpoint: state => state.breakpoints.breakpoint
+            })
+        },
+        watch: {
+            breakpoint() {
+                this.checkDevice();
+            }
+        },
         methods: {
             init() {
-
+                this.checkDevice();
                 this.initWebGLScene();
                 this.initRAF();
             },
             setListeners() {
-                window.addEventListener("resize", this.resize);
+                this.onResize = _.debounce(this.resize, 50);
+                window.addEventListener("resize", this.onResize);
+            },
+            checkDevice() {
+                this.smallDevice = !(this.breakpoint.includes("desktop") || this.breakpoint.includes("tablet"));
             },
             initRAF() {
                 this.fps = 60; // target frame rate
@@ -117,7 +138,7 @@
                 this.gl.uniform2f(location, event.clientX/this.canvas.width, event.clientY/this.canvas.height);
             },
             destroyListeners() {
-                window.removeEventListener("resize", this.resize);
+                window.removeEventListener("resize", this.onResize);
                 window.cancelAnimationFrame(this.raf);
             }
         }

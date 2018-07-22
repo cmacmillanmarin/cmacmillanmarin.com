@@ -2,6 +2,7 @@
 // store/scroll.js
 
 export const state = () => ({
+    obj: {},
     point: 0
 });
 

@@ -13,6 +13,7 @@ class Scroll extends Smooth {
         this.dom.prevPosition = 0
         this.dom.direction = 0
         this.dom.infiniteScroll = opt.infiniteScroll
+        this.dom.roulette = opt.roulette
     }
 
     calc(e) {
@@ -57,7 +58,7 @@ class Scroll extends Smooth {
         if (this.dom.dir == 'horizontal') this.dom.section.style[this.prefix] = this.horizontalScroll(-this.vars.current.toFixed(2))
         else this.dom.section.style[this.prefix] = this.verticalScroll(-this.vars.current.toFixed(2))
         this.dom.prevPosition = this.dom.scrollPosition
-
+        this.dom.roulette.style[this.prefix] = this.rotation(-this.vars.current.toFixed(2));
     }
 
     setInfiniteScroll() {
@@ -70,6 +71,10 @@ class Scroll extends Smooth {
 
     horizontalScroll(value) {
         return 'translate3d('+ value +'px,0,0)'
+    }
+
+    rotation(value) {
+        return 'rotate('+ value * 0.15 +'deg) translate(-50%, -50%)'
     }
 
     verticalScroll(value) {
@@ -115,4 +120,4 @@ class Scroll extends Smooth {
 
 }
 
-window.Scroll = Scroll
+window.Scroll = Scroll;

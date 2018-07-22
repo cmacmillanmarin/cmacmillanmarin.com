@@ -5,7 +5,7 @@
 <template>
     <div class="p-index pageLayout">
         <section v-for="(section, key) in sections" :key="key">
-            <p v-text="$t(`p-index:${section.id}`)" />
+            <component :is="section.id" />
         </section>
     </div>
 </template>
@@ -18,6 +18,12 @@
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
     import Transitions from "~/mixins/Transitions";
+
+    import Intro from "~/components/sections/Intro";
+    import Work from "~/components/sections/Work";
+    import Awards from "~/components/sections/Awards";
+    import Interests from "~/components/sections/Interests";
+    import Contact from "~/components/sections/Contact";
 
     export default {
         name: "index",
@@ -32,9 +38,7 @@
                 sections: [
                     { id: "intro" },
                     { id: "work" },
-                    { id: "agency" },
                     { id: "awards" },
-                    { id: "press" },
                     { id: "interests" },
                     { id: "contact" }
                 ]
@@ -55,7 +59,8 @@
                 this.resize();
             },
             setListeners() {
-                window.addEventListener("resize", this.resize);
+                this.onResize = _.debounce(this.resize, 50);
+                window.addEventListener("resize", this.onResize);
             },
             scrolling() {
                 if (this.$el.getBoundingClientRect().top > 0) this.addSectionOn(this.TOP);
@@ -68,10 +73,8 @@
                     side === this.TOP ? aux.unshift(aux[aux.length - 1]) : aux.push(aux[0]);
                     side === this.TOP ? aux.pop() : aux.shift();
                     this.sections = [...aux];
-                    this.$nextTick(()=>{
-                        this.setSectionOffset(side === this.TOP ? -this.topElHeight : this.bottomElHeight);
-                        this.$nextTick(this.resize);
-                    });
+                    this.setSectionOffset(side === this.TOP ? -this.bottomElHeight : this.topElHeight);
+                    this.$nextTick(this.resize);
                 });
             },
             setSectionOffset(val) {
@@ -83,8 +86,15 @@
                 this.bottomElHeight = this.$el.querySelectorAll("section")[this.sections.length - 1].getBoundingClientRect().height;
             },
             destroyListeners() {
-                 window.removeEventListener("resize", this.resize);
+                 window.removeEventListener("resize", this.onResize);
             }
+        },
+        components: {
+            Intro,
+            Work,
+            Awards, 
+            Interests,
+            Contact
         }
     }
 
@@ -94,10 +104,15 @@
 
     .p-index {
         text-align: left;
-        padding: 200px 16.666666% 0px;
+        padding: 0px 20px;
         color: $white;
+        @include respond-to("tablet-portrait") {
+            padding: 0px 16.666666%;
+        }
         section {
-            height: 200px;
+            p {
+                font-size: 2em;
+            }
         } 
     }
 
