@@ -58,8 +58,8 @@
         .dot {
             position: absolute;
             background: black;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             border-radius: 50%;
             left: 50%;
             transform: translate(-50%, -60px);

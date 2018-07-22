@@ -2,11 +2,11 @@
 // assets/css/layout/_links.scss
 
 a {
-    color: $black;
+    color: $white;
 	text-decoration: none;
 	outline: 0;
 
 	&:hover, &:focus {
-		color: $darkGrey;
+		color: $white;
 	}
 }
