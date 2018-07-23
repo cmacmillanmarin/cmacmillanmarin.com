@@ -46,6 +46,7 @@
 
 <style lang="scss" scoped>
     footer {
+        overflow: hidden;
         position: relative;
         box-sizing: content-box;
         p {

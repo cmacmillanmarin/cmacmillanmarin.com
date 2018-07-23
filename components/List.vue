@@ -5,8 +5,13 @@
 <template>
     <ul class="c-list">
         <li v-for="(item, key) in items" :key="key">
-            <a v-if="item.url" :href="item.url" v-text="item.name" />
-            <p v-else v-text="item.name" />
+            <span v-if="item.quantity">
+                <span v-html="item.quantity" />
+                <span class="cross" v-html="'x'" />
+            </span>
+            <p class="separator" v-if="item.separator" v-text="item.name" />
+            <a class="link" v-if="!item.separator && item.url" :href="item.url" v-text="item.name" target="_blank"/>
+            <span class="item" v-if="!item.separator && !item.url" v-text="item.name" />
         </li>
     </ul>
 </template>
@@ -27,5 +32,4 @@
 
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped />

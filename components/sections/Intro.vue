@@ -8,16 +8,11 @@
             <div class="flexGrid__cell _2">
                 <p class="emoji">👻</p>
                 <h1 class="SEO">Freelance developer based in Barcelona. Javascript, Nuxt, Vue, React, web, unity, webgl, iOS.</h1>
-                <p>Hi, I’m Christian, a 28 y/o <a href="">islander</a> based in Barcelona. Nowadays busy working as Creative Developer at <a href="">B-Reel</a>, running <a href="">Burundanga Studio</a> and judging the best of digital industry at <a href="">FWA</a>.</p>
+                <p class="intro-text">Yup! I’m Christian, a 28 y/o islander based in Barcelona. Nowadays busy working as Creative Developer at <a href="">B-Reel</a>, running <a href="">Burundanga Studio</a> and judging the best of digital industry at <a href="">FWA</a>.</p>
             </div>
-            <div class="flexGrid__cell _2" />
-            <div class="flexGrid__cell _4" />
-            <div class="flexGrid__cell _4" />
-            <div class="flexGrid__cell _4" />
-            <div class="flexGrid__cell _4">
-                <div ref="learning" class="flexGrid__cell _4 learning">
-                    <list :items="data.fields" />
-                </div>
+            <div class="learning">
+                <p class="smaller-title smaller-type" v-text="$t(data.learningTitle)" />
+                <list :items="data.fields" class="small-type" />
             </div>
         </div>
     </div>
@@ -26,7 +21,7 @@
 <script>
 
     const data = {
-        learningTitle: "s-work:learning:title",
+        learningTitle: "s-intro:learning:title",
         fields: [
             { name: "WebGL", url: "" },
             { name: "glsl", url: "" }
@@ -79,8 +74,16 @@
 <style lang="scss" scoped>
 
     .c-intro {
+        position: relative;
+        padding-bottom: 100px;
+        .learning {
+            .title {
 
-padding-bottom: 100px;
+            }
+            position: absolute;
+            left: 75%;
+            bottom: 0px;
+        }
     }
 
 </style>

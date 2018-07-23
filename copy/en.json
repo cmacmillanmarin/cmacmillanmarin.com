@@ -1,4 +1,6 @@
 {
+    "s-intro:learning:title": "Actually experimenting with",
+
     "s-work:title": "Selected work",
     "s-work:agency:title": "Agency background",
 
@@ -7,6 +9,7 @@
     "s-articles:title": "Articles or Press",
 
     "s-facts:title": "Other stuff",
+    "s-favourites:title": "Favs",
 
     "s-favs:title": "Favs"
 

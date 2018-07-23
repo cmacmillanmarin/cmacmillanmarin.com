@@ -25,11 +25,13 @@
     const data = {
         title: "s-facts:title",
         facts: [
-            { name: "I ran more than 5000Km in the last 5 years." },
-            { name: "I played in a Basketball team my entire life. Retired now." },
-            { name: "I have some tattoes. So I have instagram as well." },
-            { name: "I have a list on Spotify you should listen while working." },
-            { name: "I studied Informatic enginering at UIB." }
+            { name: "· Ran more than 5K km in the last 5 years." },
+            { name: "· Played in a Basketball team my entire life. Retired now." },
+            { name: "· Certified with Open Water Diver course." },
+            { name: "· Have some tattoes. So instagram as well." },
+            { name: "· Created a list on Spotify you should listen while working." },
+            { name: "· Attended to some courses: Swift(iOS), Online marketing by Google, etc." },
+            { name: "· Studied Software Engineering at UIB." }
         ],
         favouritesTitle: "s-favourites:title",
         favourites: [

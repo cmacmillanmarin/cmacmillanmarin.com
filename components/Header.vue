@@ -4,7 +4,7 @@
 
 <template>
     <header class="c-header">
-        <a class="a-mail" href="" v-text="`_@cmacmillanmarin.com`" />
+        <a class="a-mail small-type header-email" href="" v-text="`_@cmacmillanmarin.com`" />
     </header>
 </template>
 

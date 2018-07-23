@@ -13,9 +13,11 @@ h1 {
  * Heading 2
  */
 h2 {
-    font-size: 0.75em;
+    font-weight: normal;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     position: relative;
-    line-height: 1.2;
     padding: 12.5px 0px 20px;
     &::after {
         content: "";
@@ -68,4 +70,56 @@ p {
 
 h1, h2, h3, h4, h5, h6, p {
     color: $white;
+}
+
+.header-email {
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.intro-text {
+    font-size: 2em;
+}
+
+.emoji {
+    font-size: 2.3em;
+}
+
+.smaller-type {
+    font-size: 0.5em;
+}
+
+.small-type {
+    font-size: 0.75em;
+}
+
+.smaller-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.selected-work {
+    .link {
+        font-size: 2.75em;
+        letter-spacing: 1px;
+        font-weight: bold;
+        line-height: 100%;
+    }
+    .item {
+        font-size: 0.75em;
+        padding-bottom: 2px;
+    }
+    .separator {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 45px 0px 2px;
+        font-size: 0.5em;
+
+    }
+}
+
+.awards-list {
+
 }
