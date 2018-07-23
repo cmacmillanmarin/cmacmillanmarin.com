@@ -5,24 +5,32 @@
 <template>
     <div class="c-contact">
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell _4">
-                <p>Twitter</p>
+            <div class="flexGrid__cell _4 social-link">
+                <a href="https://twitter.com/cmacmillanmarin" target="_blank">Twitter</a>
+                <p>Some thoughts and emojis about tech.</p>
             </div>
-            <div class="flexGrid__cell _4">
-                <p>Github</p>
+            <div class="flexGrid__cell _4 social-link">
+                <a href="https://github.com/cmacmillanmarin" target="_blank">Github</a>
+                <p>The code for this website and more.</p>
             </div>
-            <div class="flexGrid__cell _4">
-                <p>Linkedin</p>
+            <div class="flexGrid__cell _4 social-link">
+                <a href="https://www.linkedin.com/in/cmacmillanmarin/" target="_blank">LinkedIn</a>
+                <p>Some extra laboral and academic information.</p>
             </div>
-            <div class="flexGrid__cell _4">
-                <p>Email</p>
+            <div class="flexGrid__cell _4 social-link">
+                <a href="mailto:_@cmacmillanmarin.com" target="_blank">Email</a>
+                <p>For job inquiries or saying hi.</p>
             </div>
         </div>
-        <p class="call">Call me on my cell phone?</p>
-        <audio>
+        <div class="credits social-link">
+            <p class="call">Call me on my cell phone?</p>
+            <p class="dev">Designed and Developed by me. With no love. At home.</p>
+        </div>
+
+        <!-- <audio>
             <source :src="data.audio.ogg" type="audio/ogg">
             <source :src="data.audio.mp3" type="audio/mpeg">
-        </audio>
+        </audio> -->
     </div>
 </template>
 
@@ -56,8 +64,17 @@
 <style lang="scss" scoped>
 
     .c-contact {
+        .flexGrid {
+            padding-top: 100px;
+        }
+        .credits {
+            padding-top: 50px;
+        }
         .call {
-            padding-top: 65px;
+            cursor: pointer;
+        }
+        .dev {
+            padding-top: 100px;
         }
         audio {
             display: none;

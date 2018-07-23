@@ -4,7 +4,7 @@
 
 <template>
     <footer class="c-footer">
-        <p ref="msg" class="msg">AGAIN?</p>
+        <p ref="msg" class="msg">🤮</p>
     </footer>
 </template>
 
@@ -33,8 +33,8 @@
                 window.addEventListener("resize", this.onResize);
             },
             setPosition() {
-                const height = this.$refs.msg.getBoundingClientRect().height + this.introPosition.params.padding - 30;
-                TweenMax.set(this.$el, { height });
+                const paddingTop = this.introPosition.params.padding
+                TweenMax.set(this.$el, { paddingTop });
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);
@@ -46,16 +46,9 @@
 
 <style lang="scss" scoped>
     footer {
-        overflow: hidden;
-        position: relative;
-        box-sizing: content-box;
         p {
             line-height: normal;
-            font-weight: 700;
-            @include centerX();
-            position: absolute;
-            width: 1000%;
-            bottom: 0px;
+            font-size: 8em;
             text-align: center;
         }
     }

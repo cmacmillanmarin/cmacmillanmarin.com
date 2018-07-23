@@ -116,7 +116,6 @@ h1, h2, h3, h4, h5, h6, p {
         letter-spacing: 1px;
         margin: 45px 0px 2px;
         font-size: 0.5em;
-
     }
 }
 
@@ -147,5 +146,22 @@ h1, h2, h3, h4, h5, h6, p {
         display: inline-block;
         font-weight: 700;
         margin-bottom: 10px;
+    }
+}
+
+.social-link {
+    a {
+        font-size: 2em;
+    }
+    .dev {
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.5em;
+    }
+    p {
+        width: 60%;
+        font-size: 0.65em;
+        font-weight: 700;
     }
 }
