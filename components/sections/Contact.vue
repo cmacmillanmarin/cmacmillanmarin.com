@@ -81,7 +81,9 @@
 
     .s-contact {
         .flexGrid {
-            padding-top: 100px;
+            @include respond-to("tablet-portrait") {
+                padding-top: 100px;
+            }
             .social-link {
                 padding-bottom: 50px;
             }
@@ -95,6 +97,7 @@
         }
         .dev {
             padding-top: 100px;
+            width: 100%;
         }
         audio {
             display: none;

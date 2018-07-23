@@ -5,7 +5,7 @@
 <template>
     <div class="s-intro">
         <div class="flexGrid" ref="content">
-            <div class="flexGrid__cell _2">
+            <div class="intro flexGrid__cell" :class="{ '_2': !smallMobile, '_75': smallMobile }">
                 <p class="emoji" v-text="$t(data.emoji)" />
                 <h1 class="SEO" v-text="$t(data.seo)" />
                 <p class="intro-text" v-html="$t(data.intro)" />
@@ -47,6 +47,11 @@
                 default: () => data
             }
         },
+        computed: {
+            ...mapState({
+                smallMobile: state => state.breakpoints.smallMobile
+            })
+        },
         methods: {
             init() {
                 this.setPosition();
@@ -83,6 +88,10 @@
             position: absolute;
             left: 50%;
             bottom: 100px;
+            width: 37.5%;
+            @include respond-to("tablet-portrait") {
+                width: auto;
+            }
             @include respond-to("desktop") {
                 left: 75%;
             }

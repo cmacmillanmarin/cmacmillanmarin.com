@@ -6,7 +6,7 @@
     <div class="s-awards">
         <div class="flexGrid _horizontal">
             <div v-if="!mobile" class="flexGrid__cell _4" />
-            <div class="flexGrid__cell" :class="{ '_4': !mobile, '_2': mobile }">
+            <div class="flexGrid__cell press" :class="{ '_4': !mobile, '_2': mobile }">
                 <h2 v-text="$t(data.pressTitle)" />
                 <list :items="data.press" />
             </div>
@@ -68,7 +68,9 @@
 
     .s-awards {
         .awards {
+            padding-top: 25px;
             @include respond-to("desktop") {
+                padding-top: 0px;
                 transform: translateY(-150px);
             }
         }
