@@ -34,14 +34,14 @@
         ],
         favouritesTitle: "s-facts:fav:title",
         favourites: [
-            { name: "Homo Deus", fav: "s-facts:fav:1" },
-            { name: "HER", fav: "s-facts:fav:2" },
-            { name: "Black Mirror", fav: "s-facts:fav:3" },
-            { name: "FCBarcelona", fav: "s-facts:fav:4" },
-            { name: "Stephen Curry, yes.", fav: "s-facts:fav:5" },
-            { name: "JayZ & Post Malone", fav: "s-facts:fav:6" },
-            { name: "B&O Play H5", fav: "s-facts:fav:7" },
-            { name: "Nike x Stefan Janoski", fav: "s-facts:fav:8" },
+            { name: "s-facts:fav:1:content", fav: "s-facts:fav:1" },
+            { name: "s-facts:fav:2:content", fav: "s-facts:fav:2" },
+            { name: "s-facts:fav:3:content", fav: "s-facts:fav:3" },
+            { name: "s-facts:fav:4:content", fav: "s-facts:fav:4" },
+            { name: "s-facts:fav:5:content", fav: "s-facts:fav:5" },
+            { name: "s-facts:fav:6:content", fav: "s-facts:fav:6" },
+            { name: "s-facts:fav:7:content", fav: "s-facts:fav:7" },
+            { name: "s-facts:fav:8:content", fav: "s-facts:fav:8" },
         ]
     }
 

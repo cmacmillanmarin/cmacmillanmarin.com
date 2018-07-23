@@ -26,16 +26,16 @@
     const data = {
         title: "s-awards:title",
         awards: [
-            { name: "FWA", quantity: "1" },
-            { name: "Awwwards", quantity: "7" },
-            { name: "CSSDesignAwards", quantity: "5" },
-            { name: "Marathon", quantity: "1" },
-            { name: "Half-Marathon", quantity: "8" }
+            { name: "s-awards:fwa", quantity: "1" },
+            { name: "s-awards:awwwards", quantity: "7" },
+            { name: "s-awards:css", quantity: "5" },
+            { name: "s-awards:marathon", quantity: "1" },
+            { name: "s-awards:half", quantity: "8" }
         ],
         pressTitle: "s-articles:title",
         press: [
-            { name: "Awwwards magazine", url: "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html" },
-            { name: "Communication Arts", url: "https://www.commarts.com/webpicks/xavier-cuss" }
+            { name: "s-articles:awwwards", url: "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html" },
+            { name: "s-articles:comarts", url: "https://www.commarts.com/webpicks/xavier-cuss" }
         ]
     }
 

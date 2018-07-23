@@ -5,7 +5,13 @@ body {
     font-family: $fontFamily;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
     background: $black;
     color: $white;
+}
+
+html, body {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }

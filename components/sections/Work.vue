@@ -23,24 +23,24 @@
     const data = {
         title: "s-work:title",
         projects: [
-           { name: "LVMH Hublot Digital Boutique", url: "https://www.b-reel.com/work/hublot-digital-boutique" },
-           { name: "Gorillaz & Jaguar App", url: "https://www.b-reel.com/work/client/gorillaz" },
-           { name: "Xavier Cussó", url: "https://xaviercusso.com" },
-           { name: "Chaos Fashion", url: "https://shop.chaos.club/" },
-           { name: "Here Maps OLP", url: "https://www.here.com/en/vision/innovation/here-open-location-platform" },
-           { name: "Stooorm", url: "https://xaviercusso.com/#/project/stoooorm" },
-           { name: "Intorno", url: "https://intorno.xyz" },
-           { name: "Draw a better 2016", url: "https://www.awwwards.com/sites/draw-a-better-2016" },
+           { name: "s-work:project:hublot", url: "https://www.b-reel.com/work/hublot-digital-boutique" },
+           { name: "s-work:project:gorillaz", url: "https://www.b-reel.com/work/client/gorillaz" },
+           { name: "s-work:project:xaviercusso", url: "https://xaviercusso.com" },
+           { name: "s-work:project:chaos", url: "https://shop.chaos.club/" },
+           { name: "s-work:project:heremaps", url: "https://www.here.com/en/vision/innovation/here-open-location-platform" },
+           { name: "s-work:project:stoooorm", url: "https://xaviercusso.com/#/project/stoooorm" },
+           { name: "s-work:project:intorno", url: "https://intorno.xyz" },
+           { name: "s-work:project:draw", url: "https://www.awwwards.com/sites/draw-a-better-2016" },
            { name: "s-work:separator:text", separator: true },
-           { name: "Typeform? 🙃 " },
-           { name: "Victor Vasarely" },
-           { name: "Evagher" }
+           { name: "s-work:project:typeform" },
+           { name: "s-work:project:vasarely" },
+           { name: "s-work:project:evagher" }
         ],
         agencyTitle: "s-work:agency:title",
         agencies: [
-            { name: "B-Reel", url: "https://b-reel.com" },
-            { name: "Vasava", url: "https://portfolio.vasava.es/" },
-            { name: "Bulldog Studio", url: "http://bulldogstudio.es/" }
+            { name: "s-work:agency:breel", url: "https://b-reel.com" },
+            { name: "s-work:agency:vasava", url: "https://portfolio.vasava.es/" },
+            { name: "s-work:agency:bulldog", url: "http://bulldogstudio.es/" }
         ]
     }
 

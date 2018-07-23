@@ -26,8 +26,8 @@
         intro: "s-intro:text",
         learningTitle: "s-intro:learning:title",
         fields: [
-            { name: "WebGL" },
-            { name: "glsl" }
+            { name: "s-intro:learning:1" },
+            { name: "s-intro:learning:2" }
         ]
     }
 

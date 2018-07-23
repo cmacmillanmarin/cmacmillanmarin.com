@@ -11,7 +11,8 @@
             </div>
         </div>
         <div class="credits social-link">
-            <p @mouseenter="play" @mouseleave="pause" class="call" v-text="$t(data.callme)"/>
+            <p v-if="!mobile" @mouseenter="play" @mouseleave="pause" class="call" v-text="$t(data.callme)" />
+            <p v-else class="call" @click="toggle" v-text="$t(data.callme)" />
             <audio ref="audio" loop>
                 <source :src="data.audio.mp3" type="audio/mpeg">
             </audio>
@@ -51,6 +52,11 @@
                 default: () => data
             }
         },
+        data() {
+            return {
+                playing: false
+            }
+        },
         methods: {
             play() {
                 this.$refs.audio.currentTime = 33.0;
@@ -58,7 +64,14 @@
             },
             pause() {
                 this.$refs.audio.pause();
-            }
+            },
+            toggle() {
+                if (!this.playing) {
+                    this.$refs.audio.currentTime = 33.0;
+                    this.$refs.audio.play();
+                } else this.$refs.audio.pause();
+                this.playing = !this.playing;
+            }  
         }
     }
 

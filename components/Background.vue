@@ -4,7 +4,7 @@
 
 <template>
     <div class="c-background">
-        <canvas ref="canvas" />
+        <!-- <canvas ref="canvas" /> -->
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell" :class="mobile ? '_8' : '_6'"/>
             <div class="flexGrid__cell" :class="mobile ? '_37' : '_6'"/>
@@ -40,12 +40,12 @@
         },
         methods: {
             init() {
-                this.initWebGLScene();
-                this.initRAF();
+                // this.initWebGLScene();
+                // this.initRAF();
             },
             setListeners() {
-                this.onResize = _.throttle(this.resize, 50);
-                window.addEventListener("resize", this.onResize);
+                // this.onResize = _.throttle(this.resize, 50);
+                // window.addEventListener("resize", this.onResize);
             },
             initRAF() {
                 this.fps = 60; // target frame rate
