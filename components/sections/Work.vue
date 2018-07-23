@@ -33,9 +33,10 @@
            { name: "Stooorm", url: "https://xaviercusso.com/#/project/stoooorm", after: "" },
            { name: "Intorno", url: "https://intorno.xyz", after: "" },
            { name: "Draw a better 2016", url: "https://www.awwwards.com/sites/draw-a-better-2016", after: "" },
+           { name: "Coming soon..."},
            { name: "🙃 Typeform", url: "", after: "? (Maybe you watching)" },
-           { name: "Evagher", url: "", after: "(Coming soon)" },
-           { name: "Victor Vasarely", url: "", after: "(Coming soon)" }
+           { name: "Evagher", url: "", after: "" },
+           { name: "Victor Vasarely", url: "", after: "" }
         ],
         agencyIntro: "s-work:agency:title",
         agencies: [

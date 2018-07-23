@@ -40,6 +40,7 @@
 <style lang="scss" scoped>
 
     .c-contact {
+        margin-bottom: 200px;
         .call {
             margin-top: 65px;
         }
