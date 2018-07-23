@@ -40,7 +40,6 @@
 <style lang="scss" scoped>
 
     .c-contact {
-        padding-bottom: 200px;
         .call {
             padding-top: 65px;
         }

@@ -16,6 +16,8 @@
 
     import { TweenMax } from "gsap";
 
+    import { mapState, mapMutations } from "vuex";
+
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 
     export default {
@@ -32,10 +34,14 @@
             setPosition() {
                 const paddingTop = (window.innerHeight - this.$refs.content.getBoundingClientRect().height) * 0.5;
                 TweenMax.set(this.$el, { paddingTop });
+                this.dispatch({ type: "introPosition", params: { padding: paddingTop }});
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);
-            }
+            },
+            ...mapMutations({
+                dispatch: "events/dispatch"
+            })
         }
     }
 
