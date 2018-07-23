@@ -12,13 +12,20 @@
 
     import { mapState } from "vuex";
 
+    import LifecycleHooks from "~/mixins/LifecycleHooks";
+
     export default {
         name: "Header",
+        mixins: [ LifecycleHooks ],
         computed: {
             ...mapState({
                 langs: state => state.lang.locales,
                 breakpoint: state => state.breakpoints.breakpoint
             })
+        },
+        methods: {
+            init() {
+            }
         }
     }
 
@@ -27,7 +34,7 @@
 <style lang="scss" scoped>
 
     .c-header {
-        
+
         position: fixed;
         z-index: 9;
         width: 100%;

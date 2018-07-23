@@ -45,6 +45,7 @@
 
     .c-intro {
         width: 50%;
+        padding-bottom: 100px;
     }
 
 </style>

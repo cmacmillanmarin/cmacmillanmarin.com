@@ -4,10 +4,22 @@
 
 <template>
     <div class="c-work">
-        <h2 v-text="$t(data.title)" />
-        <list :items="data.projects" />
-        <h2 v-text="$t(data.agencyIntro)" />
-        <list :items="data.agencies" />
+        <div class="flexGrid _horizontal">
+        </div>
+        <div class="flexGrid _horizontal">
+            <div class="flexGrid__cell _2">
+                <h2 v-text="$t(data.title)" />
+                <list :items="data.projects" />
+            </div>
+            <div ref="learning" class="flexGrid__cell _4 learning">
+                <h2 v-text="$t(data.agencyIntro)" />
+                <list :items="data.agencies" />
+            </div>
+            <div ref="agency" class="flexGrid__cell _4 agency">
+                <h2 v-text="$t(data.agencyIntro)" />
+                <list :items="data.agencies" />
+            </div>
+        </div>
     </div>
 </template>
 
@@ -25,9 +37,9 @@
            { name: "Intorno", url: "https://intorno.xyz", after: "" },
            { name: "Draw a better 2016", url: "https://www.awwwards.com/sites/draw-a-better-2016", after: "" },
            { name: "Coming soon..."},
-           { name: "🙃 Typeform", url: "", after: "? (Maybe you watching)" },
-           { name: "Evagher", url: "", after: "" },
-           { name: "Victor Vasarely", url: "", after: "" }
+           { name: "🙃 Typeform?", url: "", after: "? (Maybe you watching)" },
+           { name: "Victor Vasarely", url: "", after: "" },
+           { name: "Evagher", url: "", after: "" }
         ],
         agencyIntro: "s-work:agency:title",
         agencies: [
@@ -56,6 +68,14 @@
 
 <style lang="scss" scoped>
 
+    .c-work {
+        .agency {
+            padding-top: 100px;
+        }
+        .learning {
+            padding-top: 250px;
+        }
+    }
 
 </style>
 
