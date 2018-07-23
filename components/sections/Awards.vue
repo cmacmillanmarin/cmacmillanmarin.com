@@ -4,10 +4,21 @@
 
 <template>
     <div class="c-awards">
-        <h2 v-text="$t(data.title)" />
-        <list :items="data.awards" />
-        <h2 v-text="$t(data.pressTitle)" />
-        <list :items="data.press" />
+        <div class="flexGrid _horizontal">
+            <div class="flexGrid__cell _4" />
+            <div class="flexGrid__cell _4">
+                <h2 v-text="$t(data.title)" />
+                <list :items="data.awards" />
+            </div>
+            <div class="flexGrid__cell _2" />
+            <div class="flexGrid__cell _4" />
+            <div class="flexGrid__cell _4" />
+            <div class="flexGrid__cell _4" />
+            <div ref="learning" class="flexGrid__cell _4 learning">
+                <h2 v-text="$t(data.pressTitle)" />
+                <list :items="data.press" />
+            </div>
+        </div>
     </div>
 </template>
 
@@ -16,13 +27,13 @@
     const data = {
         title: "s-awards:title",
         awards: [
-            { name: "1 x FWA" },
-            { name: "7 x Awwwards" },
-            { name: "5 x CSS Design Awards" },
-            { name: "1 x Marathon Finisher" },
-            { name: "8 x Half Marathon Finisher" },
-            { name: "1 x B-Reel Bowling Championship" },
-            { name: "1 x B-Reel Beach Volley Championship" },
+            { name: "1xFWA" },
+            { name: "7xAwwwards" },
+            { name: "5xCSS Design Awards" },
+            { name: "1xMarathon Finisher" },
+            { name: "8xHalf Marathon Finisher" },
+            { name: "1xB-Reel Bowling Championship" },
+            { name: "1xB-Reel Volley Championship" },
         ],
         pressTitle: "s-articles:title",
         press: [

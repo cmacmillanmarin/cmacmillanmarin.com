@@ -26,6 +26,11 @@ h2 {
         top: 0px;
         left: 0px;
     }
+    &._noLine {
+        &::after {
+            content: none;
+        }
+    }
 }
 
 /**
@@ -54,7 +59,6 @@ h6 {}
  * Text
  */
 p {
-    font-size: 2em;
     font-weight: normal;
 }
 

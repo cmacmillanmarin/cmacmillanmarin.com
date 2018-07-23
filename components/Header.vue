@@ -42,7 +42,6 @@
         color: $white;
 
         .a-mail {
-            font-size: 12px;
             color: $white;
             position: absolute;
             left: 83.333334%;

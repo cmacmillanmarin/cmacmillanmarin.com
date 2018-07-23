@@ -49,7 +49,6 @@
         position: relative;
         box-sizing: content-box;
         p {
-            font-size: 20em;
             line-height: normal;
             font-weight: 700;
             @include centerX();

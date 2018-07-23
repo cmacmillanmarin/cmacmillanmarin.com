@@ -5,18 +5,13 @@
 <template>
     <div class="c-work">
         <div class="flexGrid _horizontal">
-        </div>
-        <div class="flexGrid _horizontal">
             <div class="flexGrid__cell _2">
                 <h2 v-text="$t(data.title)" />
                 <list :items="data.projects" />
             </div>
-            <div ref="learning" class="flexGrid__cell _4 learning">
-                <h2 v-text="$t(data.agencyIntro)" />
-                <list :items="data.agencies" />
-            </div>
+
             <div ref="agency" class="flexGrid__cell _4 agency">
-                <h2 v-text="$t(data.agencyIntro)" />
+                <h2 class="_noLine" v-text="$t(data.agencyTitle)" />
                 <list :items="data.agencies" />
             </div>
         </div>
@@ -41,7 +36,7 @@
            { name: "Victor Vasarely", url: "", after: "" },
            { name: "Evagher", url: "", after: "" }
         ],
-        agencyIntro: "s-work:agency:title",
+        agencyTitle: "s-work:agency:title",
         agencies: [
             { name: "B-Reel", url: "https//b-reel.com" },
             { name: "Vasava", url: "https://portfolio.vasava.es/" },
