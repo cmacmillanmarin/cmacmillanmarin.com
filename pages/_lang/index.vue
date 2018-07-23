@@ -111,9 +111,6 @@
         }
         section {
             padding-top: 75px;
-            p, a {
-                font-size: 2em;
-            }
         } 
     }
 

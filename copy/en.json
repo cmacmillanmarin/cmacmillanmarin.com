@@ -5,5 +5,9 @@
     "p-text:awards": "awards",
     "p-text:press": "press",
     "p-text:interests": "interest",
-    "p-text:contact": "contact"
+    "p-text:contact": "contact",
+
+    "s-work:title": "Selected work",
+    "s-work:agency:title": "Agency background"
+    
 }

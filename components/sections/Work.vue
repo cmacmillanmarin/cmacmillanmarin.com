@@ -37,7 +37,7 @@
            { name: "Evagher", url: "", after: "(Coming soon)" },
            { name: "Victor Vasarely", url: "", after: "(Coming soon)" }
         ],
-        agencyIntro: "More than 8 years of experience between agency and freelancing.",
+        agencyIntro: "s-work:agency:title",
         agencies: [
             { name: "B-Reel", url: "https//b-reel.com" },
             { name: "Vasava", url: "https://portfolio.vasava.es/" },

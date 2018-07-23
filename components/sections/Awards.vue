@@ -26,11 +26,11 @@
         awards: [
             { name: "1 x FWA" },
             { name: "7 x Awwwards" },
-            { name: "4 x CSS Design Awards" },
+            { name: "5 x CSS Design Awards" },
             { name: "1 x Marathon Finisher" },
-            { name: "6 x Half Marathon Finisher" },
+            { name: "8 x Half Marathon Finisher" },
             { name: "1 x B-Reel Bowling Championship" },
-            { name: "1 x B-Reel Beach Volley Championship" }
+            { name: "1 x B-Reel Beach Volley Championship" },
         ],
         pressTitle: "Some articles.",
         press: [

@@ -23,15 +23,6 @@
     .c-intro {
         padding-top: 20%;
         width: 50%;
-        p {
-            font-size: 2em;
-        }
-        a {
-            font-weight: 700;
-        }
-        span {
-            mix-blend-mode: difference;
-        }
     }
 
 </style>

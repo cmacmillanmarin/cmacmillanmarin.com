@@ -6,12 +6,12 @@
     <div class="c-background">
         <canvas ref="canvas" />
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell" :class="smallDevice ? '_8' : '_6'"/>
-            <div class="flexGrid__cell" :class="smallDevice ? '_37' : '_6'"/>
-            <div class="flexGrid__cell" :class="smallDevice ? '_37' : '_6'"/>
-            <div class="flexGrid__cell" :class="smallDevice ? '_8' : '_6'"/>
-            <div v-if="!smallDevice" class="flexGrid__cell _6" />
-            <div v-if="!smallDevice" class="flexGrid__cell _6" />
+            <div class="flexGrid__cell" :class="mobile ? '_8' : '_6'"/>
+            <div class="flexGrid__cell" :class="mobile ? '_37' : '_6'"/>
+            <div class="flexGrid__cell" :class="mobile ? '_37' : '_6'"/>
+            <div class="flexGrid__cell" :class="mobile ? '_8' : '_6'"/>
+            <div v-if="!mobile" class="flexGrid__cell _6" />
+            <div v-if="!mobile" class="flexGrid__cell _6" />
         </div>
     </div>
 </template>
@@ -35,26 +35,17 @@
         },
         computed: {
             ...mapState({
-                breakpoint: state => state.breakpoints.breakpoint
+                mobile: state => state.breakpoints.mobile
             })
-        },
-        watch: {
-            breakpoint() {
-                this.checkDevice();
-            }
         },
         methods: {
             init() {
-                this.checkDevice();
                 this.initWebGLScene();
                 this.initRAF();
             },
             setListeners() {
                 this.onResize = _.throttle(this.resize, 50);
                 window.addEventListener("resize", this.onResize);
-            },
-            checkDevice() {
-                this.smallDevice = !(this.breakpoint.includes("desktop") || this.breakpoint.includes("tablet"));
             },
             initRAF() {
                 this.fps = 60; // target frame rate

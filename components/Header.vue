@@ -4,17 +4,7 @@
 
 <template>
     <header class="c-header">
-        <div class="flexGrid _horizontal">
-            <a class="a-mail" href="" v-text="`_@cmacmillanmarin.com`" />
-            <!-- <div class="flexGrid__cell _2 _alignLeft">
-            </div>
-            <div class="flexGrid__cell _2 _alignRight">
-                
-                <nuxt-link :to="{ name: 'lang', params: { lang: 'es' } }"> es </nuxt-link>
-                <nuxt-link :to="{ name: 'lang', params: { lang: 'en' } }"> en </nuxt-link>
-                <nuxt-link :to="{ name: 'lang', params: { lang: 'jp' } }"> jp </nuxt-link>
-            </div> -->
-        </div>
+        <a class="a-mail" href="" v-text="`_@cmacmillanmarin.com`" />
     </header>
 </template>
 
@@ -26,16 +16,9 @@
         name: "Header",
         computed: {
             ...mapState({
-                lang: state => state.lang.locale,
-                breakpoint: state => state.breakpoints.breakpoint,
-                platform: state => state.checks.platform,
-                webGLSupported: state => state.checks.webGLSupported
+                langs: state => state.lang.locales,
+                breakpoint: state => state.breakpoints.breakpoint
             })
-        },
-        watch: {
-            breakpoint() {
-                console.log(`Breakpoint header listener! New breakpoint :: ${this.breakpoint}`);
-            }
         }
     }
 
