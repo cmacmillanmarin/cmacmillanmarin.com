@@ -1,9 +1,38 @@
 {
-    "p-index:intro": "intro",
-    "p-index:work": "trabajo",
-    "p-index:agency": "agencias",
-    "p-index:awards": "premios",
-    "p-index:press": "articulos",
-    "p-index:interests": "intereses",
-    "p-index:contact": "contacto"
+    "s-intro:emoji": "👻",
+    "s-intro:seo:h1": "Freelance developer based in Barcelona. Javascript, Nuxt, Vue, React, web, unity, webgl, iOS.",
+    "s-intro:text": "Yup! Soy Christian, un mallorquín de 28 años que vive en Barcelona. Actualmente trabajo como Creative Developer en <a href=''>B-Reel</a>, soy co-fundandor de <a href=''>Burundanga Studio</a> y miembro del jurado de <a href=''>FWA</a>.",
+    "s-intro:learning:title": "Experimentando con",
+
+    "s-work:title": "Trabajo seleccionado",
+    "s-work:agency:title": "Agencias",
+    "s-work:separator:text": "Próximamente...",
+
+    "s-awards:title": "Premios y reconocimientos",
+    "s-articles:title": "Artículos",
+
+    "s-facts:title": "Otros datos de interes",
+    "s-facts:stuff:1": "· He corrido mas de 5000 km en los últimos 5 años.",
+    "s-facts:stuff:2": "· He jugado al baloncesto toda la vida. Ahora estoy retirado.",
+    "s-facts:stuff:3": "· Dispongo del curso de buceo OWD.",
+    "s-facts:stuff:4": "· Llevo algún tattoo. Así que también tengo <a href='https://instagram.com/cmacmillanmarin'>instagram</a>.",
+    "s-facts:stuff:5": "· Tengo una lista de Spotify que deberías <a href=''>escuchar</a>.",
+    "s-facts:stuff:6": "· Estudié Ingeniería de Software en la UIB.",
+
+    "s-facts:fav:title": "Favs",
+    "s-facts:fav:1": "Libro",
+    "s-facts:fav:2": "Película",
+    "s-facts:fav:3": "Serie",
+    "s-facts:fav:4": "Equipo",
+    "s-facts:fav:5": "NBA",
+    "s-facts:fav:6": "Artista",
+    "s-facts:fav:7": "Cascos",
+    "s-facts:fav:8": "Zapatos",
+
+    "s-contact:twitter:text": "Opiniones y emojis sobre tecnología.",
+    "s-contact:github:text": "El código de esta web y más.",
+    "s-contact:linkedin:text": "Alguna información laboral y académica extra.",
+    "s-contact:email:text": "Para nuevos proyectos o saludar.",
+    "s-contact:dev:text": "Diseñado y desarrollado por mi. Sin amor. En mi casa.",
+    "s-contact:callme:text": "Call me on my cell phone?"
 }

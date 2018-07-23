@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="c-facts">
+    <div class="s-facts">
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell _2">
                 <h2 v-text="$t(data.title)" />
@@ -25,23 +25,23 @@
     const data = {
         title: "s-facts:title",
         facts: [
-            { name: "· Ran more than 5K km in the last 5 years." },
-            { name: "· Played in a Basketball team my entire life. Retired now." },
-            { name: "· Certified with Open Water Diver course." },
-            { name: "· Have some tattoes. So <a href=''>instagram</a> as well." },
-            { name: "· Created a list on Spotify you should <a href=''>listen</a> while working." },
-            { name: "· Studied Software Engineering at UIB." }
+            { name: "s-facts:stuff:1" },
+            { name: "s-facts:stuff:2" },
+            { name: "s-facts:stuff:3" },
+            { name: "s-facts:stuff:4" },
+            { name: "s-facts:stuff:5" },
+            { name: "s-facts:stuff:6" }
         ],
-        favouritesTitle: "s-favourites:title",
+        favouritesTitle: "s-facts:fav:title",
         favourites: [
-            { name: "Homo Deus", fav: "Book" },
-            { name: "HER", fav: "Movie" },
-            { name: "Black Mirror", fav: "TV Serie" },
-            { name: "FCBarcelona", fav: "Futbol team" },
-            { name: "Stephen Curry, yes.", fav: "NBA team" },
-            { name: "JayZ & Post Malone", fav: "Artist" },
-            { name: "B&O Play H5", fav: "Headphones " },
-            { name: "Nike x Stefan Janoski", fav: "Shoes" },
+            { name: "Homo Deus", fav: "s-facts:fav:1" },
+            { name: "HER", fav: "s-facts:fav:2" },
+            { name: "Black Mirror", fav: "s-facts:fav:3" },
+            { name: "FCBarcelona", fav: "s-facts:fav:4" },
+            { name: "Stephen Curry, yes.", fav: "s-facts:fav:5" },
+            { name: "JayZ & Post Malone", fav: "s-facts:fav:6" },
+            { name: "B&O Play H5", fav: "s-facts:fav:7" },
+            { name: "Nike x Stefan Janoski", fav: "s-facts:fav:8" },
         ]
     }
 

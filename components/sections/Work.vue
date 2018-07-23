@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="c-work">
+    <div class="s-work">
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell _75">
                 <h2 v-text="$t(data.title)" />
@@ -31,7 +31,7 @@
            { name: "Stooorm", url: "https://xaviercusso.com/#/project/stoooorm" },
            { name: "Intorno", url: "https://intorno.xyz" },
            { name: "Draw a better 2016", url: "https://www.awwwards.com/sites/draw-a-better-2016" },
-           { name: "Coming soon...", separator: true },
+           { name: "s-work:separator:text", separator: true },
            { name: "Typeform? 🙃 " },
            { name: "Victor Vasarely" },
            { name: "Evagher" }
@@ -63,7 +63,7 @@
 
 <style lang="scss" scoped>
 
-    .c-work {
+    .s-work {
         .agency {
             padding-top: 100px;
         }

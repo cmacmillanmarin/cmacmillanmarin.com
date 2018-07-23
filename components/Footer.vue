@@ -3,12 +3,14 @@
 -->
 
 <template>
-    <footer class="c-footer">
+    <footer class="s-footer">
         <p ref="msg" class="msg">🤮</p>
     </footer>
 </template>
 
 <script>
+
+    const emojis = []
 
     import { mapState } from "vuex";
 

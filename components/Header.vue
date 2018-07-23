@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <header class="c-header">
+    <header class="s-header">
         <a class="a-mail small-type header-email" href="mailto:_@cmacmillanmarin.com">
              _@cmacmillanmarin.com 🤙🏾
         </a>
@@ -35,7 +35,7 @@
 
 <style lang="scss" scoped>
 
-    .c-header {
+    .s-header {
 
         position: fixed;
         z-index: 9;

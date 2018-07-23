@@ -3,12 +3,12 @@
 -->
 
 <template>
-    <div class="c-intro">
+    <div class="s-intro">
         <div class="flexGrid" ref="content">
             <div class="flexGrid__cell _2">
-                <p class="emoji">👻</p>
-                <h1 class="SEO">Freelance developer based in Barcelona. Javascript, Nuxt, Vue, React, web, unity, webgl, iOS.</h1>
-                <p class="intro-text">Yup! I’m Christian, a 28 y/o islander based in Barcelona. Nowadays busy working as Creative Developer at <a href="">B-Reel</a>, running <a href="">Burundanga Studio</a> and judging the best of digital industry at <a href="">FWA</a>.</p>
+                <p class="emoji" v-text="$t(data.emoji)" />
+                <h1 class="SEO" v-text="$t(data.seo)" />
+                <p class="intro-text" v-html="$t(data.intro)" />
             </div>
             <div class="learning">
                 <p class="smaller-title smaller-type" v-text="$t(data.learningTitle)" />
@@ -21,10 +21,13 @@
 <script>
 
     const data = {
+        emoji: "s-intro:emoji",
+        seo: "s-intro:seo:h1",
+        intro: "s-intro:text",
         learningTitle: "s-intro:learning:title",
         fields: [
-            { name: "WebGL", url: "" },
-            { name: "glsl", url: "" }
+            { name: "WebGL" },
+            { name: "glsl" }
         ]
     }
 
@@ -73,13 +76,10 @@
 
 <style lang="scss" scoped>
 
-    .c-intro {
+    .s-intro {
         position: relative;
         padding-bottom: 100px;
         .learning {
-            .title {
-
-            }
             position: absolute;
             left: 75%;
             bottom: 0px;

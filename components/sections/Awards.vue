@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="c-awards">
+    <div class="s-awards">
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell _4" />
             <div class="flexGrid__cell _4">
@@ -58,7 +58,7 @@
 
 <style lang="scss" scoped>
 
-    .c-awards {
+    .s-awards {
         .awards {
             transform: translateY(-150px);
         }
