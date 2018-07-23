@@ -4,7 +4,7 @@
 
 <template>
     <footer class="c-footer">
-        
+        OH SHIT
     </footer>
 </template>
 

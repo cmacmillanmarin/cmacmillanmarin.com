@@ -32,7 +32,7 @@
             { name: "1 x B-Reel Bowling Championship" },
             { name: "1 x B-Reel Beach Volley Championship" },
         ],
-        pressTitle: "Some articles.",
+        pressTitle: "s-articles:title",
         press: [
             { name: "Awwwards magazine", url: "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html" }
         ]

@@ -13,7 +13,18 @@ h1 {
  * Heading 2
  */
 h2 {
+    position: relative;
     line-height: 1.2;
+    margin-bottom: 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: white;
+        top: -2px;
+        left: 0px;
+    }
 }
 
 /**

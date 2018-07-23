@@ -49,7 +49,7 @@
                 this.scrolling();
             }
         },
-        methods: { 
+        methods: {
             init() {
                 this.offset = 0;
 
@@ -92,7 +92,7 @@
         components: {
             Intro,
             Work,
-            Awards, 
+            Awards,
             Facts,
             Contact
         }
@@ -110,8 +110,10 @@
             padding: 0px 16.666666%;
         }
         section {
-            padding-top: 75px;
-        } 
+            > div {
+                padding-top: 75px;
+            }
+        }
     }
 
 </style>
