@@ -7,14 +7,14 @@
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell _2">
                 <h2 v-text="$t(data.title)" />
-                <list :items="data.facts" />
+                <list :items="data.facts" class="facts" />
             </div>
             <div class="flexGrid__cell _2" />
             <div class="flexGrid__cell _4" />
             <div class="flexGrid__cell _4" />
             <div ref="learning" class="flexGrid__cell _4 learning">
                 <h2 v-text="$t(data.favouritesTitle)" />
-                <list :items="data.favourites" />
+                <list :items="data.favourites" class="favs" />
             </div>
         </div>
     </div>
@@ -28,21 +28,20 @@
             { name: "· Ran more than 5K km in the last 5 years." },
             { name: "· Played in a Basketball team my entire life. Retired now." },
             { name: "· Certified with Open Water Diver course." },
-            { name: "· Have some tattoes. So instagram as well." },
-            { name: "· Created a list on Spotify you should listen while working." },
-            { name: "· Attended to some courses: Swift(iOS), Online marketing by Google, etc." },
+            { name: "· Have some tattoes. So <a href=''>instagram</a> as well." },
+            { name: "· Created a list on Spotify you should <a href=''>listen</a> while working." },
             { name: "· Studied Software Engineering at UIB." }
         ],
         favouritesTitle: "s-favourites:title",
         favourites: [
-            { name: "Book Homo Deus, Yuval Noah Harari" },
-            { name: "Movie HER" },
-            { name: "TV Serie Black Mirror" },
-            { name: "Futbol team FCBarcelona" },
-            { name: "NBA team Stephen Curry, yes." },
-            { name: "Artist JayZ & Post Malone" },
-            { name: "Headphones B&O Play H5" },
-            { name: "Shoes Nike x Stefan Janoski" },
+            { name: "Homo Deus", fav: "Book" },
+            { name: "HER", fav: "Movie" },
+            { name: "Black Mirror", fav: "TV Serie" },
+            { name: "FCBarcelona", fav: "Futbol team" },
+            { name: "Stephen Curry, yes.", fav: "NBA team" },
+            { name: "JayZ & Post Malone", fav: "Artist" },
+            { name: "B&O Play H5", fav: "Headphones " },
+            { name: "Nike x Stefan Janoski", fav: "Shoes" },
         ]
     }
 

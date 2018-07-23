@@ -6,12 +6,13 @@
     <ul class="c-list">
         <li v-for="(item, key) in items" :key="key">
             <span v-if="item.quantity">
-                <span v-html="item.quantity" />
-                <span class="cross" v-html="'x'" />
+                <span class="number" v-html="item.quantity" />
+                <span class="cross" v-html="'x '" />
             </span>
+            <span v-if="item.fav" class="category" v-html="`${item.fav} `" />
             <p class="separator" v-if="item.separator" v-text="item.name" />
             <a class="link" v-if="!item.separator && item.url" :href="item.url" v-text="item.name" target="_blank"/>
-            <span class="item" v-if="!item.separator && !item.url" v-text="item.name" />
+            <span class="item" v-if="!item.separator && !item.url" v-html="item.name" />
         </li>
     </ul>
 </template>

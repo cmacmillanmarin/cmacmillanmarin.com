@@ -28,9 +28,9 @@
         awards: [
             { name: "FWA", quantity: "1" },
             { name: "Awwwards", quantity: "7" },
-            { name: "CSS Design Awards", quantity: "5" },
-            { name: "Marathon Finisher", quantity: "1" },
-            { name: "Half Marathon Finisher", quantity: "8" }
+            { name: "CSSDesignAwards", quantity: "5" },
+            { name: "Marathon", quantity: "1" },
+            { name: "Half-Marathon", quantity: "8" }
         ],
         pressTitle: "s-articles:title",
         press: [
@@ -59,9 +59,8 @@
 <style lang="scss" scoped>
 
     .c-awards {
-        transform: translateY(-50px);
         .awards {
-            transform: translateY(-100px);
+            transform: translateY(-150px);
         }
     }
 

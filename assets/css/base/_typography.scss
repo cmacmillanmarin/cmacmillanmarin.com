@@ -121,5 +121,31 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .awards-list {
+    font-weight: bold;
+    .number, .item {
+        font-size: 1.3em;
+    }
+    .cross {
+        font-size: 1.2em;
+    }
+}
 
+.facts {
+    .item {
+        font-size: 0.8em;
+    }
+}
+
+.favs {
+    .category {
+        font-size: 0.65em;
+        font-weight: 700;
+        display: block;
+    }
+    .item {
+        font-size: 1.3em;
+        display: inline-block;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
 }
