@@ -3,6 +3,7 @@
 
 export const state = () => ({
     breakpoint: "",
+    mobile: false,
     prevBreakpoint: "",
     _debounce: null,
     _DEBOUNCE_DELAY: 50
@@ -12,6 +13,7 @@ export const mutations = {
 
     setBreakpoint(state, breakpoint) {
         state.breakpoint = breakpoint;
+        state.mobile = breakpoint.includes("mobile");
         state.prevBreakpoint = breakpoint;
     },
 

@@ -11,6 +11,12 @@
                 <span v-text="project.after" />
             </li>
         </ul>
+        <h2 v-text="$t(data.agencyIntro)" />
+        <ul>
+            <li v-for="(agency, key) in data.agencies" :key="key">
+                <p v-text="agency.name" />
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -34,7 +40,6 @@
         agencyIntro: "More than 8 years of experience between agency and freelancing.",
         agencies: [
             { name: "B-Reel", url: "https//b-reel.com" },
-            { name: "Burundanga Studio", url: "http://burundanga.studio/#/home" },
             { name: "Vasava", url: "https://portfolio.vasava.es/" },
             { name: "Bulldog Studio", url: "http://bulldogstudio.es/" }
         ]
@@ -54,10 +59,6 @@
 
 <style lang="scss" scoped>
 
-    .c-work {
-        padding-top: 30%;
-        width: 50%;
-    }
 
 </style>
 

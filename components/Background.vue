@@ -50,7 +50,7 @@
                 this.initRAF();
             },
             setListeners() {
-                this.onResize = _.debounce(this.resize, 50);
+                this.onResize = _.throttle(this.resize, 50);
                 window.addEventListener("resize", this.onResize);
             },
             checkDevice() {

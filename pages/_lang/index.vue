@@ -22,7 +22,7 @@
     import Intro from "~/components/sections/Intro";
     import Work from "~/components/sections/Work";
     import Awards from "~/components/sections/Awards";
-    import Interests from "~/components/sections/Interests";
+    import Facts from "~/components/sections/Facts";
     import Contact from "~/components/sections/Contact";
 
     export default {
@@ -39,7 +39,7 @@
                     { id: "intro" },
                     { id: "work" },
                     { id: "awards" },
-                    { id: "interests" },
+                    { id: "facts" },
                     { id: "contact" }
                 ]
             }
@@ -59,7 +59,7 @@
                 this.resize();
             },
             setListeners() {
-                this.onResize = _.debounce(this.resize, 50);
+                this.onResize = _.throttle(this.resize, 50);
                 window.addEventListener("resize", this.onResize);
             },
             scrolling() {
@@ -93,7 +93,7 @@
             Intro,
             Work,
             Awards, 
-            Interests,
+            Facts,
             Contact
         }
     }
@@ -110,7 +110,8 @@
             padding: 0px 16.666666%;
         }
         section {
-            p {
+            padding-top: 75px;
+            p, a {
                 font-size: 2em;
             }
         } 

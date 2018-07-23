@@ -52,10 +52,6 @@
 
 <style lang="scss" scoped>
 
-    .c-awards {
-        padding-top: 30%;
-        width: 50%;
-    }
 
 </style>
 
