@@ -5,7 +5,7 @@
 <template>
     <div class="p-index pageLayout">
         <section v-for="(section, key) in sections" :key="key">
-            <component :is="section.id" />
+            <component :is="section.id" :class="{ trans : section.transition }" />
         </section>
     </div>
 </template>
@@ -37,11 +37,11 @@
         data() {
             return {
                 sections: [
-                    { id: "intro" },
-                    { id: "work" },
-                    { id: "awards" },
-                    { id: "facts" },
-                    { id: "contact" },
+                    { id: "intro", transition: true },
+                    { id: "work", transition: true },
+                    { id: "awards", transition: true },
+                    { id: "facts", transition: true },
+                    { id: "contact", transition: true },
                     { id: "footerComponent" }
                 ]
             }
@@ -72,7 +72,9 @@
                 const aux = [...this.sections];
                 this.sections = [];
                 this.$nextTick(()=>{
-                    side === this.TOP ? aux.unshift(aux[aux.length - 1]) : aux.push(aux[0]);
+                    const section = side === this.TOP ? aux[aux.length - 1] : aux[0];
+                    section.transition = false;
+                    side === this.TOP ? aux.unshift(section) : aux.push(section);
                     side === this.TOP ? aux.pop() : aux.shift();
                     this.sections = [...aux];
                     this.setSectionOffset(side === this.TOP ? -this.bottomElHeight : this.topElHeight);
@@ -109,10 +111,10 @@
         opacity: 0;
         will-change: opacity, transform;
         text-align: left;
-        padding: 0px 20px;
+        padding: 0px 12.5%;
         color: $white;
         transform: translateY(25px);
-        @include respond-to("tablet-portrait") {
+        @include respond-to("desktop") {
             padding: 0px 16.666666%;
         }
         section {

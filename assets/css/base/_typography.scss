@@ -91,7 +91,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .small-type {
-    font-size: 0.75em;
+    font-size: 0.6em;
+    @include respond-to("desktop-medium") {
+        font-size: 0.75em;
+    }
 }
 
 .smaller-title {

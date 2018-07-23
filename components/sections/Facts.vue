@@ -12,7 +12,7 @@
             <div class="flexGrid__cell _2" />
             <div class="flexGrid__cell _4" />
             <div class="flexGrid__cell _4" />
-            <div ref="learning" class="flexGrid__cell _4 learning">
+            <div ref="learning" class="flexGrid__cell learning" :class="{ '_4': !mobile, '_2': mobile }">
                 <h2 v-text="$t(data.favouritesTitle)" />
                 <list :items="data.favourites" class="favs" />
             </div>
@@ -45,6 +45,8 @@
         ]
     }
 
+    import { mapState } from "vuex";
+
     import List from "~/components/List";
 
     export default {
@@ -54,6 +56,11 @@
                 type: Object,
                 default: () => data
             }
+        },
+        computed: {
+            ...mapState({
+                mobile: state => state.breakpoints.mobile
+            })
         },
         components: {
             List

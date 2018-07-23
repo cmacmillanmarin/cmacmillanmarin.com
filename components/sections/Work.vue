@@ -5,11 +5,11 @@
 <template>
     <div class="s-work">
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell _75">
+            <div class="flexGrid__cell" :class="{ '_75': !mobile, '_1': mobile }">
                 <h2 v-text="$t(data.title)" />
                 <list :items="data.projects" class="selected-work" />
             </div>
-
+            <div v-if="mobile" class="flexGrid__cell _2" />
             <div ref="agency" class="flexGrid__cell _4 agency">
                 <h2 class="_noLine" v-text="$t(data.agencyTitle)" />
                 <list :items="data.agencies" />
@@ -44,10 +44,17 @@
         ]
     }
 
+    import { mapState } from "vuex";
+
     import List from "~/components/List";
 
     export default {
         name: "Work",
+        computed: {
+            ...mapState({
+                mobile: state => state.breakpoints.mobile
+            })
+        },
         props: {
             data: {
                 type: Object,
@@ -65,10 +72,10 @@
 
     .s-work {
         .agency {
-            padding-top: 100px;
-        }
-        .learning {
-            padding-top: 250px;
+            padding-top: 0px;
+            @include respond-to("desktop") {
+                padding-top: 100px;
+            }
         }
     }
 

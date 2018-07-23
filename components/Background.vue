@@ -38,14 +38,19 @@
                 mobile: state => state.breakpoints.mobile
             })
         },
+        watch: {
+            mobile() {
+                this.$nextTick(this.resize);
+            }
+        },
         methods: {
             init() {
                 // this.initWebGLScene();
                 // this.initRAF();
             },
             setListeners() {
-                // this.onResize = _.throttle(this.resize, 50);
-                // window.addEventListener("resize", this.onResize);
+                this.onResize = _.throttle(this.resize, 50);
+                window.addEventListener("resize", this.onResize);
             },
             initRAF() {
                 this.fps = 60; // target frame rate
@@ -121,8 +126,9 @@
                 return shader;
             },
             resize() {
-                this.canvas.width = window.innerWidth;
-                this.canvas.height = window.innerHeight;
+                // this.canvas.width = window.innerWidth;
+                // this.canvas.height = window.innerHeight;
+                TweenMax.set(this.$el.querySelectorAll(".flexGrid__cell"), { y: "0%" })
             },
             mousemove() {
                 var location = this.gl.getUniformLocation(this.program, "mouse");

@@ -5,13 +5,14 @@
 <template>
     <div class="s-awards">
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell _4" />
-            <div class="flexGrid__cell _4">
+            <div v-if="!mobile" class="flexGrid__cell _4" />
+            <div class="flexGrid__cell" :class="{ '_4': !mobile, '_2': mobile }">
                 <h2 v-text="$t(data.pressTitle)" />
                 <list :items="data.press" />
             </div>
-            <div class="flexGrid__cell _4" />
-            <div class="flexGrid__cell _4 awards">
+            <div class="flexGrid__cell" :class="{ '_4': !mobile, '_2': mobile }"/>
+            <div v-if="mobile" class="flexGrid__cell _2" />
+            <div class="flexGrid__cell awards" :class="{ '_4': !mobile, '_2': mobile }">
                 <div class="parallas" data-parallax="200">
                     <h2 v-text="$t(data.title)" />
                     <list :items="data.awards" class="awards-list" />
@@ -39,6 +40,8 @@
         ]
     }
 
+    import { mapState } from "vuex";
+
     import List from "~/components/List";
 
     export default {
@@ -48,6 +51,11 @@
                 type: Object,
                 default: () => data
             }
+        },
+        computed: {
+            ...mapState({
+                mobile: state => state.breakpoints.mobile
+            })
         },
         components: {
             List
@@ -60,7 +68,9 @@
 
     .s-awards {
         .awards {
-            transform: translateY(-150px);
+            @include respond-to("desktop") {
+                transform: translateY(-150px);
+            }
         }
     }
 

@@ -13,7 +13,7 @@ export const mutations = {
 
     setBreakpoint(state, breakpoint) {
         state.breakpoint = breakpoint;
-        state.mobile = breakpoint.includes("mobile");
+        state.mobile = breakpoint.includes("mobile") || breakpoint.includes("tablet");
         state.prevBreakpoint = breakpoint;
     },
 

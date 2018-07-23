@@ -48,7 +48,11 @@
         .a-mail {
             color: $white;
             position: absolute;
-            left: 83.333334%;
+            right: 12.5%;
+            @include respond-to("desktop") {
+                left: 83.333334%;
+                right: auto;
+            }
         }
     }
 

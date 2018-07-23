@@ -5,7 +5,7 @@
 <template>
     <div class="s-contact">
         <div class="flexGrid _horizontal">
-            <div v-for="(platform, key) in data.social" :key="key" class="flexGrid__cell _4 social-link">
+            <div v-for="(platform, key) in data.social" :key="key" class="flexGrid__cell social-link"  :class="{ '_4': !mobile, '_2': mobile }">
                 <a :href="platform.url" target="_blank" v-text="platform.name" />
                 <p v-text="$t(platform.text)" />
             </div>
@@ -82,6 +82,9 @@
     .s-contact {
         .flexGrid {
             padding-top: 100px;
+            .social-link {
+                padding-bottom: 50px;
+            }
         }
         .credits {
             padding-top: 50px;

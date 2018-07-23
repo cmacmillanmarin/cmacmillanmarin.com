@@ -81,8 +81,11 @@
         padding-bottom: 100px;
         .learning {
             position: absolute;
-            left: 75%;
+            left: 50%;
             bottom: 100px;
+            @include respond-to("desktop") {
+                left: 75%;
+            }
         }
     }
 
