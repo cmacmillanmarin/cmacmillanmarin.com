@@ -56,9 +56,9 @@
                 window.addEventListener("resize", this.onResize);
             },
             setPosition() {
-                const paddingTop = (window.innerHeight - this.$refs.content.getBoundingClientRect().height) * 0.5;
-                TweenMax.set(this.$el, { paddingTop });
-                this.dispatch({ type: "introPosition", params: { padding: paddingTop }});
+                const padding = (window.innerHeight - this.$refs.content.getBoundingClientRect().height) * 0.5;
+                TweenMax.set(this.$el, { paddingTop: padding, paddingBottom: padding });
+                this.dispatch({ type: "introPosition", params: { padding }});
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);
@@ -82,7 +82,7 @@
         .learning {
             position: absolute;
             left: 75%;
-            bottom: 0px;
+            bottom: 100px;
         }
     }
 

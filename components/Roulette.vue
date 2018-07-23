@@ -19,9 +19,6 @@
         name: "Roulette",
         mixins: [ LifecycleHooks ],
         methods: {
-            init() {
-                this.resize();
-            },
             setListeners() {
                 this.onResize = _.throttle(this.resize, 50);
                 window.addEventListener("resize", this.onResize);

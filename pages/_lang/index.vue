@@ -17,7 +17,7 @@
     import { mapState } from "vuex";
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
-    import Transitions from "~/mixins/Transitions";
+    import Transition from "~/mixins/Transition";
 
     import Intro from "~/components/sections/Intro";
     import Work from "~/components/sections/Work";
@@ -28,7 +28,7 @@
 
     export default {
         name: "index",
-        mixins: [ LifecycleHooks, Transitions ],
+        mixins: [ LifecycleHooks, Transition ],
         computed: {
             ...mapState({
                 scrollPoint: state => state.scroll.point
@@ -106,9 +106,12 @@
 <style lang="scss" scoped>
 
     .p-index {
+        opacity: 0;
+        will-change: opacity, transform;
         text-align: left;
         padding: 0px 20px;
         color: $white;
+        transform: translateY(25px);
         @include respond-to("tablet-portrait") {
             padding: 0px 16.666666%;
         }

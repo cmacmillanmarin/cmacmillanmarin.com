@@ -42,6 +42,8 @@
         width: 100%;
         padding: 25px 16.666666%;
         color: $white;
+        opacity: 0;
+        will-change: opacity;
 
         .a-mail {
             color: $white;

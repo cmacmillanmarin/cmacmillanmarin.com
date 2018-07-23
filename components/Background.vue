@@ -157,6 +157,8 @@
             height: 100%;
             &__cell {
                 border-right: 1px solid $darkGrey;
+                transform: translateY(100%);
+                will-change: transform;
                 &:last-child {
                     border: none;
                 }
