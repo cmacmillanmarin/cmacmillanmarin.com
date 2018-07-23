@@ -4,14 +4,13 @@
 
 <template>
     <div class="l-default">
-        <organism-header ref="header" />
+        <header-component ref="header" />
         <roulette ref="roulette"/>
         <div class="vs-section">
             <div class="sections">
                 <nuxt />
             </div>
         </div>
-        <organism-footer ref="footer"/>
         <background ref="background"/>
     </div>
 </template>
@@ -22,8 +21,7 @@
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 
-    import OrganismHeader from "~/components/Header";
-    import OrganismFooter from "~/components/Footer";
+    import HeaderComponent from "~/components/Header";
     import Background from "~/components/Background";
     import Roulette from "~/components/Roulette";
 
@@ -65,8 +63,7 @@
 
         components: {
 
-            OrganismHeader,
-            OrganismFooter,
+            HeaderComponent,
             Background,
             Roulette
         }
@@ -84,7 +81,7 @@
         .c-roulette {
             z-index: 9;
         }
-    }  
+    }
 
 </style>
 

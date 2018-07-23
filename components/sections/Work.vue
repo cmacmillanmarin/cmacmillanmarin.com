@@ -5,18 +5,9 @@
 <template>
     <div class="c-work">
         <h2 v-text="$t(data.title)" />
-        <ul>
-            <li v-for="(project, key) in data.projects" :key="key">
-                <a :href="project.url" v-text="project.name" target="_blank" />
-                <span v-text="project.after" />
-            </li>
-        </ul>
+        <list :items="data.projects" />
         <h2 v-text="$t(data.agencyIntro)" />
-        <ul>
-            <li v-for="(agency, key) in data.agencies" :key="key">
-                <p v-text="agency.name" />
-            </li>
-        </ul>
+        <list :items="data.agencies" />
     </div>
 </template>
 
@@ -46,6 +37,8 @@
         ]
     }
 
+    import List from "~/components/List";
+
     export default {
         name: "Work",
         props: {
@@ -53,6 +46,9 @@
                 type: Object,
                 default: () => data
             }
+        },
+        components: {
+            List
         }
     }
 

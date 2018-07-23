@@ -24,6 +24,7 @@
     import Awards from "~/components/sections/Awards";
     import Facts from "~/components/sections/Facts";
     import Contact from "~/components/sections/Contact";
+    import FooterComponent from "~/components/Footer";
 
     export default {
         name: "index",
@@ -40,7 +41,8 @@
                     { id: "work" },
                     { id: "awards" },
                     { id: "facts" },
-                    { id: "contact" }
+                    { id: "contact" },
+                    { id: "footerComponent" }
                 ]
             }
         },
@@ -94,7 +96,8 @@
             Work,
             Awards,
             Facts,
-            Contact
+            Contact,
+            FooterComponent
         }
     }
 

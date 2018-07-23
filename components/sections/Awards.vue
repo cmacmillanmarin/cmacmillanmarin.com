@@ -5,17 +5,9 @@
 <template>
     <div class="c-awards">
         <h2 v-text="$t(data.title)" />
-        <ul>
-            <li v-for="(project, key) in data.awards" :key="key">
-                <p v-text="project.name" />
-            </li>
-        </ul>
+        <list :items="data.awards" />
         <h2 v-text="$t(data.pressTitle)" />
-        <ul>
-            <li v-for="(article, key) in data.press" :key="key">
-                <a :href="article.url" v-text="article.name" target="_blank" />
-            </li>
-        </ul>
+        <list :items="data.press" />
     </div>
 </template>
 
@@ -38,6 +30,8 @@
         ]
     }
 
+    import List from "~/components/List";
+
     export default {
         name: "Awards",
         props: {
@@ -45,6 +39,9 @@
                 type: Object,
                 default: () => data
             }
+        },
+        components: {
+            List
         }
     }
 
