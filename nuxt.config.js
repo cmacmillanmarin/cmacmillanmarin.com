@@ -17,7 +17,7 @@ module.exports = {
         {
             hid: "cmacmillanmarin",
             name: "Christian MacMillan",
-            content: "Christian MacMillan is an islander creative developer based in Barcelona."
+            content: "Christian MacMillan is an islander Creative Developer based in Barcelona."
         },
         ],
         bodyAttrs: {

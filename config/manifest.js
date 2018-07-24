@@ -3,9 +3,7 @@
 
 module.exports = {
     langs: [
-        "en",
-        "es",
-        "jp"
+        "en"
     ],
     routes: [""],
     dynamicRoutes: []
