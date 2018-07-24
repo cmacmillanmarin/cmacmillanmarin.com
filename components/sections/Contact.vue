@@ -27,7 +27,7 @@
         social: [
             { name: "Twitter", url: "", text: "s-contact:twitter:text" },
             { name: "Github", url: "https://github.com/cmacmillanmarin", text: "s-contact:github:text" },
-            { name: "Linkedin", url: "https://www.linkedin.com/in/cmacmillanmarin/", text: "s-contact:linkedin:text" },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/cmacmillanmarin/", text: "s-contact:linkedin:text" },
             { name: "Email", url: "mailto:_@cmacmillanmarin.com", text: "s-contact:email:text" }
         ],
         dev: "s-contact:dev:text",
@@ -71,7 +71,7 @@
                     this.$refs.audio.play();
                 } else this.$refs.audio.pause();
                 this.playing = !this.playing;
-            }  
+            }
         }
     }
 

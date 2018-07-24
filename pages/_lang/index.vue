@@ -110,11 +110,13 @@
         opacity: 0;
         will-change: opacity, transform;
         text-align: left;
-        padding: 0px 20px;
+        margin: 0px 20px;
         color: $white;
         transform: translateY(25px);
+        border: 1px solid $darkGrey;
         @include respond-to("tablet-portrait") {
             padding: 0px 12.5%;
+            border: none;
         }
         @include respond-to("desktop") {
             padding: 0px 16.666666%;
