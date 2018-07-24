@@ -10,7 +10,7 @@
                 <list :items="data.projects" class="selected-work" />
             </div>
             <div v-if="mobile" class="flexGrid__cell _2" />
-            <div ref="agency" class="flexGrid__cell _4 agency">
+            <div ref="agency" class="flexGrid__cell agency" :class="{ '_4': !mobile, '_2': mobile }">
                 <h2 class="_noLine" v-text="$t(data.agencyTitle)" />
                 <list :items="data.agencies" />
             </div>

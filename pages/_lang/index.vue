@@ -116,6 +116,7 @@
         border: 1px solid $darkGrey;
         @include respond-to("tablet-portrait") {
             padding: 0px 12.5%;
+            margin: 0px;
             border: none;
         }
         @include respond-to("desktop") {

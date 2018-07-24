@@ -11,6 +11,7 @@
                 <nuxt />
             </div>
         </div>
+        <scroll-bar ref="scrollBar" />
         <background ref="background"/>
     </div>
 </template>
@@ -24,6 +25,7 @@
     import HeaderComponent from "~/components/Header";
     import Background from "~/components/Background";
     import Roulette from "~/components/Roulette";
+    import ScrollBar from "~/components/ScrollBar";
 
     export default {
 
@@ -65,7 +67,8 @@
 
             HeaderComponent,
             Background,
-            Roulette
+            Roulette,
+            ScrollBar
         }
     }
 
