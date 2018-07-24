@@ -4,13 +4,13 @@
 
 <template>
     <footer class="s-footer">
-        <p ref="msg" class="msg">🤮</p>
+        <p ref="msg" class="msg" v-text="emoji" />
     </footer>
 </template>
 
 <script>
 
-    const emojis = []
+    const emojis = ["👻","🤪","🙃","😈","👽","👾","😼","🤗","😏","🤙🏾","🤘🏾","🖕🏾","🖖🏾","🧠","🕶","🐶","🐒","💥","🔥","🍆","🥚","🍟","🏀","🥌","🎧","🎤","🎯","🏎","🚀","💸","🎈","🎉","🖤","💯","🔞","🔝"];
 
     import { mapState } from "vuex";
 
@@ -26,7 +26,18 @@
                 introPosition: state => state.events.introPosition
             })
         },
+        data() {
+            return {
+                emoji: "",
+                emojis
+            }
+        },
         methods: {
+            setInitValue() {
+                const index = parseInt(Math.random() * this.emojis.length - 1);
+                this.emoji = this.emoji === "" ? this.emojis[index] : this.emoji;
+                console.log(this.emoji);
+            },
             init() {
                 this.setPosition();
             },
