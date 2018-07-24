@@ -41,8 +41,7 @@
                     { id: "work", transition: true },
                     { id: "awards", transition: true },
                     { id: "facts", transition: true },
-                    { id: "contact", transition: true },
-                    { id: "footerComponent" }
+                    { id: "contact", transition: true }
                 ]
             }
         },

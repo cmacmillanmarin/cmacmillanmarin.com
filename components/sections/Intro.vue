@@ -87,10 +87,11 @@
         .learning {
             position: absolute;
             left: 50%;
-            bottom: 100px;
+            bottom: 0px;
             width: 37.5%;
             @include respond-to("tablet-portrait") {
                 width: auto;
+                bottom: 100px;
             }
             @include respond-to("desktop") {
                 left: 75%;

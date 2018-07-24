@@ -41,7 +41,7 @@ module.exports = {
     },
 
     router: {
-        base: process.env.NODE_ENV === "dev" ? "/" : "/dist/",
+        base: process.env.NODE_ENV === "dev" ? "/" : "/",
         middleware: "i18n"
     },
 
