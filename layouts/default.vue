@@ -6,12 +6,13 @@
     <div class="l-default">
         <header-component ref="header" />
         <roulette ref="roulette"/>
-        <div class="vs-section">
+        <div ref="scroll">
             <div class="sections">
                 <nuxt />
             </div>
         </div>
         <scroll-bar ref="scrollBar" />
+        <cursor-pointer ref="cursor" />
         <background ref="background"/>
     </div>
 </template>
@@ -26,6 +27,7 @@
     import Background from "~/components/Background";
     import Roulette from "~/components/Roulette";
     import ScrollBar from "~/components/ScrollBar";
+    import CursorPointer from "~/components/Cursor";
 
     export default {
 
@@ -49,8 +51,9 @@
                 this.scroll.vs._emitter.on("scrolling", this.setScrollPoint);
             },
             initScroll() {
+                this.setScrollDomEl(this.$refs.scroll);
                 this.scroll = new Scroll({
-                    section: this.domScrollEl,
+                    section: this.$refs.scroll,
                     roulette: this.$refs.roulette.$el,
                     infiniteScroll: true,
                     native: false,
@@ -59,7 +62,8 @@
                 this.scroll.init();
             },
             ...mapMutations({
-                setScrollPoint: "scroll/setPoint"
+                setScrollPoint: "scroll/setPoint",
+                setScrollDomEl: "scroll/setDomEl"
             })
         },
 
@@ -68,7 +72,8 @@
             HeaderComponent,
             Background,
             Roulette,
-            ScrollBar
+            ScrollBar,
+            CursorPointer
         }
     }
 

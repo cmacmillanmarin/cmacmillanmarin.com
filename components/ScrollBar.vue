@@ -19,19 +19,22 @@
         mixins: [ LifecycleHooks ],
         computed: {
             ...mapState({
-                scrollPoint: state => state.scroll.point
+                scrollPoint: state => state.scroll.point,
+                scrollDomEl: state => state.scroll.el
             })
         },
         methods: {
             init() {
-                this.setBar();
+                _.delay(this.setBar, 1000); 
             },
             setListeners() {
                 this.onResize = _.throttle(this.setBar, 10);
                 window.addEventListener("resize", this.onResize);
             },
             setBar() {
-                console.log("scroll bar!");
+                const wH = window.innerHeight;
+                const sH = this.scrollDomEl.getBoundingClientRect().height
+                console.log(wH, sH);
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);
@@ -43,6 +46,11 @@
 
 <style lang="scss" scoped>
     .c-scrollBar {
-        color: red;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 2px;
+        background: white;
+        height: 20px;
     }
 </style>
