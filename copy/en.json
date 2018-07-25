@@ -1,4 +1,10 @@
 {
+
+    "meta:title" : "",
+    "meta:description" : "",
+    "meta:keywords" : "",
+    "meta:url" : "",
+
     "s-intro:emoji": "👻",
     "s-intro:seo:h1": "Freelance developer based in Barcelona. Javascript, Nuxt, Vue, React, web, unity, webgl, iOS.",
     "s-intro:text": "Yup! I’m Christian, a 28 y/o islander based in Barcelona. Nowadays busy working as Creative Developer at <a href='https://b-reel.com' target='blank'>B-Reel</a>, running <a href='http://burundanga.studio' target='blank'>Burundanga Studio</a> and judging the best of digital industry at <a href='https://thefwa.com' target='blank'>FWA</a>.",

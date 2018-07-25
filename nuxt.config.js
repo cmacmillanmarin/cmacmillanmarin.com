@@ -7,41 +7,29 @@ const manifest = require("./config/manifest");
 module.exports = {
     head: {
         title: "Christian MacMillan | Creative Developer",
-        meta: [{
-            charset: "utf-8"
-        },
-        {
-            name: "viewport",
-            content: "width=device-width, initial-scale=1"
-        },
-        {
-            hid: "cmacmillanmarin",
-            name: "Christian MacMillan",
-            content: "Christian MacMillan is an islander Creative Developer based in Barcelona. Available for freelance projects."
-        },
+        meta: [
+            {
+                charset: "utf-8"
+            },
+            {
+                name: "viewport",
+                content: "width=device-width, initial-scale=1"
+            }
         ],
         bodyAttrs: {
             class: "__body"
         },
-        script: [
-            // Preload JS files
-            {
-                src: ""
-            }
-        ],
         link: [
-            // Preload CSS, Favicon, etc...
             {
                 rel: "icon",
                 type: "image/x-icon",
                 href: "/favicon.ico"
-            },
-            // { rel: "stylesheet", href: "" }
+            }
         ]
     },
 
     router: {
-        base: process.env.NODE_ENV === "dev" ? "/" : "/",
+        base: "/",
         middleware: "i18n"
     },
 
@@ -59,10 +47,9 @@ module.exports = {
         })
     ],
 
-    plugins: [
-        {
-        src: "~/plugins/i18n.js",
-        ssr: true
+    plugins: [{
+            src: "~/plugins/i18n.js",
+            ssr: true
         },
         {
             src: "~/plugins/Breakpoints.js",
