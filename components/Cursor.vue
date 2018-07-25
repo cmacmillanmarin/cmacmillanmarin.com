@@ -21,14 +21,16 @@
         mixins: [ LifecycleHooks ],
         computed: {
             ...mapState({
-                scrollPoint: state => state.scroll.point
+                scrollPoint: state => state.scroll.point,
+                desktop: state => state.checks.desktop
             })
         },
         methods: {
             init() {
-                console.log("Cursor init!");
+                if (!this.desktop) TweenMax.set(this.$el, { autoAlpha: 0 });
             },
             setListeners() {
+                if (!this.desktop) return;
                 window.addEventListener("mousemove", this.onMouseMove);
             },
             onMouseMove(e) {

@@ -48,7 +48,6 @@
                 TweenMax.set(this.$refs.auxBar, { y: auxY })
             },
             setBar() {
-                console.log("setBar!");
                 this.wH = window.innerHeight;
                 this.sH = this.scrollDomEl.getBoundingClientRect().height;
                 this.height = parseInt(this.wH * (this.wH / this.sH));

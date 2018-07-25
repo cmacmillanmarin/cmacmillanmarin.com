@@ -36,6 +36,7 @@ export default {
             .to(this.header, 0.75, { opacity: 1 }, "appear")
             .to(el, 0.75, { opacity: 1, y: 0, onComplete: () => {
                 this.$store.commit("setReady");
+                this.$store.commit("randomColor");
                 done();
             } }, "appear")
         },
