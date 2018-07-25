@@ -22,6 +22,7 @@
         mixins: [ LifecycleHooks ],
         computed: {
             ...mapState({
+                ready: state => state.ready,
                 scrollPoint: state => state.scroll.point,
                 scrollDomEl: state => state.scroll.el,
                 scrollDirection: state => state.scroll.direction,
@@ -29,13 +30,11 @@
             })
         },
         watch: {
+            ready: "setBar",
             scrollPoint: "scrolling",
             color: "changeColor"
         },
         methods: {
-            init() {
-                _.delay(this.setBar, 1000);
-            },
             setListeners() {
                 this.onResize = _.throttle(this.setBar, 10);
                 window.addEventListener("resize", this.onResize);
@@ -49,6 +48,7 @@
                 TweenMax.set(this.$refs.auxBar, { y: auxY })
             },
             setBar() {
+                console.log("setBar!");
                 this.wH = window.innerHeight;
                 this.sH = this.scrollDomEl.getBoundingClientRect().height;
                 this.height = parseInt(this.wH * (this.wH / this.sH));
@@ -56,8 +56,8 @@
             },
             changeColor() {
                 const backgroundColor = this.color;
-                TweenMax.to(this.$refs.bar, 0.25, { height: this.height, backgroundColor  });
-                TweenMax.to(this.$refs.auxBar, 0.25, { height: this.height, y: -this.height, backgroundColor });
+                TweenMax.to(this.$refs.bar, 0.5, { height: this.height, backgroundColor  });
+                TweenMax.to(this.$refs.auxBar, 0.5, { height: this.height, y: -this.height, backgroundColor });
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);

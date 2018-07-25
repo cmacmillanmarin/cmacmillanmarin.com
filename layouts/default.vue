@@ -21,8 +21,6 @@
 
     import { mapState, mapMutations } from "vuex";
 
-    import LifecycleHooks from "~/mixins/LifecycleHooks";
-
     import HeaderComponent from "~/components/Header";
     import Background from "~/components/Background";
     import Roulette from "~/components/Roulette";
@@ -30,27 +28,17 @@
     import CursorPointer from "~/components/Cursor";
 
     export default {
-
         name: "default",
-
-        mixins: [ LifecycleHooks ],
-
         computed: {
             ...mapState({
+                ready: state => state.ready,
                 Scroll: state => state.scroll.obj
             })
         },
-
+        watch: {
+            ready: "initScroll"
+        },
         methods: {
-            init() {
-                this.domSections = this.$el.querySelector(".sections");
-                this.domScrollEl = this.$el.querySelector(".vs-section");
-                this.initScroll();
-            },
-            setListeners() {
-                this.scroll.vs._emitter.on("scrolling", this.setScrollPoint);
-                this.scroll.vs._emitter.on("direction", this.setDirection);
-            },
             initScroll() {
                 this.setScrollDomEl(this.$refs.scroll);
                 this.scroll = new Scroll({
@@ -61,6 +49,8 @@
                     ease: 0.05
                 });
                 this.scroll.init();
+                this.scroll.vs._emitter.on("scrolling", this.setScrollPoint);
+                this.scroll.vs._emitter.on("direction", this.setDirection);
             },
             ...mapMutations({
                 setScrollPoint: "scroll/setPoint",
@@ -68,9 +58,7 @@
                 setDirection: "scroll/setDirection"
             })
         },
-
         components: {
-
             HeaderComponent,
             Background,
             Roulette,

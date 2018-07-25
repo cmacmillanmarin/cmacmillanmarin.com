@@ -31,6 +31,7 @@
         mixins: [ LifecycleHooks, Transition ],
         computed: {
             ...mapState({
+                ready: state => state.ready,
                 scrollPoint: state => state.scroll.point,
                 direction: state => state.scroll.direction
             })
