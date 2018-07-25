@@ -80,6 +80,7 @@
 <style lang="scss" scoped>
 
     .s-contact {
+        padding-bottom: 40px;
         .flexGrid {
             @include respond-to("tablet-portrait") {
                 padding-top: 100px;

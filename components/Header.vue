@@ -45,7 +45,7 @@
                 right: 12.5%;
             }
             @include respond-to("desktop") {
-                left: 83.333334%;
+                left: calc(83.333334% + 1px);
                 right: auto;
             }
         }

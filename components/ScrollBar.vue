@@ -44,12 +44,12 @@
                 window.addEventListener("resize", this.onResize);
             },
             scrolling() {
-                // console.log(this.scrollDirection);
                 const mod = this.scrollPoint % this.sH > 0 ? this.scrollPoint % this.sH : this.sH + (this.scrollPoint % this.sH);
                 const y = this.wH * (mod / this.sH);
-                console.log(mod);
-                if (y === 0) TweenMax.set(this.$refs.bar, { y: 0 })
+                let auxY = mod + this.wH > this.sH ? (((mod + this.wH) - this.sH) / this.wH) * this.height - this.height : -this.height;
+                auxY = mod + this.wH < this.wH ? mod : auxY;
                 TweenMax.set(this.$refs.bar, { y })
+                TweenMax.set(this.$refs.auxBar, { y: auxY })
             },
             setBar() {
                 this.wH = window.innerHeight;
