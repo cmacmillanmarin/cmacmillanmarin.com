@@ -24,16 +24,13 @@
             ...mapState({
                 scrollPoint: state => state.scroll.point,
                 scrollDomEl: state => state.scroll.el,
-                scrollDirection: state => state.scroll.direction
+                scrollDirection: state => state.scroll.direction,
+                color: state => state.color
             })
         },
-        data() {
-            return {
-                y: 0
-            }
-        },
         watch: {
-            scrollPoint: "scrolling"
+            scrollPoint: "scrolling",
+            color: "changeColor"
         },
         methods: {
             init() {
@@ -55,8 +52,12 @@
                 this.wH = window.innerHeight;
                 this.sH = this.scrollDomEl.getBoundingClientRect().height;
                 this.height = parseInt(this.wH * (this.wH / this.sH));
-                TweenMax.to(this.$refs.bar, 0.1, { height: this.height });
-                TweenMax.to(this.$refs.auxBar, 0.1, { height: this.height, y: -this.height });
+                this.changeColor();
+            },
+            changeColor() {
+                const backgroundColor = this.color;
+                TweenMax.to(this.$refs.bar, 0.25, { height: this.height, backgroundColor  });
+                TweenMax.to(this.$refs.auxBar, 0.25, { height: this.height, y: -this.height, backgroundColor });
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);
@@ -84,7 +85,6 @@
             will-change: transform;
             display: block;
             width: 1px;
-            background: lime;
         }
     }
 </style>

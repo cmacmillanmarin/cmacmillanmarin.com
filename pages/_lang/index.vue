@@ -14,7 +14,7 @@
 
     import _ from "lodash";
 
-    import { mapState } from "vuex";
+    import { mapState, mapMutations } from "vuex";
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
     import Transition from "~/mixins/Transition";
@@ -31,7 +31,8 @@
         mixins: [ LifecycleHooks, Transition ],
         computed: {
             ...mapState({
-                scrollPoint: state => state.scroll.point
+                scrollPoint: state => state.scroll.point,
+                direction: state => state.scroll.direction
             })
         },
         data() {
@@ -57,6 +58,9 @@
                 this.TOP = "top";
                 this.BOTTOM = "bottom";
 
+                this.initialSection = this.sections[0].id;
+                this.lastSection = this.sections[this.sections.length - 1].id;
+
                 this.resize();
             },
             setListeners() {
@@ -72,6 +76,8 @@
                 this.sections = [];
                 this.$nextTick(()=>{
                     const section = side === this.TOP ? aux[aux.length - 1] : aux[0];
+                    if ((section.id === this.initialSection && this.direction === 1)
+                        || (section.id === this.lastSection && this.direction === -1)) this.changeRandomColor();
                     section.transition = false;
                     side === this.TOP ? aux.unshift(section) : aux.push(section);
                     side === this.TOP ? aux.pop() : aux.shift();
@@ -90,7 +96,10 @@
             },
             destroyListeners() {
                  window.removeEventListener("resize", this.onResize);
-            }
+            },
+            ...mapMutations({
+                changeRandomColor: "randomColor"
+            })
         },
         components: {
             Intro,
