@@ -74,7 +74,7 @@
     .s-facts {
         .favourites {
             padding-top: 50px;
-            @include respond-to("tablet-portrait") {
+            @include respond-to("desktop") {
                 padding-top: 0px;
             }
         }

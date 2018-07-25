@@ -40,9 +40,9 @@
         .a-mail {
             color: $white;
             position: absolute;
-            right: 20px;
+            right: calc(20px + 1px);
             @include respond-to("tablet-portrait") {
-                right: 12.5%;
+                right: calc(12.5% + 1px);
             }
             @include respond-to("desktop") {
                 left: calc(83.333334% + 1px);

@@ -69,9 +69,15 @@
 <style lang="scss" scoped>
     .c-scrollBar {
         position: absolute;
-        top: 0px;
-        right: 16.666666%;
         height: 100%;
+        top: 0px;
+        right: 20px;
+        @include respond-to("tablet-portrait") {
+            right: 12.5%;
+        }
+        @include respond-to("desktop") {
+            right: 16.666666%;
+        }
         .bar, .auxBar {
             position: absolute;
             top: 0;
