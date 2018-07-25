@@ -17,9 +17,9 @@ class Scroll extends Smooth {
     }
 
     calc(e) {
-        
+
         const delta = this.vars.direction == 'horizontal' ? e.deltaX : e.deltaY
-        
+
         this.vars.target += delta * -1
         if (!this.dom.infiniteScroll) this.clampTarget()
     }
@@ -28,14 +28,13 @@ class Scroll extends Smooth {
         if (this.isRAFCanceled) return
 
         this.vars.current += (this.vars.target - this.vars.current) * this.vars.ease
-        // this.vars.current < .1 && (this.vars.current = 0)
-        
+
         this.rAF = requestAnimationFrame(this.run)
 
         if(!this.extends){
             this.dom.section.style[this.prefix] = this.getTransform(-this.vars.current.toFixed(2))
         }
-        
+
         if(!this.vars.native && !this.options.noscrollbar) {
             const size = this.dom.scrollbar.drag.height
             const bounds = this.vars.direction === 'vertical' ? this.vars.height : this.vars.width
@@ -49,11 +48,12 @@ class Scroll extends Smooth {
         }
 
         this.vars.last = this.vars.current;
-        
+
         this.dom.scrollPosition = parseInt(this.vars.current)
         if (this.dom.scrollPosition === this.dom.prevPosition) return
         else if (this.dom.scrollPosition > this.dom.prevPosition) this.dom.direction = 1
         else this.dom.direction = -1
+        this.vs._emitter.emit('direction', this.dom.direction);
         this.vs._emitter.emit('scrolling', this.dom.scrollPosition)
         if (this.dom.dir == 'horizontal') this.dom.section.style[this.prefix] = this.horizontalScroll(-this.vars.current.toFixed(2))
         else this.dom.section.style[this.prefix] = this.verticalScroll(-this.vars.current.toFixed(2))

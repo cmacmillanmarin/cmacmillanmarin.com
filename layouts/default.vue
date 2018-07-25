@@ -49,6 +49,7 @@
             },
             setListeners() {
                 this.scroll.vs._emitter.on("scrolling", this.setScrollPoint);
+                this.scroll.vs._emitter.on("direction", this.setDirection);
             },
             initScroll() {
                 this.setScrollDomEl(this.$refs.scroll);
@@ -63,7 +64,8 @@
             },
             ...mapMutations({
                 setScrollPoint: "scroll/setPoint",
-                setScrollDomEl: "scroll/setDomEl"
+                setScrollDomEl: "scroll/setDomEl",
+                setDirection: "scroll/setDirection"
             })
         },
 

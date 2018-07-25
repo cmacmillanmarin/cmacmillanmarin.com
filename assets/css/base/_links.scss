@@ -5,7 +5,8 @@ a {
 	font-weight: 700;
     color: $white;
 	text-decoration: none;
-	outline: 0;
+    outline: 0;
+    cursor: none;
 
 	&:hover, &:focus {
 		color: $white;

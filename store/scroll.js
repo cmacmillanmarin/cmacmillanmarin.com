@@ -3,6 +3,7 @@
 
 export const state = () => ({
     point: 0,
+    direction: 0,
     el: null
 });
 
@@ -12,5 +13,8 @@ export const mutations = {
     },
     setDomEl(state, el) {
         state.el = el;
+    },
+    setDirection(state, direction) {
+        state.direction = direction;
     }
 };

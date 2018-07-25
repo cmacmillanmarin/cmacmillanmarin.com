@@ -93,7 +93,6 @@
         }
         .call {
             display: inline;
-            cursor: pointer;
         }
         .dev {
             padding-top: 100px;

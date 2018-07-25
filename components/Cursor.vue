@@ -4,7 +4,7 @@
 
 <template>
     <div class="c-cursor">
-        <span class="dot" />
+        <span ref="dot" class="dot" />
     </div>
 </template>
 
@@ -31,8 +31,8 @@
             setListeners() {
                 window.addEventListener("mousemove", this.onMouseMove);
             },
-            onMouseMove() {
-                console.log("Cursor !");
+            onMouseMove(e) {
+                TweenMax.set(this.$refs.dot, { x: e.x, y: e.y })
             },
             destroyListeners() {
                 window.removeEventListener("mousemove", this.onMouseMove);
@@ -47,12 +47,14 @@
         position: absolute;
         top: 0;
         left: 0;
+        transform: translate(-50%,-50%);
         .dot {
             display: block;
             background: white;
-            width: 10px;
-            height: 10px;
+            width: 5px;
+            height: 5px;
             border-radius: 50%;
+            will-change: transform;
         }
     }
 </style>
