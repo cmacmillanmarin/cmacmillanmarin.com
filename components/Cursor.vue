@@ -48,6 +48,7 @@
         top: 0;
         left: 0;
         transform: translate(-50%,-50%);
+        pointer-events: none;
         .dot {
             display: block;
             background: white;

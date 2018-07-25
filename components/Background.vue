@@ -35,6 +35,7 @@
         },
         computed: {
             ...mapState({
+                ready: state => state.ready,
                 mobile: state => state.breakpoints.mobile
             })
         },
@@ -126,6 +127,7 @@
                 return shader;
             },
             resize() {
+                if (!this.ready) return;
                 // this.canvas.width = window.innerWidth;
                 // this.canvas.height = window.innerHeight;
                 TweenMax.set(this.$el.querySelectorAll(".flexGrid__cell"), { y: "0%" })
@@ -168,7 +170,7 @@
                 &:last-child {
                     border: none;
                 }
-            } 
+            }
         }
     }
 
