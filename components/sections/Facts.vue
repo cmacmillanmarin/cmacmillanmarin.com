@@ -5,14 +5,14 @@
 <template>
     <div class="s-facts">
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell" :class="{ '_2': !mobile, '_1': mobile }">
+            <div class="flexGrid__cell facts_cell">
                 <h2 v-text="$t(data.title)" />
                 <list :items="data.facts" class="facts" />
             </div>
             <div class="flexGrid__cell _2" />
             <div class="flexGrid__cell _4" />
             <div class="flexGrid__cell _4" />
-            <div ref="favs" class="flexGrid__cell favourites" :class="{ '_4': !mobile, '_2': mobile }">
+            <div ref="favs" class="flexGrid__cell favourites">
                 <h2 v-text="$t(data.favouritesTitle)" />
                 <list :items="data.favourites" class="favs" />
             </div>
@@ -72,10 +72,19 @@
 <style lang="scss" scoped>
 
     .s-facts {
-        .favourites {
-            padding-top: 50px;
+        .facts_cell {
+            width: 100%;
             @include respond-to("desktop") {
-                padding-top: 0px;
+                width: 50%;
+            }
+        }
+        .favourites {
+            padding-top: 75px;
+            width: 50%;
+            @include respond-to("desktop") {
+                padding-top: 25px;
+                width: 25%;
+                padding-left: 0%;
             }
         }
     }

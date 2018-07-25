@@ -6,12 +6,12 @@
     <div class="c-background">
         <!-- <canvas ref="canvas" /> -->
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell" :class="mobile ? '_8' : '_6'"/>
-            <div class="flexGrid__cell" :class="mobile ? '_37' : '_6'"/>
-            <div class="flexGrid__cell" :class="mobile ? '_37' : '_6'"/>
-            <div class="flexGrid__cell" :class="mobile ? '_8' : '_6'"/>
-            <div v-if="!mobile" class="flexGrid__cell _6" />
-            <div v-if="!mobile" class="flexGrid__cell _6" />
+            <div class="flexGrid__cell" />
+            <div class="flexGrid__cell" />
+            <div class="flexGrid__cell" />
+            <div class="flexGrid__cell" />
+            <div class="flexGrid__cell" />
+            <div class="flexGrid__cell" />
         </div>
     </div>
 </template>
@@ -127,10 +127,9 @@
                 return shader;
             },
             resize() {
-                if (!this.ready) return;
                 // this.canvas.width = window.innerWidth;
                 // this.canvas.height = window.innerHeight;
-                TweenMax.set(this.$el.querySelectorAll(".flexGrid__cell"), { y: "0%" })
+                // TweenMax.set(this.$el.querySelectorAll(".flexGrid__cell"), { y: "0%" })
             },
             mousemove() {
                 var location = this.gl.getUniformLocation(this.program, "mouse");
@@ -164,12 +163,43 @@
             width: 100%;
             height: 100%;
             &__cell {
+                width: 10px;
                 border-right: 1px solid $darkGrey;
                 transform: translateY(100%);
                 will-change: transform;
-                &:last-child {
-                    border: none;
+                &:nth-child(1), &:nth-child(4) {
+                    width: 20px;
+                    @include respond-to("tablet-portrait") {
+                        width: 12.5%;
+                    }
+                    @include respond-to("desktop") {
+                        width: 16.666666%;
+                    }
                 }
+                &:nth-child(2), &:nth-child(3) {
+                    width: calc(50% - 20px);
+                    @include respond-to("tablet-portrait") {
+                        width: 37.5%;
+                    }
+                    @include respond-to("desktop") {
+                        width: 16.666666%;
+                    }
+                }  
+                &:nth-child(5) {
+                    display: none;
+                    @include respond-to("desktop") {
+                        display: block;
+                        width: 16.666666%;
+                    }
+                }  
+                &:nth-child(6) {
+                    border: none;
+                    display: none;
+                    @include respond-to("desktop") {
+                        display: block;
+                        width: 16.666666%;
+                    }
+                }  
             }
         }
     }

@@ -24,3 +24,34 @@ html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, 
 header, footer, nav, section, article, hgroup, figure {
 	display: block;
 }
+
+.__desktop {
+	display: none !important;
+	@include respond-to("desktop") {
+		display: block;
+	}
+}
+
+.__tablet {
+	display: none !important;
+	@include respond-to("tablet-portrait") {
+		display: block;
+	}
+	@include respond-to("desktop") {
+		display: none !important;
+	}
+} 
+
+._tablet_desktop {
+	display: none !important;
+	@include respond-to("tablet-portrait") {
+		display: block;
+	}
+} 
+
+.__mobile {
+	display: block;
+	@include respond-to("tablet-portrait") {
+		display: none !important;
+	}
+}

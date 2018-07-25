@@ -5,7 +5,7 @@
 <template>
     <div class="s-intro">
         <div class="flexGrid" ref="content">
-            <div class="intro flexGrid__cell" :class="{ '_2': !smallMobile, '_75': smallMobile }">
+            <div class="intro flexGrid__cell">
                 <p class="emoji" v-text="$t(data.emoji)" />
                 <h1 class="SEO" v-text="$t(data.seo)" />
                 <p class="intro-text" v-html="$t(data.intro)" />
@@ -84,14 +84,19 @@
     .s-intro {
         position: relative;
         padding-bottom: 100px;
+        .intro {
+            width: 75%;
+            @include respond-to("tablet-portrait") {
+                width: 50%;
+            }
+        }
         .learning {
             position: absolute;
             left: 50%;
-            bottom: 0px;
+            bottom: 100px;
             width: 37.5%;
             @include respond-to("tablet-portrait") {
                 width: auto;
-                bottom: 100px;
             }
             @include respond-to("desktop") {
                 left: 75%;

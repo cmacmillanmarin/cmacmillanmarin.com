@@ -5,12 +5,11 @@
 <template>
     <div class="s-work">
         <div class="flexGrid _horizontal">
-            <div class="flexGrid__cell" :class="{ '_75': !mobile, '_1': mobile }">
+            <div ref="projects" class="flexGrid__cell projects">
                 <h2 v-text="$t(data.title)" />
                 <list :items="data.projects" class="selected-work" />
             </div>
-            <div v-if="mobile" class="flexGrid__cell _2" />
-            <div ref="agency" class="flexGrid__cell agency" :class="{ '_4': !mobile, '_2': mobile }">
+            <div ref="agency" class="flexGrid__cell agency">
                 <h2 class="_noLine" v-text="$t(data.agencyTitle)" />
                 <list :items="data.agencies" />
             </div>
@@ -71,10 +70,21 @@
 <style lang="scss" scoped>
 
     .s-work {
-        .agency {
-            padding-top: 0px;
+        .projects {
+            width: 100%;
             @include respond-to("desktop") {
+                width: 75%;
+            }
+        }
+        .agency {
+            box-sizing: content-box;
+            padding-top: 0px;
+            padding-left: 50%;
+            width: 50%;
+            @include respond-to("desktop") {
+                width: 25%;
                 padding-top: 100px;
+                padding-left: 0%;
             }
         }
     }

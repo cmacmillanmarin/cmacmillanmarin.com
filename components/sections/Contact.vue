@@ -5,14 +5,14 @@
 <template>
     <div class="s-contact">
         <div class="flexGrid _horizontal">
-            <div v-for="(platform, key) in data.social" :key="key" class="flexGrid__cell social-link"  :class="{ '_4': !mobile, '_2': mobile }">
+            <div v-for="(platform, key) in data.social" :key="key" class="flexGrid__cell social-link">
                 <a :href="platform.url" target="_blank" v-text="platform.name" />
                 <p v-text="$t(platform.text)" />
             </div>
         </div>
         <div class="credits social-link">
-            <p v-if="!mobile" @mouseenter="play" @mouseleave="pause" class="call" v-text="$t(data.callme)" />
-            <p v-else class="call" @click="toggle" v-text="$t(data.callme)" />
+            <p @mouseenter="play" @mouseleave="pause" class="call call_desktop" v-text="$t(data.callme)" />
+            <p class="call call_mobile" @click="toggle" v-text="$t(data.callme)" />
             <audio ref="audio" loop>
                 <source :src="data.audio.mp3" type="audio/mpeg">
             </audio>
@@ -86,7 +86,11 @@
                 padding-top: 100px;
             }
             .social-link {
+                width: 50%;
                 padding-bottom: 50px;
+                @include respond-to("desktop") {
+                    width: 25%;
+                }
             }
         }
         .credits {
@@ -94,6 +98,17 @@
         }
         .call {
             display: inline;
+        }
+        .call_mobile {
+            @include respond-to("tablet-portrait") {
+                display: none;
+            }
+        }
+        .call_desktop {
+            display: none;
+            @include respond-to("tablet-portrait") {
+                display: block;
+            }
         }
         .dev {
             padding-top: 100px;

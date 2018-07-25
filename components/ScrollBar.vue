@@ -15,11 +15,8 @@
 
     import { TweenMax } from "gsap";
 
-    import LifecycleHooks from "~/mixins/LifecycleHooks";
-
     export default {
         name: "ScrollBar",
-        mixins: [ LifecycleHooks ],
         computed: {
             ...mapState({
                 ready: state => state.ready,
@@ -30,7 +27,10 @@
             })
         },
         watch: {
-            ready: "setBar",
+            ready() {
+                this.setBar();
+                this.setListeners();
+            },
             scrollPoint: "scrolling",
             color: "changeColor"
         },
@@ -51,7 +51,6 @@
                 this.wH = window.innerHeight;
                 this.sH = this.scrollDomEl.getBoundingClientRect().height;
                 this.height = parseInt(this.wH * (this.wH / this.sH));
-                this.changeColor();
             },
             changeColor() {
                 const backgroundColor = this.color;
@@ -61,6 +60,9 @@
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);
             }
+        },
+        beforeDestroy() {
+            this.destroyListeners();
         }
     }
 

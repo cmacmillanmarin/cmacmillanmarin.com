@@ -5,14 +5,11 @@
 <template>
     <div class="s-awards">
         <div class="flexGrid _horizontal">
-            <div v-if="!mobile" class="flexGrid__cell _4" />
-            <div class="flexGrid__cell press" :class="{ '_4': !mobile, '_2': mobile }">
+            <div class="flexGrid__cell press">
                 <h2 v-text="$t(data.pressTitle)" />
                 <list :items="data.press" />
             </div>
-            <div class="flexGrid__cell" :class="{ '_4': !mobile, '_2': mobile }"/>
-            <div v-if="mobile" class="flexGrid__cell _2" />
-            <div class="flexGrid__cell awards" :class="{ '_4': !mobile, '_2': mobile }">
+            <div class="flexGrid__cell awards">
                 <div class="parallas" data-parallax="200">
                     <h2 v-text="$t(data.title)" />
                     <list :items="data.awards" class="awards-list" />
@@ -71,10 +68,25 @@
 <style lang="scss" scoped>
 
     .s-awards {
+        .press {
+            width: 50%;
+            box-sizing: content-box;
+            padding-right: 50%;
+            @include respond-to("desktop") {
+                width: 25%;
+                padding-left: 25%;
+                padding-right: 0%;
+            }
+        }
         .awards {
+            width: 50%;
             padding-top: 25px;
+            padding-left: 50%;
+            box-sizing: content-box;
             @include respond-to("desktop") {
                 padding-top: 0px;
+                width: 25%;
+                padding-left: 25%;
                 transform: translateY(-150px);
             }
         }
