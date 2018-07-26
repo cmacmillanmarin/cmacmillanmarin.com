@@ -1,10 +1,10 @@
 {
-    "meta:title" : "",
-    "meta:description" : "",
-    "meta:keywords" : "",
-    "meta:url" : "",
-    "meta:facebook:pic" : "",
-    "meta:twitter:pic" : "",
+    "meta:title" : "Christian MacMillan | Creative Developer",
+    "meta:description" : "Freelance developer based in Barcelona. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
+    "meta:keywords" : "developer, freelance, barcelona, projects, more",
+    "meta:url" : "http://cmacmillanmarin.com",
+    "meta:og:image" : "http://cmacmillanmarin.com/img/social.jpg",
+    "meta:twitter:image" : "http://cmacmillanmarin.com/img/social.jpg",
 
     "s-intro:emoji": "👻",
     "s-intro:seo:h1": "Freelance developer based in Barcelona. Javascript, Nuxt, Vue, React, web, unity, webgl, iOS.",
