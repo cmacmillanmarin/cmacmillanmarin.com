@@ -60,7 +60,7 @@
                     {
                         hid: "og:image",
                         name: "og:image",
-                        content: ""
+                        content: this.$t("meta:og:image")
                     },
 
                     {
@@ -86,7 +86,7 @@
                     {
                         hid: "twitter:image",
                         name: "twitter:image",
-                        content: ""
+                        content: this.$t("meta:twitter:image")
                     }
                 ]
             }

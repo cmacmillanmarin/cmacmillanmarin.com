@@ -33,7 +33,7 @@
         dev: "s-contact:dev:text",
         callme: "s-contact:callme:text",
         audio: {
-            mp3: "./audio/drakeHotlineBling.mp3"
+            mp3: "./audio/callme.mp3"
         }
     }
 

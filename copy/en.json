@@ -1,9 +1,10 @@
 {
-
     "meta:title" : "",
     "meta:description" : "",
     "meta:keywords" : "",
     "meta:url" : "",
+    "meta:facebook:pic" : "",
+    "meta:twitter:pic" : "",
 
     "s-intro:emoji": "👻",
     "s-intro:seo:h1": "Freelance developer based in Barcelona. Javascript, Nuxt, Vue, React, web, unity, webgl, iOS.",
