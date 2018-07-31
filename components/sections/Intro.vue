@@ -63,7 +63,7 @@
             setPosition() {
                 const padding = (window.innerHeight - this.$refs.content.getBoundingClientRect().height) * 0.5;
                 TweenMax.set(this.$el, { paddingTop: padding, paddingBottom: padding });
-                this.dispatch({ type: "introPosition", params: { padding }});
+                // this.dispatch({ type: "introPosition", params: { padding }});
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.onResize);
