@@ -6,7 +6,7 @@
     <ul class="c-list">
         <li v-for="(item, key) in items" :key="key">
             <span v-if="item.quantity">
-                <span class="number" v-html="item.quantity" />
+                <span class="number" v-html="$t(item.quantity)" />
                 <span class="cross" v-html="'x '" />
             </span>
             <span v-if="item.fav" class="category" v-text="$t(item.fav)" />

@@ -21,6 +21,8 @@
 
     import { mapState, mapMutations } from "vuex";
 
+    import Meta from "~/mixins/Meta";
+
     import HeaderComponent from "~/components/Header";
     import Background from "~/components/Background";
     import Roulette from "~/components/Roulette";
@@ -29,68 +31,7 @@
 
     export default {
         name: "default",
-        head() {
-            return {
-                meta: [
-                    {
-                        hid: "description",
-                        name: "description",
-                        content: this.$t("meta:description")
-                    },
-                    {
-                        hid: "keywords",
-                        name: "keywords",
-                        content: this.$t("meta:keywords")
-                    },
-                    {
-                        hid: "og:url",
-                        name: "og:url",
-                        content: this.$t("meta:url")
-                    },
-                    {
-                        hid: "og:title",
-                        name: "og:title",
-                        content: this.$t("meta:title")
-                    },
-                    {
-                        hid: "og:description",
-                        name: "og:description",
-                        content: this.$t("meta:description")
-                    },
-                    {
-                        hid: "og:image",
-                        name: "og:image",
-                        content: ""
-                    },
-
-                    {
-                        hid: "twitter:card",
-                        name: "twitter:card",
-                        content: "summary_large_image"
-                    },
-                    {
-                        hid: "twitter:site",
-                        name: "twitter:site",
-                        content: "@cmacmillanmarin"
-                    },
-                    {
-                        hid: "twitter:title",
-                        name: "twitter:title",
-                        content: this.$t("meta:title")
-                    },
-                    {
-                        hid: "twitter:description",
-                        name: "twitter:description",
-                        content: this.$t("meta:description")
-                    },
-                    {
-                        hid: "twitter:image",
-                        name: "twitter:image",
-                        content: ""
-                    }
-                ]
-            }
-        },
+        mixins: [ Meta ],
         computed: {
             ...mapState({
                 ready: state => state.ready,
