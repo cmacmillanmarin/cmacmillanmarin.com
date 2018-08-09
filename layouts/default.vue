@@ -21,7 +21,7 @@
 
     import { mapState, mapMutations } from "vuex";
 
-    import Meta from "~/mixins/Meta";
+    import Head from "~/mixins/Head";
 
     import HeaderComponent from "~/components/Header";
     import Background from "~/components/Background";
@@ -31,7 +31,7 @@
 
     export default {
         name: "default",
-        mixins: [ Meta ],
+        mixins: [ Head ],
         computed: {
             ...mapState({
                 ready: state => state.ready,
