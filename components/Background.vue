@@ -4,7 +4,7 @@
 
 <template>
     <div class="c-background">
-        <!-- <canvas ref="canvas" /> -->
+        <canvas ref="canvas" />
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell" />
             <div class="flexGrid__cell" />
@@ -46,15 +46,15 @@
         },
         methods: {
             init() {
-                // this.initWebGLScene();
-                // this.initRAF();
+                this.initWebGLScene();
+                this.initRAF();
             },
             setListeners() {
                 this.onResize = _.throttle(this.resize, 50);
                 window.addEventListener("resize", this.onResize);
             },
             initRAF() {
-                this.fps = 60; // target frame rate
+                this.fps = 2; // target frame rate
                 this.frameDuration = 1000/this.fps; // how long, in milliseconds, a regular frame should take to be drawn
                 this.time = 0; // time value, to be sent to shaders, for example
                 this.lastTime = 0; // when was the last frame drawn
@@ -70,8 +70,8 @@
                     this.step = this.delta/this.frameDuration;
                     // add it to the time counter
                     this.time += this.step;
+                    
                     this.gl.uniform1f(this.timeLocation, this.time);
-
                     this.gl.drawArrays(this.gl.TRIANGLES, 0, 6);
                 }
 
@@ -126,11 +126,7 @@
 
                 return shader;
             },
-            resize() {
-                // this.canvas.width = window.innerWidth;
-                // this.canvas.height = window.innerHeight;
-                // TweenMax.set(this.$el.querySelectorAll(".flexGrid__cell"), { y: "0%" })
-            },
+            resize() {},
             mousemove() {
                 var location = this.gl.getUniformLocation(this.program, "mouse");
                 this.gl.uniform2f(location, event.clientX/this.canvas.width, event.clientY/this.canvas.height);
@@ -154,14 +150,21 @@
         height: 100%;
         canvas, .flexGrid {
             position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
         }
         canvas {
             width: 100%;
             height: 100%;
+            background: transparent;
         }
         .flexGrid {
+            z-index: 2;
             width: 100%;
             height: 100%;
+            top: 0;
+            left: 0;
             &__cell {
                 width: 10px;
                 border-right: 1px solid $darkGrey;

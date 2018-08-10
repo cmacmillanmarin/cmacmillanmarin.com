@@ -73,12 +73,12 @@
         position: absolute;
         height: 100%;
         top: 0px;
-        right: 20px;
+        right: 21px;
         @include respond-to("tablet-portrait") {
-            right: 12.5%;
+            right: calc(12.5% + 1px);
         }
         @include respond-to("desktop") {
-            right: 16.666666%;
+            right: calc(16.666666% + 1px);
         }
         .bar, .auxBar {
             position: absolute;

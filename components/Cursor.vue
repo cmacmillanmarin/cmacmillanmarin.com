@@ -5,6 +5,7 @@
 <template>
     <div class="c-cursor">
         <span ref="dot" class="dot" />
+        <div class="diagram-wrapper" />
     </div>
 </template>
 
@@ -13,6 +14,10 @@
     import { mapState } from "vuex";
 
     import { TweenMax } from "gsap";
+    
+    // if (process.browser) {
+    //     const Diagram = require("~/modules/Diagram");
+    // }
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 
@@ -27,6 +32,7 @@
         },
         methods: {
             init() {
+                // Diagram.init();
                 if (!this.desktop) TweenMax.set(this.$el, { autoAlpha: 0 });
             },
             setListeners() {
@@ -58,6 +64,10 @@
             height: 5px;
             border-radius: 50%;
             will-change: transform;
+        }
+        .diagram-wrapper {
+            position: absolute;
+            @include centerXY();
         }
     }
 </style>
