@@ -42,15 +42,17 @@
     "s-awards:fwa:q": "2",
     "s-awards:awwwards:q": "7",
     "s-awards:css:q": "5",
-    "s-awards:marathon:q": "2",
+    "s-awards:marathon:q": "1",
     "s-awards:half:q": "8",
 
     "s-articles:title": "Articles or Press",
+    "s-articles:thefwa": "TheFWA🏅",
     "s-articles:robRepport": "Robb Report",
     "s-articles:wwd": "WWD",
     "s-articles:realClear": "RealClear | Life",
     "s-articles:hublot": "Hublot News",
     "s-articles:watchprosite": "Watch Pro Site",
+    "s-articles:creative-blog": "Creative Blog",
     "s-articles:awwwards": "Awwwards magazine",
     "s-articles:comarts": "Communication Arts",
 

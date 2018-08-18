@@ -29,7 +29,7 @@
            { name: "s-work:project:heremaps", url: "https://www.here.com/en/vision/innovation/here-open-location-platform" },
            { name: "s-work:project:stoooorm", url: "https://xaviercusso.com/#/project/stoooorm" },
            { name: "s-work:project:h2o", url: "http://www.h2o.es/#/en/" },
-           { name: "s-work:project:intorno", url: "https://intorno.xyz" },
+           { name: "s-work:project:intorno", url: "http://intorno.xyz" },
            { name: "s-work:project:draw", url: "https://www.awwwards.com/sites/draw-a-better-2016" },
            { name: "s-work:separator:text", separator: true },
            { name: "s-work:project:typeform" },

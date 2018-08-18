@@ -35,17 +35,14 @@
         },
         computed: {
             ...mapState({
+                desktop: state => state.checks.desktop,
                 ready: state => state.ready,
                 mobile: state => state.breakpoints.mobile
             })
         },
-        watch: {
-            mobile() {
-                this.$nextTick(this.resize);
-            }
-        },
         methods: {
             init() {
+                if (!this.desktop) return;
                 this.initWebGLScene();
                 this.initRAF();
             },
@@ -54,6 +51,9 @@
                 window.addEventListener("resize", this.onResize);
             },
             initRAF() {
+                this.$el.style.background = "none";
+                this.$refs.canvas.style.display = "block";
+                
                 this.fps = 2; // target frame rate
                 this.frameDuration = 1000/this.fps; // how long, in milliseconds, a regular frame should take to be drawn
                 this.time = 0; // time value, to be sent to shaders, for example
@@ -148,6 +148,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        background: $black;
         canvas, .flexGrid {
             position: absolute;
             top: 0;
@@ -158,6 +159,7 @@
             width: 100%;
             height: 100%;
             background: transparent;
+            display: none;
         }
         .flexGrid {
             z-index: 2;

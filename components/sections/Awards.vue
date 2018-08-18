@@ -32,10 +32,12 @@
         ],
         pressTitle: "s-articles:title",
         press: [
+            { name: "s-articles:thefwa", url: "https://thefwa.com/fwa-jury/christian-macmillan" },
             { name: "s-articles:robRepport", url: "https://robbreport.com/style/watch-collector/hublots-new-experiential-digital-platform-is-a-radical-way-to-buy-a-watch-2799213/" },
             { name: "s-articles:wwd", url: "https://wwd.com/accessories-news/watches/hublot-digital-boutique-program-1202694234/" },
             { name: "s-articles:realClear", url: "http://www.realclearlife.com/fashion/hublot-digital-boutique/#1" },
             { name: "s-articles:watchprosite", url: "https://www.watchprosite.com/hublot/the-opening-of-hublot-s-first-digital-boutique-in-new-york-/871.1213266.9914741/" },
+            { name: "s-articles:creative-blog", url: "https://www.creativebloq.com/portfolios/examples-712368" },
             { name: "s-articles:awwwards", url: "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html" },
             { name: "s-articles:comarts", url: "https://www.commarts.com/webpicks/xavier-cuss" }
         ]
@@ -76,6 +78,7 @@
                 width: 25%;
                 padding-left: 25%;
                 padding-right: 0%;
+                padding-bottom: 25px;
             }
         }
         .awards {
