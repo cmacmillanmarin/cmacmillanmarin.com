@@ -16,7 +16,7 @@ export default {
                 class: "__body"
             },
             link: [
-                { rel: "icon", type: "image/x-icon", href: "/favico.ico" },
+                { rel: "icon", type: "image/x-icon", href: `${__baseUrl}/favicon.ico` },
                 { rel: "canonical", href: `${__baseUrl}${this.$route.path}` },
                 { rel: "publisher", href: `https://plus.google.com/${__googleUser}` }
             ],

@@ -32,7 +32,7 @@
            { name: "s-work:project:intorno", url: "http://intorno.xyz" },
            { name: "s-work:project:draw", url: "https://www.awwwards.com/sites/draw-a-better-2016" },
            { name: "s-work:separator:text", separator: true },
-           { name: "s-work:project:typeform" },
+           { name: "s-work:project:loropiana" },
            { name: "s-work:project:vasarely" },
            { name: "s-work:project:evagher" }
         ],
