@@ -1,7 +1,7 @@
 //
 //  components/types/mixins/Meta.js
 
-const __baseUrl = "http://cmacmillanmarin.com";
+const __baseUrl = "https://cmacmillanmarin.com";
 const __googleUser = "+cmacmillanmarin";
 const __fbUser = "cmacmillanmarin";
 const __twUser = "cmacmillanmarin";
