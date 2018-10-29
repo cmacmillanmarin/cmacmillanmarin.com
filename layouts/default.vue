@@ -6,7 +6,7 @@
     <div class="l-default">
         <header-component ref="header" />
         <roulette ref="roulette"/>
-        <div ref="scroll">
+        <div class="scroll" ref="scroll">
             <div class="sections">
                 <nuxt />
             </div>
@@ -81,6 +81,9 @@
         }
         .c-roulette {
             z-index: 9;
+        }
+        .scroll {
+            will-change: transform;
         }
     }
 

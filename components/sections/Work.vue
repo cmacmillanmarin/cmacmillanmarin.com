@@ -22,6 +22,7 @@
     const data = {
         title: "s-work:title",
         projects: [
+           { name: "s-work:project:loropiana", url: "https://uk.loropiana.com/en" },
            { name: "s-work:project:hublot", url: "https://www.b-reel.com/work/hublot-digital-boutique" },
            { name: "s-work:project:gorillaz", url: "https://www.b-reel.com/work/client/gorillaz" },
            { name: "s-work:project:xaviercusso", url: "https://xaviercusso.com" },
@@ -32,9 +33,8 @@
            { name: "s-work:project:intorno", url: "http://intorno.xyz" },
            { name: "s-work:project:draw", url: "https://www.awwwards.com/sites/draw-a-better-2016" },
            { name: "s-work:separator:text", separator: true },
-           { name: "s-work:project:loropiana" },
-           { name: "s-work:project:vasarely" },
-           { name: "s-work:project:evagher" }
+           { name: "s-work:project:evagher" },
+           { name: "s-work:project:vasarely" }
         ],
         agencyTitle: "s-work:agency:title",
         agencies: [
