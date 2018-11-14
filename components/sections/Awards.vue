@@ -32,6 +32,7 @@
         ],
         pressTitle: "s-articles:title",
         press: [
+            { name: "s-articles:wired", url: "https://www.wired.co.uk/article/lvmh-brands-group-digital-technology" },
             { name: "s-articles:thefwa", url: "https://thefwa.com/fwa-jury/christian-macmillan" },
             { name: "s-articles:robRepport", url: "https://robbreport.com/style/watch-collector/hublots-new-experiential-digital-platform-is-a-radical-way-to-buy-a-watch-2799213/" },
             { name: "s-articles:wwd", url: "https://wwd.com/accessories-news/watches/hublot-digital-boutique-program-1202694234/" },
