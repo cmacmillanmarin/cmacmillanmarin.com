@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6, p {
     .link {
         font-size: 1.25em;
         font-weight: bold;
-        line-height: 100%;
+        line-height: 1.05;
         @include respond-to("tablet-portrait") {
             font-size: 2.75em;
             letter-spacing: 1px;
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, p {
     .separator {
         text-transform: uppercase;
         letter-spacing: 1px;
-        margin: 45px 0px 2px;
+        margin: 45px 0px 10px;
         font-size: 0.5em;
     }
 }

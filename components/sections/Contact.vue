@@ -91,6 +91,9 @@
                 @include respond-to("desktop") {
                     width: 25%;
                 }
+                a {
+                    line-height: 1.45;
+                }
             }
         }
         .credits {

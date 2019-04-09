@@ -33,4 +33,8 @@
 
 </script>
 
-<style lang="scss" scoped />
+<style lang="scss" scoped>
+    a {
+        line-height: 1.2;
+    }
+</style>

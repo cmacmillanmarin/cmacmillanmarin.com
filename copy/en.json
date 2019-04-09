@@ -7,15 +7,16 @@
 
     "s-intro:emoji": "👻",
     "s-intro:seo:h1": "Freelance developer based in Barcelona. Javascript, Nuxt, Vue, React, web, unity, webgl, iOS.",
-    "s-intro:text": "Yup! I’m Christian, a 28 y/o islander based in Barcelona. Nowadays busy working as Creative Developer at <a href='https://b-reel.com' target='blank'>B-Reel</a>, running <a href='http://burundanga.studio' target='blank'>Burundanga Studio</a> and judging the best of digital industry at <a href='https://thefwa.com' target='blank'>FWA</a>.",
+    "s-intro:text": "Yup! I’m Christian, a 29 y/o islander based in Barcelona. Nowadays busy working as Creative Developer at <a href='https://b-reel.com' target='blank'>B-Reel</a>, running <a href='http://burundanga.studio' target='blank'>Burundanga Studio</a> and judging the best of digital industry at <a href='https://thefwa.com' target='blank'>FWA</a>.",
     "s-intro:learning:title": "Actually experimenting with",
     "s-intro:learning:1": "WebGL",
     "s-intro:learning:2": "glsl",
 
     "s-work:title": "Selected work",
-    "s-work:agency:title": "Agency background",
+    "s-work:clients:title": "Selected clients",
     "s-work:separator:text": "Coming soon...",
 
+    "s-work:project:ourplanet": "Our Planet",
     "s-work:project:hublot": "LVMH Hublot Digital Boutique",
     "s-work:project:gorillaz": "Gorillaz x Jaguar App",
     "s-work:project:xaviercusso": "Xavier Cussó",
@@ -28,10 +29,6 @@
     "s-work:project:loropiana": "Loro Piana",
     "s-work:project:vasarely": "Victor Vasarely",
     "s-work:project:evagher": "Evagher",
-
-    "s-work:agency:breel": "B-Reel",
-    "s-work:agency:vasava": "Vasava",
-    "s-work:agency:bulldog": "Bulldog Studio",
 
     "s-awards:title": "Awards & Recognitions",
     "s-awards:fwa": "FWA",
@@ -61,7 +58,7 @@
     "s-facts:stuff:1": "· Ran more than 5K km in the last 5 years.",
     "s-facts:stuff:2": "· Played in a Basketball team my entire life. Retired now.",
     "s-facts:stuff:3": "· Certified with Open Water Diver course.",
-    "s-facts:stuff:4": "· Have some tattoes. So <a href='https://instagram.com/cmacmillanmarin' target='blank'>instagram</a> as well.",
+    "s-facts:stuff:4": "· Have some tattoes.",
     "s-facts:stuff:5": "· Created a list on Spotify you should <a href='https://open.spotify.com/user/cmacmillanmarin/playlist/49iAjDrHslLQoC33Qz6qO5?si=MP_mBGzMTDWeYVLaDUz_dw' target='blank'>listen</a> while working.",
     "s-facts:stuff:6": "· Studied Software Engineering at UIB.",
 
@@ -75,7 +72,7 @@
     "s-facts:fav:4": "Futbol team",
     "s-facts:fav:4:content": "FCBarcelona",
     "s-facts:fav:5": "NBA team",
-    "s-facts:fav:5:content": "Stephen Curry, yes.",
+    "s-facts:fav:5:content": "Brookyln Nets",
     "s-facts:fav:6": "Artist",
     "s-facts:fav:6:content": "JayZ & Post Malone",
     "s-facts:fav:7": "Headphones",

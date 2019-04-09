@@ -84,6 +84,9 @@
     .s-intro {
         position: relative;
         padding-bottom: 100px;
+        .smaller-title {
+            margin-bottom: 15px;
+        }
         .intro {
             width: 75%;
             @include respond-to("tablet-portrait") {
