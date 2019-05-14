@@ -22,17 +22,19 @@
     const data = {
         title: "s-work:title",
         projects: [
-           { name: "s-work:project:ourplanet", url: "https://www.ourplanet.com/en/explorable-globe/landing" },
-           { name: "s-work:project:xaviercusso", url: "https://xaviercusso.com" },
-           { name: "s-work:project:hublot", url: "https://www.b-reel.com/work/hublot-digital-boutique" },
-           { name: "s-work:project:loropiana", url: "https://uk.loropiana.com/en" },
-           { name: "s-work:project:gorillaz", url: "https://www.b-reel.com/work/client/gorillaz" },
-           { name: "s-work:project:chaos", url: "https://shop.chaos.club/" },
-           { name: "s-work:project:h2o", url: "http://www.h2o.es/#/en/" },
-           { name: "s-work:project:intorno", url: "http://intorno.xyz" },
-           { name: "s-work:separator:text", separator: true },
-           { name: "s-work:project:evagher" },
-           { name: "s-work:project:vasarely" }
+            { name: "s-work:project:evagher", url: "https://evagher.com" },
+            { name: "s-work:project:ourplanet", url: "https://www.ourplanet.com/en/explorable-globe/landing" },
+            { name: "s-work:project:xaviercusso", url: "https://xaviercusso.com" },
+            { name: "s-work:project:hublot", url: "https://www.b-reel.com/work/hublot-digital-boutique" },
+            { name: "s-work:project:loropiana", url: "https://uk.loropiana.com/en" },
+            { name: "s-work:project:gorillaz", url: "https://www.b-reel.com/work/client/gorillaz" },
+            { name: "s-work:project:chaos", url: "https://shop.chaos.club/" },
+            { name: "s-work:project:h2o", url: "http://www.h2o.es/#/en/" },
+            { name: "s-work:project:intorno", url: "http://intorno.xyz" },
+            { name: "s-work:separator:text", separator: true },
+            { name: "s-work:project:pei" },
+            { name: "s-work:project:maricastana" },
+            { name: "s-work:project:roma" }
         ],
         clientTitle: "s-work:clients:title",
         clients: [
