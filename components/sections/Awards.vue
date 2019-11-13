@@ -10,7 +10,7 @@
                 <list :items="data.press" />
             </div>
             <div class="flexGrid__cell awards">
-                <div class="parallas" data-parallax="200">
+                <div>
                     <h2 v-text="$t(data.title)" />
                     <list :items="data.awards" class="awards-list" />
                 </div>
@@ -77,7 +77,7 @@
                 width: 25%;
                 padding-left: 25%;
                 padding-right: 0%;
-                padding-bottom: 25px;
+                padding-bottom: 40px;
             }
         }
         .awards {
