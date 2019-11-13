@@ -22,25 +22,25 @@
     const data = {
         title: "s-work:title",
         projects: [
+           { name: "s-work:project:roma", url: "https://romalevin.com/" },
+           { name: "s-work:project:pixel", url: "https://b-reel.com/work/google-pixel-wallpapers" },
+           { name: "s-work:project:evagher", url: "https://evagher.com/" },
+           { name: "s-work:project:ourplanet", url: "https://www.ourplanet.com/en/explorable-globe/landing/" },
+           { name: "s-work:project:xaviercusso", url: "https://xaviercusso.com" },
            { name: "s-work:project:loropiana", url: "https://uk.loropiana.com/en" },
            { name: "s-work:project:hublot", url: "https://www.b-reel.com/work/hublot-digital-boutique" },
            { name: "s-work:project:gorillaz", url: "https://www.b-reel.com/work/client/gorillaz" },
-           { name: "s-work:project:xaviercusso", url: "https://xaviercusso.com" },
            { name: "s-work:project:chaos", url: "https://shop.chaos.club/" },
-           { name: "s-work:project:heremaps", url: "https://www.here.com/en/vision/innovation/here-open-location-platform" },
-           { name: "s-work:project:stoooorm", url: "https://xaviercusso.com/#/project/stoooorm" },
            { name: "s-work:project:h2o", url: "http://www.h2o.es/#/en/" },
-           { name: "s-work:project:intorno", url: "http://intorno.xyz" },
-           { name: "s-work:project:draw", url: "https://www.awwwards.com/sites/draw-a-better-2016" },
-           { name: "s-work:separator:text", separator: true },
-           { name: "s-work:project:evagher" },
-           { name: "s-work:project:vasarely" }
         ],
-        agencyTitle: "s-work:agency:title",
+        agencyTitle: "s-work:client:title",
         agencies: [
-            { name: "s-work:agency:breel", url: "https://b-reel.com" },
-            { name: "s-work:agency:vasava", url: "https://portfolio.vasava.es/" },
-            { name: "s-work:agency:bulldog", url: "http://bulldogstudio.es/" }
+            { name: "s-work:client:google", url: "#" },
+            { name: "s-work:client:nike", url: "#" },
+            { name: "s-work:client:netflix", url: "#" },
+            { name: "s-work:client:wwf", url: "#" },
+            { name: "s-work:client:hublot", url: "#" },
+            { name: "s-work:client:gorillaz", url: "#" },
         ]
     }
 
@@ -75,6 +75,9 @@
             width: 100%;
             @include respond-to("desktop") {
                 width: 75%;
+            }
+            .c-list {
+                width: 100%;
             }
         }
         .agency {

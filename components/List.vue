@@ -33,4 +33,8 @@
 
 </script>
 
-<style lang="scss" scoped />
+<style lang="scss" scoped>
+    .c-list {
+        width: 80%;
+    }
+</style>

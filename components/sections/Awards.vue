@@ -26,9 +26,7 @@
         awards: [
             { name: "s-awards:fwa", quantity: "s-awards:fwa:q" },
             { name: "s-awards:awwwards", quantity: "s-awards:awwwards:q" },
-            { name: "s-awards:css", quantity: "s-awards:css:q" },
-            { name: "s-awards:marathon", quantity: "s-awards:marathon:q" },
-            { name: "s-awards:half", quantity: "s-awards:half:q" }
+            { name: "s-awards:css", quantity: "s-awards:css:q" }
         ],
         pressTitle: "s-articles:title",
         press: [
@@ -91,7 +89,7 @@
                 padding-top: 0px;
                 width: 25%;
                 padding-left: 25%;
-                transform: translateY(-150px);
+                transform: translateY(100px);
             }
         }
     }
