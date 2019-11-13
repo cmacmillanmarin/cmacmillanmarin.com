@@ -30,7 +30,10 @@
             { name: "s-facts:stuff:3" },
             { name: "s-facts:stuff:4" },
             { name: "s-facts:stuff:5" },
-            { name: "s-facts:stuff:6" }
+            { name: "s-facts:stuff:6" },
+            { name: "s-facts:stuff:7" },
+            { name: "s-facts:stuff:10" },
+            { name: "s-facts:stuff:11" }
         ],
         favouritesTitle: "s-facts:fav:title",
         favourites: [
@@ -85,6 +88,10 @@
                 padding-top: 25px;
                 width: 25%;
                 padding-left: 0%;
+                transform: translateY(-75px);
+            }
+            .c-list {
+                width: 100%;
             }
         }
     }

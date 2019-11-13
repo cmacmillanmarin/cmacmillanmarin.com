@@ -25,7 +25,7 @@
 
     const data = {
         social: [
-            { name: "Twitter", url: "", text: "s-contact:twitter:text" },
+            { name: "Twitter", url: "https://twitter.com/cmacmillanmarin", text: "s-contact:twitter:text" },
             { name: "Github", url: "https://github.com/cmacmillanmarin", text: "s-contact:github:text" },
             { name: "LinkedIn", url: "https://www.linkedin.com/in/cmacmillanmarin/", text: "s-contact:linkedin:text" },
             { name: "Email", url: "mailto:_@cmacmillanmarin.com", text: "s-contact:email:text" }

@@ -26,9 +26,7 @@
         awards: [
             { name: "s-awards:fwa", quantity: "s-awards:fwa:q" },
             { name: "s-awards:awwwards", quantity: "s-awards:awwwards:q" },
-            { name: "s-awards:css", quantity: "s-awards:css:q" },
-            { name: "s-awards:marathon", quantity: "s-awards:marathon:q" },
-            { name: "s-awards:half", quantity: "s-awards:half:q" }
+            { name: "s-awards:css", quantity: "s-awards:css:q" }
         ],
         pressTitle: "s-articles:title",
         press: [

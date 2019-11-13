@@ -34,7 +34,7 @@
 </script>
 
 <style lang="scss" scoped>
-    a {
-        line-height: 1.2;
+    .c-list {
+        width: 80%;
     }
 </style>
