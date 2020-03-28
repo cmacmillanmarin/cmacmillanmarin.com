@@ -7,7 +7,9 @@
         <div class="flexGrid _horizontal">
             <h2 v-text="data.title" />
             <div class="reel">
-                <div class="play" />
+                <div class="play">
+                    <div class="triangle" />
+                </div>
             </div>
         </div>
     </section>
@@ -46,15 +48,26 @@
                 position: relative;
                 width: 100%;
                 padding-bottom: 56.25%;
-                border: 1px solid white;
+                // background: rgba(255,255,255, 0.95);
                 .play {
                     position: absolute;
                     width: 100px;
                     height: 100px;
                     border-radius: 50%;
-                    border: 1px solid white;
+                    border: 2px solid white;
                     @include centerXY();
+                    .triangle {
+                        position: absolute;
+                        @include centerXY();
+                        transform: translate(-33%, -50%);
+                        width: 0; 
+                        height: 0; 
+                        border-left: 40px solid white;
+                        border-top: 20px solid transparent;
+                        border-bottom: 20px solid transparent; 
+                    }
                 }
+
             }
         }
     }

@@ -37,7 +37,9 @@
                    { "name": "Our Planet", "url": "https://www.ourplanet.com/en/explorable-globe/landing/" },
                    { "name": "Xavier Cussó", "url": "https://xaviercusso.com" },
                    { "name": "Loro Piana", "url": "https://uk.loropiana.com/en" },
-                   { "name": "Intorno", "url": "http://intorno.xyz" }
+                   { "name": "Chaos Fashion", "url": "https://shop.chaos.club" },
+                   { "name": "Intorno", "url": "http://intorno.xyz" },
+                   { "name": "h2o", "url": "http://h2o.es" }
                 ],
                 "clientTitle": "Selected clients",
                 "clients": [
@@ -64,6 +66,7 @@
                     { "name": "WiReD", "url": "https://www.wired.co.uk/article/lvmh-brands-group-digital-technology" },
                     { "name": "WWD", "url": "https://wwd.com/accessories-news/watches/hublot-digital-boutique-program-1202694234/" },
                     { "name": "Robb Report", "url": "https://robbreport.com/style/watch-collector/hublots-new-experiential-digital-platform-is-a-radical-way-to-buy-a-watch-2799213/" },
+                    { "name": "It's Nice That", "url": "https://www.itsnicethat.com/news/b-reel-our-planet-david-attenborough-website-digital-080419" },
                     { "name": "TheFWA Interview", "url": "https://thefwa.com/fwa-jury/christian-macmillan" },
                     { "name": "Awwwards Case Study", "url": "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html" },
                     { "name": "Commarts", "url": "https://www.commarts.com/webpicks/xavier-cuss" }
