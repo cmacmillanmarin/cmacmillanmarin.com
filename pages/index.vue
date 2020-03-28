@@ -17,11 +17,11 @@
     import LifecycleHooks from "~/mixins/LifecycleHooks";
     import Transition from "~/mixins/Transition";
 
-    import Intro from "~/components/sections/Intro";
-    import Work from "~/components/sections/Work";
-    import Awards from "~/components/sections/Awards";
-    import Facts from "~/components/sections/Facts";
-    import Contact from "~/components/sections/Contact";
+    import Intro from "~/components/home/Intro";
+    import Work from "~/components/home/Work";
+    import Awards from "~/components/home/Awards";
+    import Facts from "~/components/home/Facts";
+    import Contact from "~/components/home/Contact";
     import FooterComponent from "~/components/Footer";
 
     export default {
@@ -36,7 +36,7 @@
         },
         data() {
             return {
-                sections: this.$content.home
+                sections: this.$content.pages.home
             }
         },
         watch: {

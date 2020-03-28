@@ -1,8 +1,12 @@
 //
 // nuxt.config.js
 
-const axios = require("axios");
-const manifest = require("./config/manifest");
+const Data = require("./data/en.json");
+
+const routes = ["/"];
+for (const page in Data.pages) {
+    page !== "home" && routes.push(`/${page}`);
+}
 
 module.exports = {
 
@@ -70,31 +74,6 @@ module.exports = {
         }
     },
     generate: {
-        routes: function (callback) {
-            let routes = [];
-            manifest.routes.forEach(route => {
-                manifest.langs.forEach(lang => {
-                    routes.push({
-                        route: `${lang}/${route}`
-                    });
-                });
-            })
-            if (!manifest.dynamicRoutes || manifest.dynamicRoutes.length === 0) callback(null, routes);
-            else {
-                manifest.dynamicRoutes.forEach((dynamicRoute, numCall) => {
-                    axios.get(dynamicRoute.url).then((res) => {
-                        Array.from(res.data.result).forEach((child, key) => {
-                            manifest.langs.forEach(lang => {
-                                routes.push({
-                                    route: `${lang}/${dynamicRoute.path}/${key}`,
-                                    payload: child
-                                });
-                            });
-                        });
-                        if (numCall === manifest.dynamicRoutes.length - 1) callback(null, routes);
-                    });
-                });
-            }
-        }
+        routes
     }
 };
