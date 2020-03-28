@@ -46,6 +46,10 @@
 <style lang="scss" scoped>
 
     .s-facts {
+        padding-top: 50px;
+        @include respond-to("tablet-portrait") {
+            padding-top: 100px; 
+        }
         .facts_cell {
             width: 100%;
             @include respond-to("desktop") {

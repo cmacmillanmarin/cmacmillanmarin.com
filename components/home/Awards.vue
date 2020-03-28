@@ -45,7 +45,7 @@
 <style lang="scss" scoped>
 
     .s-awards {
-        padding: 40px 0px;
+        padding: 80px 0px 40px;
         .press {
             width: 50%;
             box-sizing: content-box;

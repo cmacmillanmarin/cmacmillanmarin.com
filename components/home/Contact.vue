@@ -66,7 +66,7 @@
         padding-top: 80px;
         padding-bottom: 40px;
         @include respond-to("desktop") {
-            padding-top: 20px;
+            padding-top: 80px;
         }
         .flexGrid {
             @include respond-to("tablet-portrait") {
