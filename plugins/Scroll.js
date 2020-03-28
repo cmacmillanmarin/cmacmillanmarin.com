@@ -48,6 +48,7 @@ class Scroll extends Smooth {
         }
 
         this.vars.last = this.vars.current;
+        const current = -this.vars.current.toFixed(2);
 
         this.dom.scrollPosition = parseInt(this.vars.current)
         if (this.dom.scrollPosition === this.dom.prevPosition) return
@@ -55,10 +56,10 @@ class Scroll extends Smooth {
         else this.dom.direction = -1
         this.vs._emitter.emit('direction', this.dom.direction);
         this.vs._emitter.emit('scrolling', this.dom.scrollPosition)
-        if (this.dom.dir == 'horizontal') this.dom.section.style[this.prefix] = this.horizontalScroll(-this.vars.current.toFixed(2))
-        else this.dom.section.style[this.prefix] = this.verticalScroll(-this.vars.current.toFixed(2))
+        if (this.dom.dir == 'horizontal') this.dom.section.style[this.prefix] = this.horizontalScroll(current)
+        else this.dom.section.style[this.prefix] = this.verticalScroll(current)
         this.dom.prevPosition = this.dom.scrollPosition
-        this.dom.roulette.style[this.prefix] = this.rotation(-this.vars.current.toFixed(2));
+        this.dom.roulette.style[this.prefix] = this.rotation(current);
     }
 
     setInfiniteScroll() {
@@ -73,8 +74,10 @@ class Scroll extends Smooth {
         return 'translate3d('+ value +'px,0,0)'
     }
 
-    rotation(value) {
-        return 'rotate('+ value * 0.15 +'deg) translate(-50%, -50%)'
+    rotation(current) {
+        const height = this.vars.bounding + this.vars.height;
+        const progress = current % height  / height;
+        return 'rotate('+ 360 * Math.abs(progress) +'deg) translate(-50%, -50%)'
     }
 
     verticalScroll(value) {

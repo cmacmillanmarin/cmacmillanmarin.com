@@ -28,7 +28,7 @@ export default {
                 { hid: "og:locale", property: "og:locale", content: "en" },
                 { hid: "og:title", property: "og:title", content: head.title },
                 { hid: "og:type", property: "og:type", content: "website" },
-                { hid: "og:url", property: "og:url", content: `${this.$content}${this.$route.path}` },
+                { hid: "og:url", property: "og:url", content: `${head.url}${this.$route.path}` },
                 { hid: "og:site_name", property: "og:site_name", content: head.title },
                 { hid: "og:description", property: "og:description", content: 'meta:description' },
                 { hid: "og:image", property: "og:image", content: head.ogImage },

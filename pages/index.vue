@@ -16,6 +16,7 @@
     import Transition from "~/mixins/Transition";
 
     import Intro from "~/components/home/Intro";
+    import Reel from "~/components/home/Reel";
     import Work from "~/components/home/Work";
     import Awards from "~/components/home/Awards";
     import Facts from "~/components/home/Facts";
@@ -92,6 +93,7 @@
         },
         components: {
             Intro,
+            Reel,
             Work,
             Awards,
             Facts,

@@ -21,6 +21,10 @@
                     { "name": "glsl" }
                 ]
             },
+            {
+                "id": "reel",
+                "title": "Reel"
+            },
             { 
                 "id": "work",
                 "title": "Selected work",
