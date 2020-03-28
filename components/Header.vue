@@ -4,8 +4,8 @@
 
 <template>
     <header class="s-header">
-        <a class="a-mail small-type header-email" href="mailto:_@cmacmillanmarin.com">
-             _@cmacmillanmarin.com 🤙🏾
+        <a class="a-mail small-type header-email" href="mailto:spam@cmacmillanmarin.com">
+             spam@cmacmillanmarin.com 🤙🏾
         </a>
     </header>
 </template>

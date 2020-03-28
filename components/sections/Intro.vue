@@ -6,12 +6,12 @@
     <div class="s-intro">
         <div class="flexGrid" ref="content">
             <div class="intro flexGrid__cell">
-                <p class="emoji" v-text="$t(data.emoji)" />
-                <h1 class="SEO" v-text="$t(data.seo)" />
-                <p class="intro-text" v-html="$t(data.intro)" />
+                <p class="emoji" v-text="data.emoji" />
+                <h1 class="SEO" v-text="data.seo" />
+                <p class="intro-text" v-html="data.intro" />
             </div>
             <div class="learning">
-                <p class="smaller-title smaller-type" v-text="$t(data.learningTitle)" />
+                <p class="smaller-title smaller-type" v-text="data.learningTitle" />
                 <list :items="data.fields" class="small-type" />
             </div>
         </div>
@@ -19,17 +19,6 @@
 </template>
 
 <script>
-
-    const data = {
-        emoji: "s-intro:emoji",
-        seo: "s-intro:seo:h1",
-        intro: "s-intro:text",
-        learningTitle: "s-intro:learning:title",
-        fields: [
-            { name: "s-intro:learning:1" },
-            { name: "s-intro:learning:2" }
-        ]
-    }
 
     import { TweenMax } from "gsap";
     import { mapState, mapMutations } from "vuex";
@@ -42,10 +31,7 @@
         name: "Intro",
         mixins: [ LifecycleHooks ],
         props: {
-            data: {
-                type: Object,
-                default: () => data
-            }
+            data: Object
         },
         computed: {
             ...mapState({
@@ -57,16 +43,14 @@
                 this.setPosition();
             },
             setListeners() {
-                this.onResize = _.throttle(this.setPosition, 10);
-                window.addEventListener("resize", this.onResize);
+                window.addEventListener("resize", this.setPosition);
             },
             setPosition() {
                 const padding = (window.innerHeight - this.$refs.content.getBoundingClientRect().height) * 0.5;
                 TweenMax.set(this.$el, { paddingTop: padding, paddingBottom: padding });
-                // this.dispatch({ type: "introPosition", params: { padding }});
             },
             destroyListeners() {
-                window.removeEventListener("resize", this.onResize);
+                window.removeEventListener("resize", this.setPosition);
             },
             ...mapMutations({
                 dispatch: "events/dispatch"

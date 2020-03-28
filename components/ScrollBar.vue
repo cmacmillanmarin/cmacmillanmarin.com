@@ -36,8 +36,7 @@
         },
         methods: {
             setListeners() {
-                this.onResize = _.throttle(this.setBar, 10);
-                window.addEventListener("resize", this.onResize);
+                window.addEventListener("resize", this.setBar);
             },
             scrolling() {
                 const mod = this.scrollPoint % this.sH > 0 ? this.scrollPoint % this.sH : this.sH + (this.scrollPoint % this.sH);
@@ -58,7 +57,7 @@
                 TweenMax.to(this.$refs.auxBar, 0.5, { height: this.height, y: -this.height, backgroundColor });
             },
             destroyListeners() {
-                window.removeEventListener("resize", this.onResize);
+                window.removeEventListener("resize", this.setBar);
             }
         },
         beforeDestroy() {

@@ -47,8 +47,7 @@
                 this.initRAF();
             },
             setListeners() {
-                this.onResize = _.throttle(this.resize, 50);
-                window.addEventListener("resize", this.onResize);
+                window.addEventListener("resize", this.resize);
             },
             initRAF() {
                 this.$el.style.background = "none";
@@ -132,7 +131,7 @@
                 this.gl.uniform2f(location, event.clientX/this.canvas.width, event.clientY/this.canvas.height);
             },
             destroyListeners() {
-                window.removeEventListener("resize", this.onResize);
+                window.removeEventListener("resize", this.resize);
                 window.cancelAnimationFrame(this.raf);
             }
         }

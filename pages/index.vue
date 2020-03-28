@@ -1,18 +1,16 @@
 <!--
-    pages/_lang/index.vue
+    pages/index.vue
 -->
 
 <template>
     <div class="p-index pageLayout">
-        <section v-for="(section, key) in sections" :key="key">
-            <component :is="section.id" :class="{ trans : section.transition }" />
+        <section v-for="(section, i) in sections" :key="i">
+            <component :is="section.id" :data="section" />
         </section>
     </div>
 </template>
 
 <script>
-
-    import _ from "lodash";
 
     import { mapState, mapMutations } from "vuex";
 
@@ -34,17 +32,11 @@
                 ready: state => state.ready,
                 scrollPoint: state => state.scroll.point,
                 direction: state => state.scroll.direction
-            })
+            }),
         },
         data() {
             return {
-                sections: [
-                    { id: "intro", transition: true },
-                    { id: "work", transition: true },
-                    { id: "awards", transition: true },
-                    { id: "facts", transition: true },
-                    { id: "contact", transition: true }
-                ]
+                sections: this.$content.home
             }
         },
         watch: {
@@ -65,8 +57,7 @@
                 this.resize();
             },
             setListeners() {
-                this.onResize = _.throttle(this.resize, 50);
-                window.addEventListener("resize", this.onResize);
+                window.addEventListener("resize", this.resize);
             },
             scrolling() {
                 if (this.$el.getBoundingClientRect().top > 0) this.addSectionOn(this.TOP);
@@ -79,7 +70,6 @@
                     const section = side === this.TOP ? aux[aux.length - 1] : aux[0];
                     if ((section.id === this.initialSection && this.direction === 1)
                         || (section.id === this.lastSection && this.direction === -1)) this.changeRandomColor();
-                    section.transition = false;
                     side === this.TOP ? aux.unshift(section) : aux.push(section);
                     side === this.TOP ? aux.pop() : aux.shift();
                     this.sections = [...aux];
@@ -96,7 +86,7 @@
                 this.bottomElHeight = this.$el.querySelectorAll("section")[this.sections.length - 1].getBoundingClientRect().height;
             },
             destroyListeners() {
-                 window.removeEventListener("resize", this.onResize);
+                 window.removeEventListener("resize", this.resize);
             },
             ...mapMutations({
                 changeRandomColor: "randomColor"

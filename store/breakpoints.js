@@ -26,32 +26,18 @@ export const mutations = {
 
 export const actions = {
 
-    init({ state, commit, dispatch }) {
-
-        console.log("Breakpoints :: init");
-
-        commit("setDebounce",
-            _.debounce(() => {
-                dispatch("_updateBreakpoint");
-            }, state._DEBOUNCE_DELAY)
-        );
-
+    init({commit, dispatch }) {
+        commit("setDebounce",() => {dispatch("_updateBreakpoint");});
         dispatch("startWatching");
     },
 
     startWatching({ state, dispatch }){
-
-        console.log("Breakpoints :: start watching");
-
         dispatch("stopWatching");
         window.addEventListener("resize", state._debounce );
         state._debounce();
     },
 
     stopWatching({ state }){
-        if(state._debounce){
-            state._debounce.cancel();
-        }
         window.removeEventListener("resize", state._debounce );
     },
 
@@ -59,13 +45,12 @@ export const actions = {
 
         let breakpoint = window.getComputedStyle(document.body, "::after").getPropertyValue("content");
 
-        if(!_.isUndefined(breakpoint) && !_.isNull(breakpoint)){
+        if(breakpoint){
             breakpoint = breakpoint.replace(/["']/g, "");
         }
 
         if(state.prevBreakpoint !== breakpoint){
             commit("setBreakpoint", breakpoint);
-            console.log("Breakpoints :: updateBreakpoint", breakpoint);
         }
     }
 }

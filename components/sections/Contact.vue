@@ -7,35 +7,21 @@
         <div class="flexGrid _horizontal">
             <div v-for="(platform, key) in data.social" :key="key" class="flexGrid__cell social-link">
                 <a :href="platform.url" target="_blank" v-text="platform.name" />
-                <p v-text="$t(platform.text)" />
+                <p v-text="platform.text" />
             </div>
         </div>
         <div class="credits social-link">
-            <p @mouseenter="play" @mouseleave="pause" class="call call_desktop" v-text="$t(data.callme)" />
-            <p class="call call_mobile" @click="toggle" v-text="$t(data.callme)" />
+            <p @mouseenter="play" @mouseleave="pause" class="call call_desktop" v-text="data.callme" />
+            <p class="call call_mobile" @click="toggle" v-text="data.callme" />
             <audio ref="audio" loop>
                 <source :src="data.audio.mp3" type="audio/mpeg">
             </audio>
-            <p class="dev" v-text="$t(data.dev)" />
+            <p class="dev" v-text="data.dev" />
         </div>
     </div>
 </template>
 
 <script>
-
-    const data = {
-        social: [
-            { name: "Twitter", url: "https://twitter.com/cmacmillanmarin", text: "s-contact:twitter:text" },
-            { name: "Github", url: "https://github.com/cmacmillanmarin", text: "s-contact:github:text" },
-            { name: "LinkedIn", url: "https://www.linkedin.com/in/cmacmillanmarin/", text: "s-contact:linkedin:text" },
-            { name: "Email", url: "mailto:_@cmacmillanmarin.com", text: "s-contact:email:text" }
-        ],
-        dev: "s-contact:dev:text",
-        callme: "s-contact:callme:text",
-        audio: {
-            mp3: "./audio/callme.mp3"
-        }
-    }
 
     import { mapState } from "vuex";
 
@@ -47,10 +33,7 @@
             })
         },
         props: {
-            data: {
-                type: Object,
-                default: () => data
-            }
+            data: Object
         },
         data() {
             return {

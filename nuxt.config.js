@@ -7,8 +7,7 @@ const manifest = require("./config/manifest");
 module.exports = {
 
     router: {
-        base: "/",
-        middleware: "i18n"
+        base: "/"
     },
 
     loading: false,
@@ -25,16 +24,13 @@ module.exports = {
         })
     ],
 
-    plugins: [{
-            src: "~/plugins/i18n.js",
+    plugins: [
+        {
+            src: "~/plugins/Data.js",
             ssr: true
         },
         {
-            src: "~/plugins/Breakpoints.js",
-            ssr: false
-        },
-        {
-            src: "~/plugins/Checks.js",
+            src: "~/plugins/Store.js",
             ssr: false
         },
         {
@@ -47,15 +43,10 @@ module.exports = {
         }
     ],
 
-    serverMiddleware: ["~/middleware/server.js"],
 
     build: {
         vendor: [
-            "lodash",
-            "gsap",
-            "isomorphic-fetch",
-            "babel-polyfill",
-            "~/plugins/Polyfills.js"
+            "gsap"
         ],
         extend(config, {
             isDev,
