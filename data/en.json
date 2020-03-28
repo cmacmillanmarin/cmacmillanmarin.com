@@ -1,11 +1,12 @@
 {
     "config": {
-        "meta": {
+        "head": {
             "title": "Christian MacMillan",
             "description": "Developer based in Barcelona. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
             "url": "https://cmacmillanmarin.com",
-            "og:image": "https://cmacmillanmarin.com/img/social.jpg",
-            "tw:image": "https://cmacmillanmarin.com/img/social.jpg"
+            "ogImage": "https://cmacmillanmarin.com/img/social.jpg",
+            "twImage": "https://cmacmillanmarin.com/img/social.jpg",
+            "twUser": "cmacmillanmarin"
         }
     },
     "pages": {
@@ -13,7 +14,7 @@
             { 
                 "id": "intro",
                 "emoji": "👻",
-                "intro": "Hey!<br/>I’m Christian MacMillan, a 30 y/o islander and developer with 10+ years of experience with a keen interest in design, motion and interaction. Over those years my work has been recognised in Awwwards, FWA, The Webby Awards, Cannes Lions or WiReD. Currently based in Barcelona, I work at B-Reel for companies and brands such as Google, Netflix, LVMH, Nike or Gorillazz.<br/>However, in-between those monstars, I’m always looking for small side projects where innovation and exploration are a must.",
+                "intro": "Hey! I’m Christian MacMillan, a 30 y/o developer with a keen interest in design, motion and interaction.<br/><br/>Currently based in Barcelona, I work at <a href='https://b-reel.com' href='_target'>B-Reel</a>.",
                 "learningTitle": "Actually experimenting with",
                 "fields": [
                     { "name": "WebGL" },
@@ -94,8 +95,8 @@
                 "social": [
                     { "name": "Twitter", "url": "https://twitter.com/cmacmillanmarin", "text": "Emoji reactions about design & tech." },
                     { "name": "Github", "url": "https://github.com/cmacmillanmarin", "text": "The code for this website and more." },
-                    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/cmacmillanmarin/", "text": "For job inquiries or saying hi." },
-                    { "name": "Email", "url": "mailto:spam@cmacmillanmarin.com", "text": "s-contact:email:text" }
+                    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/cmacmillanmarin/", "text": "Some extra laboral and academic information." },
+                    { "name": "Email", "url": "mailto:spam@cmacmillanmarin.com", "text": "For job inquiries or saying hi." }
                 ],
                 "dev": "Designed and Developed by me. With no love. At home.",
                 "callme": "Call me on my cell phone?",

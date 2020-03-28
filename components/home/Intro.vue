@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="s-intro">
+    <section class="s-intro">
         <div class="flexGrid" ref="content">
             <div class="intro flexGrid__cell">
                 <p class="emoji" v-text="data.emoji" />
@@ -15,7 +15,7 @@
                 <list :items="data.fields" class="small-type" />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -47,14 +47,11 @@
             },
             setPosition() {
                 const padding = (window.innerHeight - this.$refs.content.getBoundingClientRect().height) * 0.5;
-                TweenMax.set(this.$el, { paddingTop: padding, paddingBottom: padding });
+                TweenMax.set(this.$el, { paddingTop: padding * 0.9, paddingBottom: padding * 1.1 });
             },
             destroyListeners() {
                 window.removeEventListener("resize", this.setPosition);
-            },
-            ...mapMutations({
-                dispatch: "events/dispatch"
-            })
+            }
         },
         components: {
             List

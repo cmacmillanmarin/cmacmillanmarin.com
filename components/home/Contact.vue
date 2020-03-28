@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="s-contact">
+    <section class="s-contact">
         <div class="flexGrid _horizontal">
             <div v-for="(platform, key) in data.social" :key="key" class="flexGrid__cell social-link">
                 <a :href="platform.url" target="_blank" v-text="platform.name" />
@@ -18,7 +18,7 @@
             </audio>
             <p class="dev" v-text="data.dev" />
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -63,10 +63,14 @@
 <style lang="scss" scoped>
 
     .s-contact {
+        padding-top: 80px;
         padding-bottom: 40px;
+        @include respond-to("desktop") {
+            padding-top: 20px;
+        }
         .flexGrid {
             @include respond-to("tablet-portrait") {
-                padding-top: 100px;
+                padding-top: 0px;
             }
             .social-link {
                 width: 50%;

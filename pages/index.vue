@@ -4,9 +4,7 @@
 
 <template>
     <div class="p-index pageLayout">
-        <section v-for="(section, i) in sections" :key="i">
-            <component :is="section.id" :data="section" />
-        </section>
+        <component v-for="(section, i) in sections" :key="i" :is="section.id" :data="section" />
     </div>
 </template>
 

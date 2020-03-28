@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="s-awards">
+    <section class="s-awards">
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell press">
                 <h2 v-text="data.pressTitle" />
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -45,6 +45,7 @@
 <style lang="scss" scoped>
 
     .s-awards {
+        padding: 40px 0px;
         .press {
             width: 50%;
             box-sizing: content-box;

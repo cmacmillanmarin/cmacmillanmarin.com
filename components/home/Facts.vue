@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="s-facts">
+    <section class="s-facts">
         <div class="flexGrid _horizontal">
             <div class="flexGrid__cell facts_cell">
                 <h2 v-text="data.title" />
@@ -17,7 +17,7 @@
                 <list :items="data.favourites" class="favs" />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

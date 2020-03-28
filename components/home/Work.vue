@@ -3,7 +3,7 @@
 -->
 
 <template>
-    <div class="s-work">
+    <section class="s-work">
         <div class="flexGrid _horizontal">
             <div ref="projects" class="flexGrid__cell projects">
                 <h2 v-text="data.title" />
@@ -14,7 +14,7 @@
                 <list :items="data.clients" />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
