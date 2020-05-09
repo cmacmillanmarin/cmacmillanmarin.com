@@ -89,7 +89,7 @@ class Scroll extends Smooth {
     }
 
     scrollTo(val) {
-        this.vars.current = val
+        // this.vars.current = val
         this.vars.target = val
     }
 

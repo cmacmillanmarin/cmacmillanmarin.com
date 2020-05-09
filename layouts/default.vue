@@ -4,7 +4,7 @@
 
 <template>
     <div class="l-default">
-        <header-component ref="header" />
+        <!-- <header-component ref="header" /> -->
         <roulette ref="roulette"/>
         <div class="scroll" ref="scroll">
             <nuxt />
@@ -21,7 +21,7 @@
 
     import Head from "~/mixins/Head";
 
-    import HeaderComponent from "~/components/Header";
+    // import HeaderComponent from "~/components/Header";
     import Background from "~/components/Background";
     import Roulette from "~/components/Roulette";
     import ScrollBar from "~/components/ScrollBar";
@@ -32,11 +32,15 @@
         mixins: [ Head ],
         computed: {
             ...mapState({
-                ready: state => state.ready
+                ready: state => state.ready,
+                to: state => state.scroll.to
             })
         },
         watch: {
-            ready: "initScroll"
+            ready: "initScroll",
+            to() {
+                this.scroll.scrollTo(this.to);
+            }
         },
         methods: {
             initScroll() {
@@ -46,6 +50,7 @@
                     roulette: this.$refs.roulette.$el,
                     infiniteScroll: true,
                     native: false,
+                    noscrollbar: true,
                     ease: 0.05
                 });
                 this.scroll.init();
@@ -59,7 +64,6 @@
             })
         },
         components: {
-            HeaderComponent,
             Background,
             Roulette,
             ScrollBar,
@@ -69,7 +73,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
     .l-default {
         overflow-y: hidden;

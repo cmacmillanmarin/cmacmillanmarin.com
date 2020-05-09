@@ -7,10 +7,15 @@ export const state = () => ({
     smallMobile: false,
     prevBreakpoint: "",
     _debounce: null,
+    vs: {w: 0, h: 0},
     _DEBOUNCE_DELAY: 50
 })
 
 export const mutations = {
+
+    setViewportSize(state, size) {
+        state.vs = {...size};
+    },
 
     setBreakpoint(state, breakpoint) {
         state.breakpoint = breakpoint;
@@ -44,6 +49,8 @@ export const actions = {
     _updateBreakpoint({ state, commit }) {
 
         let breakpoint = window.getComputedStyle(document.body, "::after").getPropertyValue("content");
+
+        commit("setViewportSize", {w: window.innerWidth, h: window.innerHeight});
 
         if(breakpoint){
             breakpoint = breakpoint.replace(/["']/g, "");

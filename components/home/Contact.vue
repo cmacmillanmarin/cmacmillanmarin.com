@@ -6,7 +6,7 @@
     <section class="s-contact">
         <div class="flexGrid _horizontal">
             <div v-for="(platform, key) in data.social" :key="key" class="flexGrid__cell social-link">
-                <a :href="platform.url" target="_blank" v-text="platform.name" />
+                <a :href="platform.url" rel="noopener" target="_blank" v-text="platform.name" />
                 <p v-text="platform.text" />
             </div>
         </div>

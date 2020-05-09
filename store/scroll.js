@@ -4,10 +4,14 @@
 export const state = () => ({
     point: 0,
     direction: 0,
+    to: 0,
     el: null
 });
 
 export const mutations = {
+    scrollTo(state, point) {
+        state.to = point;
+    },
     setPoint(state, point) {
         state.point = point;
     },

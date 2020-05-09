@@ -25,7 +25,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
     .p-photography {
         opacity: 0;

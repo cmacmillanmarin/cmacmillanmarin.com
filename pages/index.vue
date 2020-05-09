@@ -21,7 +21,6 @@
     import Awards from "~/components/home/Awards";
     import Facts from "~/components/home/Facts";
     import Contact from "~/components/home/Contact";
-    import FooterComponent from "~/components/Footer";
 
     export default {
         name: "index",
@@ -97,8 +96,7 @@
             Work,
             Awards,
             Facts,
-            Contact,
-            FooterComponent
+            Contact
         }
     }
 

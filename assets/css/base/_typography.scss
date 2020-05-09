@@ -129,6 +129,12 @@ h1, h2, h3, h4, h5, h6, p {
             font-size: 1.3em;
         }
     }
+    .quantity {
+        font-family: "neue-machina-light", "Helvetica Neue", sans-serif;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
     .cross {
         font-size: 0.8em;
         @include respond-to("tablet-portrait") {

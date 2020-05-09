@@ -12,12 +12,7 @@
 <script>
 
     import { mapState } from "vuex";
-
     import { TweenMax } from "gsap";
-    
-    // if (process.browser) {
-    //     const Diagram = require("~/modules/Diagram");
-    // }
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 

@@ -1,7 +1,7 @@
 {
     "config": {
         "head": {
-            "title": "Christian MacMillan",
+            "title": "Christian MacMillan | Developer",
             "description": "Developer based in Barcelona. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
             "url": "https://cmacmillanmarin.com",
             "ogImage": "https://cmacmillanmarin.com/img/social.jpg",
@@ -29,7 +29,7 @@
                 "id": "work",
                 "title": "Selected work",
                 "projects": [
-                   { "name": "Pixel 4 Live Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
+                   { "name": "Pixel 4 Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
                    { "name": "Hublot Digital Boutique", "url": "https://www.b-reel.com/work/hublot-digital-boutique" },
                    { "name": "Gorillaz AR App", "url": "https://www.b-reel.com/work/gorillaz-humanz-app" },
                    { "name": "Evagher", "url": "https://evagher.com/" },
@@ -56,10 +56,10 @@
                 "id": "awards",
                 "title": "Awards & Recognitions",
                 "awards": [
-                    { "name": "Awwwards", "quantity": "10" },
                     { "name": "TheFWA", "quantity": "5" },
+                    { "name": "Awwwards", "quantity": "11" },
                     { "name": "Cannes Lions", "quantity": "4" },
-                    { "name": "Webby Award", "quantity": "1" }
+                    { "name": "Webby Award", "quantity": "2" }
                 ],
                 "pressTitle": "Articles & Press",
                 "press": [
@@ -78,23 +78,23 @@
                 "facts": [
                     { "name": "· Studied Software Engineering at UIB." },
                     { "name": "· Speak Spanish, Catalan and English fluently." },
-                    { "name": "· Judging the best of digital industry at <a href='https://thefwa.com' target='_blank'>FWA</a>." },
+                    { "name": "· Judging the best of digital industry at <a rel='noopener' href='https://thefwa.com' target='_blank'>FWA</a>." },
                     { "name": "· Ran a marathon in 3h and 35min." },
-                    { "name": "· Played Basketball my entire life. Still balling for <a href='https://totbasquet.basquetcatala.cat/resultats-i-classificacions/?group=8338' target='_blank'>Forasters</a>." },
-                    { "name": "· Have the Open Water Diver Certify." },
+                    { "name": "· Played Basketball my entire life. Still balling." },
+                    { "name": "· Open Water Diver Certified." },
                     { "name": "· Have some tattoes." },
-                    { "name": "· Travel and Photography are my secret." }
+                    { "name": "· Photography enthusiast. Sharing photos on <a href='https://unsplash.com/cmacmillanmarin' rel='noopener' target='_blank'>@Unsplash</a> ." }
                 ],
                 "favouritesTitle": "Favs",
                 "favourites": [
                     { "name": "Homo Deus", "fav": "Book" },
-                    { "name": "HER", "fav": "Movie" },
-                    { "name": "Black Mirror", "fav": "TV Serie" },
-                    { "name": "FCBarcelona", "fav": "Futbol Team" },
-                    { "name": "Nets & Suns", "fav": "NBA Team" },
+                    { "name": "The Gentlemen", "fav": "Movie" },
+                    { "name": "Gomorra", "fav": "TV Serie" },
+                    { "name": "FCBarcelona & Nets", "fav": "Team" },
                     { "name": "JayZ & Post Malone", "fav": "Artist" },
                     { "name": "Bose 700 & AirPods", "fav": "Headphones" },
-                    { "name": "Nike x Stefan Janoski &</br>Kobe IV D.Booker PE", "fav": "Shoes" }
+                    { "name": "Nike x Stefan Janoski</br>& Jordan I Low", "fav": "Shoes" },
+                    { "name": "Kobe IV D.Booker PE", "fav": "Ball Shoes" }
                 ]
             },
             { 
