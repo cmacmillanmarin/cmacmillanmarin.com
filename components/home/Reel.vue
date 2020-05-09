@@ -123,7 +123,7 @@
                             "controls": this.desktop ? 0 : 1,
                             "rel": 0,
                             "playsinline": 0,
-                            "origin": "https://cmacmillanmarin.com"
+                            "origin": "https://www.youtube.com"
                         },
                         events: {
                             'onReady': this.onPlayerReady,
