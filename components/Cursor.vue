@@ -40,7 +40,7 @@
                 window.addEventListener("mousemove", this.onMouseMove);
             },
             onMouseMove(e) {
-                TweenMax.set(this.$refs.dot, { x: e.x, y: e.y })
+                TweenMax.set(this.$refs.dot, { x: e.x, y: e.y, opacity: 1 })
             },
             destroyListeners() {
                 window.removeEventListener("mousemove", this.onMouseMove);
@@ -53,6 +53,7 @@
 <style lang="scss" scoped>
     .c-cursor {
         position: absolute;
+        mix-blend-mode: difference;
         top: 0;
         left: 0;
         transform: translate(-50%,-50%);
@@ -63,7 +64,8 @@
             width: 5px;
             height: 5px;
             border-radius: 50%;
-            will-change: transform;
+            opacity: 0;
+            will-change: transform, opacity;
         }
         .diagram-wrapper {
             position: absolute;

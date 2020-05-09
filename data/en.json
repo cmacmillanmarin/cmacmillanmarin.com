@@ -1,0 +1,117 @@
+{
+    "config": {
+        "head": {
+            "title": "Christian MacMillan",
+            "description": "Developer based in Barcelona. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
+            "url": "https://cmacmillanmarin.com",
+            "ogImage": "https://cmacmillanmarin.com/img/social.jpg",
+            "twImage": "https://cmacmillanmarin.com/img/social.jpg",
+            "twUser": "cmacmillanmarin"
+        }
+    },
+    "pages": {
+        "home": [
+            { 
+                "id": "intro",
+                "emoji": "👻",
+                "intro": "Hey! I’m Christian MacMillan, a 30 y/o developer with a keen interest in design, motion and interaction.<br/><br/>Currently based in Barcelona, I work at <a href='https://b-reel.com' href='_target'>B-Reel</a>.",
+                "learningTitle": "Actually experimenting with",
+                "fields": [
+                    { "name": "WebGL" },
+                    { "name": "glsl" }
+                ]
+            },
+            {
+                "id": "reel",
+                "title": "Reel"
+            },
+            { 
+                "id": "work",
+                "title": "Selected work",
+                "projects": [
+                   { "name": "Pixel 4 Live Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
+                   { "name": "Hublot Digital Boutique", "url": "https://www.b-reel.com/work/hublot-digital-boutique" },
+                   { "name": "Gorillaz AR App", "url": "https://www.b-reel.com/work/gorillaz-humanz-app" },
+                   { "name": "Evagher", "url": "https://evagher.com/" },
+                   { "name": "Roma Levin", "url": "https://romalevin.com/" },
+                   { "name": "Our Planet", "url": "https://www.ourplanet.com/en/explorable-globe/landing/" },
+                   { "name": "Xavier Cussó", "url": "https://xaviercusso.com" },
+                   { "name": "Loro Piana", "url": "https://uk.loropiana.com/en" },
+                   { "name": "Chaos Fashion", "url": "https://shop.chaos.club" },
+                   { "name": "Intorno", "url": "http://intorno.xyz" },
+                   { "name": "h2o", "url": "http://h2o.es" }
+                ],
+                "clientTitle": "Selected clients",
+                "clients": [
+                    { "name": "Google", "url": "#" },
+                    { "name": "Nike", "url": "#" },
+                    { "name": "Netflix", "url": "#" },
+                    { "name": "WWF", "url": "#" },
+                    { "name": "Hublot", "url": "#" },
+                    { "name": "-", "url": "#" },
+                    { "name": "Cool Individuals", "url": "#" }
+                ]
+            },
+            { 
+                "id": "awards",
+                "title": "Awards & Recognitions",
+                "awards": [
+                    { "name": "Awwwards", "quantity": "10" },
+                    { "name": "TheFWA", "quantity": "5" },
+                    { "name": "Cannes Lions", "quantity": "4" },
+                    { "name": "Webby Award", "quantity": "1" }
+                ],
+                "pressTitle": "Articles & Press",
+                "press": [
+                    { "name": "WiReD", "url": "https://www.wired.co.uk/article/lvmh-brands-group-digital-technology" },
+                    { "name": "WWD", "url": "https://wwd.com/accessories-news/watches/hublot-digital-boutique-program-1202694234/" },
+                    { "name": "Robb Report", "url": "https://robbreport.com/style/watch-collector/hublots-new-experiential-digital-platform-is-a-radical-way-to-buy-a-watch-2799213/" },
+                    { "name": "It's Nice That", "url": "https://www.itsnicethat.com/news/b-reel-our-planet-david-attenborough-website-digital-080419" },
+                    { "name": "TheFWA Interview", "url": "https://thefwa.com/fwa-jury/christian-macmillan" },
+                    { "name": "Awwwards Case Study", "url": "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html" },
+                    { "name": "Commarts", "url": "https://www.commarts.com/webpicks/xavier-cuss" }
+                ]
+            },
+            {
+                "id": "facts",
+                "title": "About me",
+                "facts": [
+                    { "name": "· Studied Software Engineering at UIB." },
+                    { "name": "· Speak Spanish, Catalan and English fluently." },
+                    { "name": "· Judging the best of digital industry at <a href='https://thefwa.com' target='_blank'>FWA</a>." },
+                    { "name": "· Ran a marathon in 3h and 35min." },
+                    { "name": "· Played Basketball my entire life. Still balling for <a href='https://totbasquet.basquetcatala.cat/resultats-i-classificacions/?group=8338' target='_blank'>Forasters</a>." },
+                    { "name": "· Have the Open Water Diver Certify." },
+                    { "name": "· Have some tattoes." },
+                    { "name": "· Travel and Photography are my secret." }
+                ],
+                "favouritesTitle": "Favs",
+                "favourites": [
+                    { "name": "Homo Deus", "fav": "Book" },
+                    { "name": "HER", "fav": "Movie" },
+                    { "name": "Black Mirror", "fav": "TV Serie" },
+                    { "name": "FCBarcelona", "fav": "Futbol Team" },
+                    { "name": "Nets & Suns", "fav": "NBA Team" },
+                    { "name": "JayZ & Post Malone", "fav": "Artist" },
+                    { "name": "Bose 700 & AirPods", "fav": "Headphones" },
+                    { "name": "Nike x Stefan Janoski &</br>Kobe IV D.Booker PE", "fav": "Shoes" }
+                ]
+            },
+            { 
+                "id": "contact",
+                "social": [
+                    { "name": "Twitter", "url": "https://twitter.com/cmacmillanmarin", "text": "Emoji reactions about design & tech." },
+                    { "name": "Github", "url": "https://github.com/cmacmillanmarin", "text": "The code for this website and more." },
+                    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/cmacmillanmarin/", "text": "Some extra laboral and academic information." },
+                    { "name": "Email", "url": "mailto:spam@cmacmillanmarin.com", "text": "For job inquiries or saying hi." }
+                ],
+                "dev": "Designed and Developed by me. With no love. At home.",
+                "callme": "Call me on my cell phone?",
+                "audio": {
+                    "mp3": "./audio/callme.mp3"
+                }
+            }
+        ],
+        "photography": {}
+    }
+}

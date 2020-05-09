@@ -7,9 +7,7 @@
         <header-component ref="header" />
         <roulette ref="roulette"/>
         <div class="scroll" ref="scroll">
-            <div class="sections">
-                <nuxt />
-            </div>
+            <nuxt />
         </div>
         <scroll-bar ref="scrollBar" />
         <cursor-pointer ref="cursor" />
@@ -34,8 +32,7 @@
         mixins: [ Head ],
         computed: {
             ...mapState({
-                ready: state => state.ready,
-                Scroll: state => state.scroll.obj
+                ready: state => state.ready
             })
         },
         watch: {

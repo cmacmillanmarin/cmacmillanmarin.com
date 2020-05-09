@@ -36,15 +36,14 @@
                 this.setPosition();
             },
             setListeners() {
-                this.onResize = _.throttle(this.setPosition, 10);
-                window.addEventListener("resize", this.onResize);
+                window.addEventListener("resize", this.setPosition);
             },
             setPosition() {
                 const paddingTop = this.introPosition.params.padding
                 TweenMax.set(this.$el, { paddingTop });
             },
             destroyListeners() {
-                window.removeEventListener("resize", this.onResize);
+                window.removeEventListener("resize", this.setPosition);
             }
         }
     }

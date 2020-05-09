@@ -10,7 +10,6 @@
 
 <script>
 
-    import _ from "lodash";
     import { TweenMax } from "gsap";
 
     import LifecycleHooks from "~/mixins/LifecycleHooks";
@@ -20,8 +19,7 @@
         mixins: [ LifecycleHooks ],
         methods: {
             setListeners() {
-                this.onResize = _.throttle(this.resize, 50);
-                window.addEventListener("resize", this.onResize);
+                window.addEventListener("resize", this.resize);
             },
             resize() {
                 const borderWidth = this.$el.getBoundingClientRect().width * 0.2;
@@ -29,7 +27,7 @@
                 TweenMax.to(this.$refs.dot, 0.25, { x: "-50%", y: -borderWidth + 20 });
             },
             destroyListeners() {
-                window.removeEventListener("resize", this.onResize);
+                window.removeEventListener("resize", this.resize);
             }
         }
     }
