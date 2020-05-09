@@ -33,13 +33,20 @@
         computed: {
             ...mapState({
                 ready: state => state.ready,
-                to: state => state.scroll.to
+                scrollTo: state => state.scroll.to,
+                scrollEnabled: state => state.scroll.enabled
             })
         },
         watch: {
             ready: "initScroll",
-            to() {
-                this.scroll.scrollTo(this.to);
+            scrollTo() {
+                this.scroll.scrollTo(this.scrollTo);
+            },
+            scrollTo() {
+                this.scroll.scrollTo(this.scrollTo);
+            },
+            scrollEnabled() {
+                this.scroll.setEnabled(this.scrollEnabled);
             }
         },
         methods: {

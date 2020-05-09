@@ -17,7 +17,7 @@ class Scroll extends Smooth {
     }
 
     calc(e) {
-
+        if (!this.vars.enabled) return;
         const delta = this.vars.direction == 'horizontal' ? e.deltaX : e.deltaY
 
         this.vars.target += delta * -1
@@ -91,6 +91,10 @@ class Scroll extends Smooth {
     scrollTo(val) {
         // this.vars.current = val
         this.vars.target = val
+    }
+
+    setEnabled(val) {
+        this.vars.enabled = val
     }
 
     scrollToZero() {

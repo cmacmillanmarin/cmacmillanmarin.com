@@ -2,6 +2,7 @@
 // store/scroll.js
 
 export const state = () => ({
+    enabled: true,
     point: 0,
     direction: 0,
     to: 0,
@@ -9,6 +10,9 @@ export const state = () => ({
 });
 
 export const mutations = {
+    setEnabled(state, enabled) {
+        state.enabled = enabled;
+    },
     scrollTo(state, point) {
         state.to = point;
     },

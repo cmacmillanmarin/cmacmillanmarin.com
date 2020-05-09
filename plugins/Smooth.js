@@ -23,6 +23,7 @@ class Smooth {
         this.extends = typeof opt.extends === 'undefined' ? constructorName != 'Smooth' : opt.extends
         this.callback = this.options.callback || null
         this.vars = {
+            enabled: this.options.enabled || true,
             direction: this.options.direction || 'vertical',
             native: this.options.native || false,
             ease: this.options.ease || 0.075,
@@ -232,7 +233,6 @@ class Smooth {
     }
 
     scrollTo(offset) {
-        console.log("SSSSSUUUPPP", offset);
         if (this.vars.native) {
             this.vars.direction == 'vertical' ? window.scrollTo(0, offset) : window.scrollTo(offset, 0)
         } else {
