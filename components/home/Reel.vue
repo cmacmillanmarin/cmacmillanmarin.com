@@ -122,7 +122,8 @@
                             "autoplay": this.desktop ? 1 : 0,
                             "controls": this.desktop ? 0 : 1,
                             "rel": 0,
-                            "playsinline": 0
+                            "playsinline": 0,
+                            "origin": "https://cmacmillanmarin.com"
                         },
                         events: {
                             'onReady': this.onPlayerReady,

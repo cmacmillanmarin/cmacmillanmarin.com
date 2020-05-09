@@ -74,6 +74,7 @@ module.exports = {
         }
     },
     generate: {
+        dir: "htdocs",
         routes
     }
 };

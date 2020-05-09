@@ -7,3 +7,6 @@ package-lock.json
 
 # Nuxt build
 .nuxt
+
+dist/
+htdocs/
