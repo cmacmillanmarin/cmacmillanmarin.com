@@ -41,6 +41,7 @@
             .line {
                 position: relative;
                 display: inline-block;
+                // margin-bottom: 5px;
                 .quantity {
                     position: absolute;
                     right: 0;

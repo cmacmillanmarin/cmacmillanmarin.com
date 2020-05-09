@@ -58,7 +58,7 @@
         }
         .favourites {
             padding-top: 75px;
-            width: 50%;
+            width: 100%;
             @include respond-to("desktop") {
                 padding-top: 25px;
                 width: 25%;

@@ -40,7 +40,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
     .s-work {
         .projects {

@@ -97,7 +97,7 @@
         .call_desktop {
             display: none;
             @include respond-to("tablet-portrait") {
-                display: block;
+                display: inline-block;
             }
         }
         .dev {
