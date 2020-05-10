@@ -56,10 +56,11 @@
                 "id": "awards",
                 "title": "Awards & Recognitions",
                 "awards": [
-                    { "name": "TheFWA", "quantity": "5" },
-                    { "name": "Awwwards", "quantity": "11" },
-                    { "name": "Cannes Lions", "quantity": "4" },
-                    { "name": "Webby Award", "quantity": "2" }
+                    { "name": "Awwwards SOTD & DEV", "quantity": "11" },
+                    { "name": "Awwwards SOTM Nominee", "quantity": "1" },
+                    { "name": "Awwwards DOTY Nominee", "quantity": "1" },
+                    { "name": "The Webby Awards", "quantity": "2" },
+                    { "name": "TheFWA FOTD", "quantity": "5" }
                 ],
                 "pressTitle": "Articles & Press",
                 "press": [

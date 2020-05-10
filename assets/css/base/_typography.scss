@@ -124,10 +124,7 @@ h1, h2, h3, h4, h5, h6, p {
 .awards-list {
     font-weight: bold;
     .number, .item {
-        font-size: 0.9em;
-        @include respond-to("tablet-portrait") {
-            font-size: 1.3em;
-        }
+        font-size: 0.8em;
     }
     .quantity {
         font-family: "neue-machina-light", "Helvetica Neue", sans-serif;
