@@ -23,7 +23,7 @@ export default {
                 { hid: "msapplication-TileColor", name: "msapplication-TileColor", content:"#000" },
                 { hid: "theme-color", name: "theme-color", content:"#000" },
 
-                { hid: "description", name: "description", content: 'meta:description' },
+                { hid: "description", name: "description", content: head.description },
 
                 { hid: "og:locale", property: "og:locale", content: "en" },
                 { hid: "og:title", property: "og:title", content: head.title },

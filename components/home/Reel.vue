@@ -74,7 +74,7 @@
                 TweenMax.to(this.$refs.close, time, {opacity, ease, onComplete: this.reset});
             },
             reset() {
-                const time = 1.0;
+                const time = 1.25;
                 const delay = 0.5;
                 const opacity = 1;
                 const ease = Power1.easeIn;
