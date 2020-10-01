@@ -1,8 +1,8 @@
 {
     "config": {
         "head": {
-            "title": "Christian MacMillan | Developer",
-            "description": "Developer based in Barcelona. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
+            "title": "Christian MacMillan | Tech Lead ~ Developer",
+            "description": "Tech Lead ~ Developer based in Barcelona. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
             "url": "https://cmacmillanmarin.com",
             "ogImage": "https://cmacmillanmarin.com/img/social.jpg",
             "twImage": "https://cmacmillanmarin.com/img/social.jpg",
@@ -14,11 +14,10 @@
             { 
                 "id": "intro",
                 "emoji": "👻",
-                "intro": "Hey! I’m Christian MacMillan, a 30 y/o developer with a keen interest in design, motion and interaction.<br/><br/>Currently based in Barcelona, I work at <a href='https://b-reel.com' href='_target'>B-Reel</a>.",
-                "learningTitle": "Actually experimenting with",
+                "intro": "Hey! I’m Christian MacMillan, a 30 y/o developer with a keen interest in design, motion and interaction.<br/><br/>Currently based in Barcelona, I work as Tech Leader and Developer at <a href='https://b-reel.com' href='_target'>B-Reel</a>.",
+                "learningTitle": "Available for freelance",
                 "fields": [
-                    { "name": "WebGL" },
-                    { "name": "glsl" }
+                    { "name": "JUL 2021" }
                 ]
             },
             {
@@ -29,6 +28,7 @@
                 "id": "work",
                 "title": "Selected work",
                 "projects": [
+                   { "name": "Carolina Herrera", "url": "https://carolinaherrera.com" },
                    { "name": "Pixel 4 Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
                    { "name": "Hublot Digital Boutique", "url": "https://www.b-reel.com/work/hublot-digital-boutique" },
                    { "name": "Gorillaz AR App", "url": "https://www.b-reel.com/work/gorillaz-humanz-app" },
@@ -38,7 +38,6 @@
                    { "name": "Xavier Cussó", "url": "https://xaviercusso.com" },
                    { "name": "Loro Piana", "url": "https://uk.loropiana.com/en" },
                    { "name": "Chaos Fashion", "url": "https://shop.chaos.club" },
-                   { "name": "Intorno", "url": "http://intorno.xyz" },
                    { "name": "h2o", "url": "http://h2o.es" }
                 ],
                 "clientTitle": "Selected clients",
@@ -59,11 +58,12 @@
                     { "name": "Awwwards SOTD & DEV", "quantity": "11" },
                     { "name": "Awwwards SOTM Nominee", "quantity": "1" },
                     { "name": "Awwwards DOTY Nominee", "quantity": "1" },
-                    { "name": "The Webby Awards", "quantity": "2" },
+                    { "name": "The Webby Awards", "quantity": "3" },
                     { "name": "TheFWA FOTD", "quantity": "5" }
                 ],
                 "pressTitle": "Articles & Press",
                 "press": [
+                    { "name": "Shopify", "url": "https://www.shopify.com/partners/blog/web-design-portfolio-inspiration" },
                     { "name": "WiReD", "url": "https://www.wired.co.uk/article/lvmh-brands-group-digital-technology" },
                     { "name": "WWD", "url": "https://wwd.com/accessories-news/watches/hublot-digital-boutique-program-1202694234/" },
                     { "name": "Robb Report", "url": "https://robbreport.com/style/watch-collector/hublots-new-experiential-digital-platform-is-a-radical-way-to-buy-a-watch-2799213/" },
@@ -78,7 +78,6 @@
                 "title": "About me",
                 "facts": [
                     { "name": "· Studied Software Engineering at UIB." },
-                    { "name": "· Speak Spanish, Catalan and English fluently." },
                     { "name": "· Judging the best of digital industry at <a rel='noopener' href='https://thefwa.com' target='_blank'>FWA</a>." },
                     { "name": "· Ran a marathon in 3h and 35min." },
                     { "name": "· Played Basketball my entire life. Still balling." },
