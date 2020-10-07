@@ -14,7 +14,7 @@
             { 
                 "id": "intro",
                 "emoji": "👻",
-                "intro": "Hey! I’m Christian MacMillan, a 30 y/o developer with a keen interest in design, motion and interaction.<br/><br/>Currently I work as Tech Leader and Developer at <a href='https://b-reel.com' href='_target'>B-Reel</a> in Barcelona.",
+                "intro": "Hey! I’m Christian MacMillan, a 30 y/o developer with a keen interest in design, motion and interaction.<br/><br/>Currently I work as Tech Leader and Developer at <a href='https://b-reel.com' href='_target'>B-Reel</a>.",
                 "learningTitle": "Available for freelance",
                 "fields": [
                     { "name": "JUL 2021" }
@@ -28,17 +28,15 @@
                 "id": "work",
                 "title": "Selected work",
                 "projects": [
-                   { "name": "Carolina Herrera", "url": "https://carolinaherrera.com" },
+                   { "name": "Evagher", "url": "https://evagher.com/" },
                    { "name": "Pixel 4 Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
+                   { "name": "Carolina Herrera", "url": "https://carolinaherrera.com" },
                    { "name": "Hublot Digital Boutique", "url": "https://www.b-reel.com/work/hublot-digital-boutique" },
                    { "name": "Gorillaz AR App", "url": "https://www.b-reel.com/work/gorillaz-humanz-app" },
-                   { "name": "Evagher", "url": "https://evagher.com/" },
+                   { "name": "Xavier Cussó", "url": "https://xaviercusso.com/" },
                    { "name": "Roma Levin", "url": "https://romalevin.com/" },
                    { "name": "Our Planet", "url": "https://www.ourplanet.com/en/explorable-globe/landing/" },
-                   { "name": "Xavier Cussó", "url": "https://xaviercusso.com" },
                    { "name": "Loro Piana", "url": "https://uk.loropiana.com/en" },
-                   { "name": "Chaos Fashion", "url": "https://shop.chaos.club" },
-                   { "name": "h2o", "url": "http://h2o.es" }
                 ],
                 "clientTitle": "Selected clients",
                 "clients": [
