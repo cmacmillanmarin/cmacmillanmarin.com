@@ -36,7 +36,7 @@
                    { "name": "Xavier Cussó", "url": "https://xaviercusso.com/" },
                    { "name": "Roma Levin", "url": "https://romalevin.com/" },
                    { "name": "Our Planet", "url": "https://www.ourplanet.com/en/explorable-globe/landing/" },
-                   { "name": "Loro Piana", "url": "https://uk.loropiana.com/en" },
+                   { "name": "Loro Piana", "url": "https://uk.loropiana.com/en" }
                 ],
                 "clientTitle": "Selected clients",
                 "clients": [
@@ -53,11 +53,11 @@
                 "id": "awards",
                 "title": "Awards & Recognitions",
                 "awards": [
+                    { "name": "TheFWA FOTD", "quantity": "5" },
+                    { "name": "The Webby Awards", "quantity": "3" },
                     { "name": "Awwwards SOTD & DEV", "quantity": "11" },
                     { "name": "Awwwards SOTM Nominee", "quantity": "1" },
-                    { "name": "Awwwards DOTY Nominee", "quantity": "1" },
-                    { "name": "The Webby Awards", "quantity": "3" },
-                    { "name": "TheFWA FOTD", "quantity": "5" }
+                    { "name": "Awwwards DOTY Nominee", "quantity": "1" }
                 ],
                 "pressTitle": "Articles & Press",
                 "press": [
