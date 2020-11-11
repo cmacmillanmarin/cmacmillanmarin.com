@@ -30,13 +30,13 @@
                 "projects": [
                    { "name": "Evagher", "url": "https://evagher.com/" },
                    { "name": "Pixel 4 Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
-                   { "name": "Carolina Herrera", "url": "https://carolinaherrera.com" },
+                   { "name": "Carolina Herrera", "url": "https://www.carolinaherrera.com/us/en/configurator/lipstick" },
                    { "name": "Hublot Digital Boutique", "url": "https://www.b-reel.com/work/hublot-digital-boutique" },
                    { "name": "Gorillaz AR App", "url": "https://www.b-reel.com/work/gorillaz-humanz-app" },
                    { "name": "Xavier Cussó", "url": "https://xaviercusso.com/" },
                    { "name": "Roma Levin", "url": "https://romalevin.com/" },
-                   { "name": "Our Planet", "url": "https://www.ourplanet.com/en/explorable-globe/landing/" },
-                   { "name": "Loro Piana", "url": "https://uk.loropiana.com/en" }
+                   { "name": "Voice for the Planet", "url": "https://voicefortheplanet.org/" },
+                   { "name": "Our Planet", "url": "https://www.ourplanet.com/en/explorable-globe/landing/" }
                 ],
                 "clientTitle": "Selected clients",
                 "clients": [
