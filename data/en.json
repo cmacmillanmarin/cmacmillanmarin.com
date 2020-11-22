@@ -14,8 +14,8 @@
             { 
                 "id": "intro",
                 "emoji": "👻",
-                "intro": "Hey! I’m Christian MacMillan, a 30 y/o software engineer with a keen interest in design, motion and interaction.<br/><br/>I help world leading brands and individuals in their projects as Tech Leader and Developer.",
-                "learningTitle": "Available for work",
+                "intro": "Hey! I’m Christian MacMillan, a 30 y/o software engineer with a keen interest in design, motion and interaction.<br/><br/>I help world leading brands, agencies and individuals to launch their projects as Tech Leader and Developer.",
+                "learningTitle": "Available for new projects",
                 "fields": [
                     { "name": "EARLY 2021" }
                 ]
@@ -28,7 +28,6 @@
                 "id": "work",
                 "title": "Selected work",
                 "projects": [
-                   
                    { "name": "Pixel 4 Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
                    { "name": "Evagher", "url": "https://evagher.com/" },
                    { "name": "Hublot Digital Boutique", "url": "https://www.b-reel.com/work/hublot-digital-boutique" },
