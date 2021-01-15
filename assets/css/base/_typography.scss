@@ -159,13 +159,13 @@ h1, h2, h3, h4, h5, h6, p {
     .category {
         font-family: $fontBold;
         font-size: 0.65em;
-        font-weight: 700;
+        font-weight: bold;
         display: block;
     }
     .item {
         font-size: 1em;
         display: inline-block;
-        font-weight: 700;
+        font-weight: bold;
         margin-bottom: 5px;
         @include respond-to("tablet-portrait") {
             font-size: 1.3em;
@@ -189,8 +189,8 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 0.5em;
     }
     p {
-        // width: 60%;
+        width: 80%;
         font-size: 0.65em;
-        font-weight: 700;
+        font-weight: normal;
     }
 }

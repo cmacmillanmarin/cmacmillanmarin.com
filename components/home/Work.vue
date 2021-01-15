@@ -10,7 +10,7 @@
                 <list :items="data.projects" class="selected-work" />
             </div>
             <div ref="agency" class="flexGrid__cell agency">
-                <h2 class="_noLine" v-text="data.clientTitle" />
+                <h2 v-text="data.clientTitle" />
                 <list :items="data.clients" />
             </div>
         </div>
