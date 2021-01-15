@@ -1,7 +1,7 @@
 {
     "config": {
         "head": {
-            "title": "Cristian MacMillan | Independent Tech Lead ~ Developer",
+            "title": "Christian MacMillan | Independent Tech Lead ~ Developer",
             "description": "Independent / Freelance Tech Lead and Developer. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
             "url": "https://cmacmillanmarin.com",
             "ogImage": "https://cmacmillanmarin.com/img/social.jpg",
@@ -14,7 +14,7 @@
             { 
                 "id": "intro",
                 "emoji": "👻",
-                "intro": "Hey! I’m Cristian MacMillan, a 30 y/o software engineer with a keen interest in design, motion and interaction.<br/><br/>I help brands, agencies and individuals launching their projects as Independent Tech Leader and Developer.",
+                "intro": "Hey! I’m Christian MacMillan, a 30 y/o software engineer with a keen interest in design, motion and interaction.<br/><br/>I help brands, agencies and individuals launching their projects as Independent Tech Leader and Developer.",
                 "learningTitle": "Available for freelance projects",
                 "fields": [
                     { "name": "MID/LATE 2021" }
