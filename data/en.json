@@ -2,7 +2,7 @@
     "config": {
         "head": {
             "title": "Christian MacMillan | Independent Tech Lead ~ Developer",
-            "description": "Independent / Freelance Tech Lead and Developer. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
+            "description": "Independent Tech Lead ~ Developer. Front end and iOS Apps. Javascript, Nuxt, Vue, React, web, unity, webgl, Swift and more.",
             "url": "https://cmacmillanmarin.com",
             "ogImage": "https://cmacmillanmarin.com/img/social.jpg",
             "twImage": "https://cmacmillanmarin.com/img/social.jpg",
@@ -10,96 +10,228 @@
         }
     },
     "pages": {
-        "home": [
-            { 
+        "home": [{
                 "id": "intro",
                 "emoji": "👻",
-                "intro": "I’m Christian MacMillan, a 30 y/o software engineer with a keen interest in design, motion and interaction.<br/><br/>I help brands, agencies and individuals launching their projects as Independent Tech Leader and Developer.",
+                "intro": "I’m Christian MacMillan, a 30 y/o software engineer with a keen interest in design, motion and interaction.<br/><br/>I help brands, agencies and individuals launching their projects as Independent Tech Lead and Developer.",
                 "learningTitle": "Available for freelance projects",
-                "fields": [
-                    { "name": "JULY 2021" }
-                ]
+                "fields": [{
+                    "name": "SEPTEMBER 2021"
+                }]
             },
             {
                 "id": "reel",
                 "title": "Reel"
             },
-            { 
+            {
                 "id": "work",
                 "title": "Selected work",
                 "projects": [
-                   { "name": "Pixel 4 Wallpapers", "url": "https://b-reel.com/work/google-pixel-wallpapers" },
-                   { "name": "Evagher", "url": "https://evagher.com/" },
-                   { "name": "Hublot Digital Boutique", "url": "https://www.b-reel.com/work/hublot-digital-boutique" },
-                   { "name": "Gorillaz iOS AR App", "url": "https://www.b-reel.com/work/gorillaz-humanz-app" },
-                   { "name": "Xavier Cussó", "url": "https://xaviercusso.com/" },
-                   { "name": "Roma Levin", "url": "https://romalevin.com/" },
-                   { "name": "Voice for the Planet", "url": "https://voicefortheplanet.org/" },
-                   { "name": "CH Makeup Configurator", "url": "https://www.carolinaherrera.com/us/en/configurator/lipstick" }
+                    {
+                        "name": "Pixel 4 Wallpapers",
+                        "url": "https://b-reel.com/work/google-pixel-wallpapers"
+                    },
+                    {
+                        "name": "Evagher",
+                        "url": "https://evagher.com/"
+                    },
+                    {
+                        "name": "CH Makeup Configurator",
+                        "url": "https://www.carolinaherrera.com/us/en/configurator/lipstick"
+                    },
+                    {
+                        "name": "Hublot Digital Boutique",
+                        "url": "https://www.b-reel.com/work/hublot-digital-boutique"
+                    },
+                    {
+                        "name": "Gorillaz iOS AR App",
+                        "url": "https://www.b-reel.com/work/gorillaz-humanz-app"
+                    },
+                    {
+                        "name": "Voice for the Planet",
+                        "url": "https://voicefortheplanet.org/"
+                    },
+                    {
+                        "name": "Our Planet",
+                        "url": "https://ourplanet.com/en/explorable-globe/landing/"
+                    },
+                    {
+                        "name": "Xavier Cussó",
+                        "url": "https://xaviercusso.com/"
+                    },
+                    {
+                        "name": "Roma Levin",
+                        "url": "https://romalevin.com/"
+                    }
                 ],
                 "clientTitle": "Selected clients",
-                "clients": [
-                    { "name": "Google", "url": "#" },
-                    { "name": "Nike", "url": "#" },
-                    { "name": "Netflix", "url": "#" },
-                    { "name": "WWF", "url": "#" },
-                    { "name": "Gorillaz", "url": "#" },
-                    { "name": "-", "url": "#" },
-                    { "name": "Cool Individuals", "url": "#" }
+                "clients": [{
+                        "name": "Google",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Nike",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Netflix",
+                        "url": "#"
+                    },
+                    {
+                        "name": "WWF",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Gorillaz",
+                        "url": "#"
+                    },
+                    {
+                        "name": "-",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Cool Individuals",
+                        "url": "#"
+                    }
                 ]
             },
-            { 
+            {
                 "id": "awards",
                 "title": "Awards & Recognitions",
-                "awards": [
-                    { "name": "TheFWA FOTD", "quantity": "5" },
-                    { "name": "The Webby Awards", "quantity": "3" },
-                    { "name": "Awwwards SOTD & DEV", "quantity": "11" },
-                    { "name": "Awwwards SOTM Nominee", "quantity": "1" },
-                    { "name": "Awwwards DOTY Nominee", "quantity": "1" }
+                "awards": [{
+                        "name": "TheFWA FOTD",
+                        "quantity": "5"
+                    },
+                    {
+                        "name": "The Webby Awards",
+                        "quantity": "3"
+                    },
+                    {
+                        "name": "Awwwards SOTD & DEV",
+                        "quantity": "11"
+                    },
+                    {
+                        "name": "Awwwards SOTM Nominee",
+                        "quantity": "1"
+                    },
+                    {
+                        "name": "Awwwards DOTY Nominee",
+                        "quantity": "1"
+                    }
                 ],
                 "pressTitle": "Articles & Press",
-                "press": [
-                    { "name": "TheFWA Interview", "url": "https://thefwa.com/fwa-jury/christian-macmillan" },
-                    { "name": "Awwwards Case Study", "url": "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html" },
-                    { "name": "WiReD", "url": "https://www.wired.co.uk/article/lvmh-brands-group-digital-technology" },
-                    { "name": "WWD", "url": "https://wwd.com/accessories-news/watches/hublot-digital-boutique-program-1202694234/" },
-                    { "name": "Robb Report", "url": "https://robbreport.com/style/watch-collector/hublots-new-experiential-digital-platform-is-a-radical-way-to-buy-a-watch-2799213/" },
-                    { "name": "It's Nice That", "url": "https://www.itsnicethat.com/news/b-reel-our-planet-david-attenborough-website-digital-080419" },
-                    { "name": "Commarts", "url": "https://www.commarts.com/webpicks/xavier-cuss" }
+                "press": [{
+                        "name": "TheFWA Interview",
+                        "url": "https://thefwa.com/fwa-jury/christian-macmillan"
+                    },
+                    {
+                        "name": "Awwwards Case Study",
+                        "url": "https://www.awwwards.com/case-study-xavier-cusso-portfolio.html"
+                    },
+                    {
+                        "name": "WiReD",
+                        "url": "https://www.wired.co.uk/article/lvmh-brands-group-digital-technology"
+                    },
+                    {
+                        "name": "WWD",
+                        "url": "https://wwd.com/accessories-news/watches/hublot-digital-boutique-program-1202694234/"
+                    },
+                    {
+                        "name": "Robb Report",
+                        "url": "https://robbreport.com/style/watch-collector/hublots-new-experiential-digital-platform-is-a-radical-way-to-buy-a-watch-2799213/"
+                    },
+                    {
+                        "name": "It's Nice That",
+                        "url": "https://www.itsnicethat.com/news/b-reel-our-planet-david-attenborough-website-digital-080419"
+                    },
+                    {
+                        "name": "Commarts",
+                        "url": "https://www.commarts.com/webpicks/xavier-cuss"
+                    }
                 ]
             },
             {
                 "id": "facts",
                 "title": "About me",
-                "facts": [
-                    { "name": "· Studied Software Engineering at UIB." },
-                    { "name": "· Judging the best of digital industry at <a rel='noopener' href='https://thefwa.com' target='_blank'>FWA</a>." },
-                    { "name": "· Ran a marathon in 3h and 35min." },
-                    { "name": "· Played Basketball my entire life. Still balling." },
-                    { "name": "· Open Water Diver Certified." },
-                    { "name": "· Have some tattoes." },
-                    { "name": "· Photography enthusiast. Sharing photos on <a href='https://unsplash.com/cmacmillanmarin' rel='noopener' target='_blank'>@Unsplash</a> ." }
+                "facts": [{
+                        "name": "· Studied Software Engineering at UIB."
+                    },
+                    {
+                        "name": "· Judging the best of digital industry at <a rel='noopener' href='https://thefwa.com' target='_blank'>FWA</a>."
+                    },
+                    {
+                        "name": "· Ran a marathon in 3h and 35min."
+                    },
+                    {
+                        "name": "· Played Basketball my entire life. Still balling."
+                    },
+                    {
+                        "name": "· Open Water Diver Certified."
+                    },
+                    {
+                        "name": "· Have some tattoes."
+                    },
+                    {
+                        "name": "· Photography enthusiast. Sharing photos on <a href='https://unsplash.com/cmacmillanmarin' rel='noopener' target='_blank'>@Unsplash</a> ."
+                    }
                 ],
                 "favouritesTitle": "Favs",
-                "favourites": [
-                    { "name": "Homo Deus", "fav": "Book" },
-                    { "name": "The Gentlemen", "fav": "Movie" },
-                    { "name": "Gomorra", "fav": "TV Serie" },
-                    { "name": "FCBarcelona & Nets", "fav": "Team" },
-                    { "name": "JayZ & Post Malone", "fav": "Artist" },
-                    { "name": "Bose 700 & AirPods", "fav": "Headphones" },
-                    { "name": "Nike x Stefan Janoski</br>& Jordan I Low", "fav": "Shoes" },
-                    { "name": "Kobe IV D.Booker PE</br>& Jordan XI", "fav": "Ball Shoes" }
+                "favourites": [{
+                        "name": "Homo Deus",
+                        "fav": "Book"
+                    },
+                    {
+                        "name": "The Gentlemen",
+                        "fav": "Movie"
+                    },
+                    {
+                        "name": "Gomorra",
+                        "fav": "TV Serie"
+                    },
+                    {
+                        "name": "FCBarcelona & Nets",
+                        "fav": "Team"
+                    },
+                    {
+                        "name": "JayZ & Post Malone",
+                        "fav": "Artist"
+                    },
+                    {
+                        "name": "Bose 700 & AirPods",
+                        "fav": "Headphones"
+                    },
+                    {
+                        "name": "Nike x Stefan Janoski</br>& Jordan I Low",
+                        "fav": "Shoes"
+                    },
+                    {
+                        "name": "Kobe IV D.Booker PE</br>& Jordan XI",
+                        "fav": "Ball Shoes"
+                    }
                 ]
             },
-            { 
+            {
                 "id": "contact",
-                "social": [
-                    { "name": "Twitter", "url": "https://twitter.com/cmacmillanmarin", "text": "Emoji reactions about design & tech." },
-                    { "name": "Github", "url": "https://github.com/cmacmillanmarin", "text": "The code for this website and more." },
-                    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/cmacmillanmarin/", "text": "More professional and academic information." },
-                    { "name": "Email", "url": "mailto:_@cmacmillanmarin.com", "text": "For job inquiries or saying hi." }
+                "social": [{
+                        "name": "Twitter",
+                        "url": "https://twitter.com/cmacmillanmarin",
+                        "text": "Emoji reactions about design & tech."
+                    },
+                    {
+                        "name": "Github",
+                        "url": "https://github.com/cmacmillanmarin",
+                        "text": "The code for this website and more."
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/cmacmillanmarin/",
+                        "text": "More professional and academic information."
+                    },
+                    {
+                        "name": "Email",
+                        "url": "mailto:_@cmacmillanmarin.com",
+                        "text": "For job inquiries or saying hi."
+                    }
                 ],
                 "dev": "Designed and Developed by me. With no love. At home.",
                 "callme": "Call me on my cell phone?",
