@@ -6,7 +6,7 @@
     <section class="s-intro">
         <div class="flexGrid" ref="content">
             <div class="intro flexGrid__cell">
-                <p class="emoji" v-text="data.emoji" />
+                <sprite />
                 <h1 class="SEO" v-text="data.seo" />
                 <p class="intro-text" v-html="data.intro" />
             </div>
@@ -26,6 +26,7 @@
     import LifecycleHooks from "~/mixins/LifecycleHooks";
 
     import List from "~/components/List";
+    import Sprite from "~/components/home/Sprite";
 
     export default {
         name: "Intro",
@@ -54,7 +55,8 @@
             }
         },
         components: {
-            List
+            List,
+            Sprite
         }
     }
 
